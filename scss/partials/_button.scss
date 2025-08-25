@@ -1,31 +1,19 @@
 .btn_wrapper {
     a {
-        padding: 12px 4px 12px 30px;
-        background-color: $white;
-        @include border-radius(40px);
-        font-weight: 600;
-        font-size: 16px;
-        color: #031a26;
-        span {
-            width: 36px;
-            height: 36px;
-            line-height: 36px;
-            text-align: center;
-            background-color: $text_color;
-            color: $white;
-            @include border-radius(50%);
-            margin-left: 12px;
-            
-            display: inline-block;
-            i {
-                @include transition(0.4s);
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -ms-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
-            }
-        }
+        display: flex;
+        padding: 11px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 24px;
+        background: #FF1949;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: -0.28px;
         &:hover {
             background-color: $primary;
             color: white;

@@ -69,3 +69,58 @@
         }
     }
 }
+
+.rb_about1 {
+    .about_card {
+        display: flex;
+        padding: 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 80px;
+        align-self: stretch;
+        border-radius: 12px;
+        border: 1px solid #E5E9ED;
+        background: #F5F5F5;
+        .card_title {
+            color: #404A56;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 157.143% */
+            letter-spacing: -0.14px;
+        }
+        .card_numb {
+            color: #002147;
+            font-family: Geist;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px; /* 142.857% */
+            letter-spacing: -0.56px;
+        }
+        .card_text {
+            color: #404A56;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.16px;
+        }
+        .card_desc {
+            color: #404A56;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 177.778% */
+            letter-spacing: -0.18px;
+        }
+    }
+    // .about_thumb {
+    //     img {
+    //         max-width: 100%;
+    //     }
+    // }
+}

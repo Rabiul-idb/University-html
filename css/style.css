@@ -30702,6 +30702,11 @@ p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .common_input {
   position: relative;
 }
@@ -32014,45 +32019,37 @@ header {
 .rb_heading_area .rb_subtitle {
   margin-bottom: 22px;
   display: inline-flex;
+  padding: 5px 12px;
+  align-items: center;
   gap: 8px;
-  padding: 11px 30px;
+  align-self: stretch;
   border-radius: 100px;
-  border: 1px solid rgba(3, 26, 38, 0.12);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F2F2 100%);
-  color: #252525;
+  border: 1px solid rgba(0, 33, 71, 0.2);
+  color: #002147;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+.rb_heading_area .rb_title {
+  color: #002147;
+  font-family: Geist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+.rb_heading_area .rb_desc {
+  color: #404A56;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-}
-.rb_heading_area .rb_subtitle.style1 {
-  color: #031A26;
-  text-transform: uppercase;
-  background: none;
-}
-.rb_heading_area .rb_title {
-  color: #252525;
-  font-family: Inter;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 60px;
-}
-.rb_heading_area .rb_title.style1 {
-  color: #031A26;
-}
-.rb_heading_area .rb_desc {
-  color: rgba(37, 37, 37, 0.6);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.rb_heading_area .rb_desc.styel1 {
-  color: rgba(3, 26, 38, 0.6);
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
 }
 
 @media (min-width: 1200px) {
@@ -32090,39 +32087,20 @@ header {
   }
 }
 .btn_wrapper a {
-  padding: 12px 4px 12px 30px;
-  background-color: #fff;
-  border-radius: 40px;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #031a26;
-}
-.btn_wrapper a span {
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  text-align: center;
-  background-color: #031a26;
-  color: #fff;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-left: 12px;
-  display: inline-block;
-}
-.btn_wrapper a span i {
-  transition: all 0.4s ease;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+  display: flex;
+  padding: 11px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  background: #FF1949;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.28px;
 }
 .btn_wrapper a:hover {
   background-color: #ff9916;
@@ -32606,6 +32584,54 @@ header {
 }
 .rb_service1 .service_card:hover .content p {
   color: #fff;
+}
+
+.rb_about1 .about_card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #E5E9ED;
+  background: #F5F5F5;
+}
+.rb_about1 .about_card .card_title {
+  color: #404A56;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.14px;
+}
+.rb_about1 .about_card .card_numb {
+  color: #002147;
+  font-family: Geist;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
+  letter-spacing: -0.56px;
+}
+.rb_about1 .about_card .card_text {
+  color: #404A56;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+}
+.rb_about1 .about_card .card_desc {
+  color: #404A56;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.18px;
 }
 
 .mb_hero_area .mb_hero_bg {
@@ -33880,36 +33906,6 @@ header {
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-
-.rb_about1 .container {
-  max-width: 1754px;
-}
-.rb_about1 .mission_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 99px 77px;
-  border-radius: 10px;
-  background: #031A26;
-}
-.rb_about1 h4 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 100px; /* 416.667% */
-}
-.rb_about1 p {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px; /* 166.667% */
 }
 
 .rb_about2 {

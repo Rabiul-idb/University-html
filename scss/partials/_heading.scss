@@ -3,45 +3,37 @@
     .rb_subtitle {
         margin-bottom: 22px;
         display: inline-flex;
+        padding: 5px 12px;
+        align-items: center;
         gap: 8px;
-        padding: 11px 30px;
+        align-self: stretch;
         border-radius: 100px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F2F2F2 100%);
-        color: #252525;
+        border: 1px solid rgba(0, 33, 71, 0.20);
+        color: #002147;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.14px;
+    }
+    .rb_title {
+        color: #002147;
+        font-family: Geist;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px; 
+        letter-spacing: -0.96px;
+    }
+    .rb_desc {
+        color: #404A56;
         font-family: Inter;
         font-size: 16px;
         font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-transform: uppercase;
-        &.style1 {
-            color: #031A26;
-            text-transform: uppercase;
-            background: none;
-        }
-    }
-    .rb_title {
-        color: #252525;
-        font-family: Inter;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 60px; 
-        &.style1 {
-            color: #031A26;
-        }
-    }
-    .rb_desc {
-        color: rgba(37, 37, 37, 0.60);
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-        &.styel1 {
-            color: rgba(3, 26, 38, 0.60);
-        }
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.16px;
     }
 }
 // Heading Area End
