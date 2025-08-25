@@ -53,6 +53,10 @@
                 background-color: $text_color;
                 color: $white;
             }
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
         }
     }
 }
