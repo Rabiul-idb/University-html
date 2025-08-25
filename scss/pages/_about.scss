@@ -1,0 +1,165 @@
+/*---Inner Page Hero Section Start---*/
+.mb_inner_page_hero{
+    height: 470px;
+    background-color: #FFEED8;
+    @include border-radius(24px);
+    @include flex(row, flex-start, center);
+    position: relative;
+    .container{
+        height: 100%;
+    }
+    .row{
+        height: 100%;
+        height: 470px
+        // .col-lg-6{
+        //     height: 100%
+        // }
+    }
+    ul{
+        @include flex(row, flex-start, center);
+        gap: 10px;
+        border: 1px solid rgba(34, 34, 34, 0.12);
+        border-radius: 100px;
+        padding: 5px 20px;
+        background: #f4d9b6;
+        width: fit-content;
+        li{
+            a{
+                font-weight: 600;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #031a26;
+                @include transition(0.4s);
+                span{
+                    margin-right: 10px;
+                }
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .heading{
+        h1{
+            font-weight: 600;
+            font-size: 80px;
+            color: #031a26;
+            margin-top: 20px;
+        }
+    }
+    .bitcoin{
+        position: absolute;
+        bottom: 52px;
+        left: 0px;
+    }
+    .shape{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+// About1 css start
+.rb_about1 {
+    .container {
+        max-width: 1754px;
+    }
+    .mission_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 99px 77px;
+        border-radius: 10px;
+        background: #031A26;
+    }
+    h4 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100px; /* 416.667% */
+    }
+    p {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 166.667% */
+    }
+}
+// About1 css end
+
+
+// About2 css start
+.rb_about2 {
+    position: relative;
+    .rb_heading_area {
+        max-width: 630px;
+    }
+    .rb_content {
+        max-width: 530px;
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .icon {
+                width: 80px;
+                height: 80px;
+                img {
+                    border-radius: 100px;
+                    border: 1px solid #E6E8E9;
+                    background: #FFF;
+                    padding: 23px 18px;
+                }
+            }
+            &.style1 {
+                .icon {
+                    img {
+                        padding: 18px 22px;
+                    }
+                }
+            }
+        }
+    }
+    .rb_btn_area {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .rb_profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .item {
+                span:not(:first-child) {
+                    margin-left: -18px;
+                }
+
+                .plus_icon {
+                    display: flex;
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    background: #121C27;
+                    padding: 13px;
+                    border-radius: 24px;
+                }
+                &.style1 {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .rb_thumb {
+        position: relative;
+        border-radius: 20px;
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+// About2 css end
