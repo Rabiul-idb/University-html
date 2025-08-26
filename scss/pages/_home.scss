@@ -197,6 +197,27 @@
         border-radius: 12px;
         border: 1px solid #E5E9ED;
         background: #F5F5F5;
+        @include breakpoint (max-xxl){
+            gap: 34px;
+            &.style_1 {
+                padding: 22px;
+            }
+        }
+        @include breakpoint (max-xl){
+            gap: 80px;
+            &.style_1 {
+                padding: 32px;
+            }
+        }
+        @include breakpoint (max-md){
+            gap: 62px;
+        }
+        @include breakpoint (max-xsmall){
+            padding: 24px;
+            &.style_1 {
+                padding: 24px;
+            }
+        }
         .card_title {
             color: #404A56;
             font-family: Inter;
@@ -234,11 +255,40 @@
             letter-spacing: -0.18px;
         }
     }
-    // .about_thumb {
-    //     img {
-    //         max-width: 100%;
-    //     }
-    // }
+    @include breakpoint (max-lg){
+        .about_thumb {
+            &.style_1, &.style_3 {
+                img {
+                    width: 346px;
+                    height: 236px;
+                    align-self: stretch;
+                }
+            }
+            &.style_2 {
+                img {
+                    width: 346px;
+                    height: 484px;
+                }
+            }
+        }
+    }
+    @include breakpoint (max-sm){
+        .about_thumb {
+            &.style_1, &.style_3 {
+                img {
+                    width: 100%;
+                    max-height: 236px;
+                    align-self: stretch;
+                }
+            }
+            &.style_2 {
+                img {
+                    width: 100%;
+                    max-height: 484px;
+                }
+            }
+        }
+    }
 }
 
 .rb_program1 {

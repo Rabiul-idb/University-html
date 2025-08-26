@@ -32787,6 +32787,35 @@ header {
   border: 1px solid #E5E9ED;
   background: #F5F5F5;
 }
+@media (max-width: 1399px) {
+  .rb_about1 .about_card {
+    gap: 34px;
+  }
+  .rb_about1 .about_card.style_1 {
+    padding: 22px;
+  }
+}
+@media (max-width: 1199px) {
+  .rb_about1 .about_card {
+    gap: 80px;
+  }
+  .rb_about1 .about_card.style_1 {
+    padding: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .rb_about1 .about_card {
+    gap: 62px;
+  }
+}
+@media (max-width: 449px) {
+  .rb_about1 .about_card {
+    padding: 24px;
+  }
+  .rb_about1 .about_card.style_1 {
+    padding: 24px;
+  }
+}
 .rb_about1 .about_card .card_title {
   color: #404A56;
   font-family: Inter;
@@ -32822,6 +32851,28 @@ header {
   font-weight: 400;
   line-height: 32px; /* 177.778% */
   letter-spacing: -0.18px;
+}
+@media (max-width: 991px) {
+  .rb_about1 .about_thumb.style_1 img, .rb_about1 .about_thumb.style_3 img {
+    width: 346px;
+    height: 236px;
+    align-self: stretch;
+  }
+  .rb_about1 .about_thumb.style_2 img {
+    width: 346px;
+    height: 484px;
+  }
+}
+@media (max-width: 575px) {
+  .rb_about1 .about_thumb.style_1 img, .rb_about1 .about_thumb.style_3 img {
+    width: 100%;
+    max-height: 236px;
+    align-self: stretch;
+  }
+  .rb_about1 .about_thumb.style_2 img {
+    width: 100%;
+    max-height: 484px;
+  }
 }
 
 .rb_program1 {
