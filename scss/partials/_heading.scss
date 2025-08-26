@@ -40,24 +40,23 @@
     .rb_title {
         color: #002147;
         font-family: Geist;
-        font-size: 48px;
+        font-size: 56px;
         font-style: normal;
         font-weight: 500;
-        line-height: 60px; 
-        letter-spacing: -0.96px;
+        line-height: 68px;
+        letter-spacing: -1.12px;
         &.style_1 {
             color: #FFF;
         }
         @include breakpoint (max-lg){
-            font-size: 40px;
-            font-weight: 500;
-            line-height: 52px; 
-            letter-spacing: -0.8px;
+            font-size: 48px;
+            line-height: 60px; 
+            letter-spacing: -0.96px;
         }
         @include breakpoint (max-xsmall){
-            font-size: 28px;
-            line-height: 40px; 
-            letter-spacing: -0.56px;
+            font-size: 40px;
+            line-height: 52px;
+            letter-spacing: -0.8px;
         }
     }
     .rb_desc {

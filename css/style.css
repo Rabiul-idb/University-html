@@ -32060,28 +32060,27 @@ header {
 .rb_heading_area .rb_title {
   color: #002147;
   font-family: Geist;
-  font-size: 48px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 500;
-  line-height: 60px;
-  letter-spacing: -0.96px;
+  line-height: 68px;
+  letter-spacing: -1.12px;
 }
 .rb_heading_area .rb_title.style_1 {
   color: #FFF;
 }
 @media (max-width: 991px) {
   .rb_heading_area .rb_title {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 52px;
-    letter-spacing: -0.8px;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.96px;
   }
 }
 @media (max-width: 449px) {
   .rb_heading_area .rb_title {
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.56px;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -0.8px;
   }
 }
 .rb_heading_area .rb_desc {
@@ -33055,6 +33054,47 @@ header {
 }
 
 /*--Branding End---*/
+.rb_campus_life .rb_heading_area {
+  max-width: 476px;
+}
+.rb_campus_life .campus_thumb img {
+  width: 100%;
+}
+.rb_campus_life .campus_card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: #002147;
+}
+.rb_campus_life .campus_card p {
+  max-width: 550px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.18px;
+}
+@media (max-width: 1399px) {
+  .rb_campus_life .campus_card {
+    padding: 15px 20px;
+  }
+}
+.rb_campus_life .btn_wrapper {
+  margin-top: 56px;
+}
+@media (max-width: 1599px) {
+  .rb_campus_life .btn_wrapper {
+    margin-top: 30px;
+  }
+}
+
 .mb_hero_area .mb_hero_bg {
   height: 959px;
   background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
