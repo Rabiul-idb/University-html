@@ -32203,7 +32203,7 @@ header {
 
 @media (min-width: 1600px) {
   .container {
-    max-width: 1264px;
+    max-width: 1464px;
   }
 }
 
@@ -32752,6 +32752,7 @@ header {
   transition: all 0.4s ease;
 }
 .rb_service1 .service_card .content p {
+  max-width: 300px;
   color: #404A56;
   font-family: Inter;
   font-size: 14px;
@@ -32781,18 +32782,22 @@ header {
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 80px;
+  gap: 88px;
   align-self: stretch;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid #E5E9ED;
   background: #F5F5F5;
 }
+.rb_about1 .about_card.style_1 {
+  display: flex;
+  padding: 42px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
 @media (max-width: 1399px) {
   .rb_about1 .about_card {
-    gap: 34px;
-  }
-  .rb_about1 .about_card.style_1 {
-    padding: 22px;
+    gap: 68px;
   }
 }
 @media (max-width: 1199px) {
@@ -32844,6 +32849,7 @@ header {
   letter-spacing: -0.16px;
 }
 .rb_about1 .about_card .card_desc {
+  max-width: 584px;
   color: #404A56;
   font-family: Inter;
   font-size: 18px;
@@ -32851,6 +32857,14 @@ header {
   font-weight: 400;
   line-height: 32px; /* 177.778% */
   letter-spacing: -0.18px;
+}
+.rb_about1 .about_thumb.style_1 img, .rb_about1 .about_thumb.style_3 img {
+  width: 348px;
+  height: 244px;
+}
+.rb_about1 .about_thumb.style_2 img {
+  width: 348px;
+  height: 504px;
 }
 @media (max-width: 991px) {
   .rb_about1 .about_thumb.style_1 img, .rb_about1 .about_thumb.style_3 img {

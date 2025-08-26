@@ -157,6 +157,7 @@
                 @include transition(0.4s);
             }
             p {
+                max-width: 300px;
                 color: #404A56;
                 font-family: Inter;
                 font-size: 14px;
@@ -192,16 +193,20 @@
         padding: 32px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 80px;
+        gap: 88px;
         align-self: stretch;
-        border-radius: 12px;
+        border-radius: 16px;
         border: 1px solid #E5E9ED;
         background: #F5F5F5;
+        &.style_1 {
+            display: flex;
+            padding: 42px 32px;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+        }
         @include breakpoint (max-xxl){
-            gap: 34px;
-            &.style_1 {
-                padding: 22px;
-            }
+            gap: 68px;
         }
         @include breakpoint (max-xl){
             gap: 80px;
@@ -246,6 +251,7 @@
             letter-spacing: -0.16px;
         }
         .card_desc {
+            max-width: 584px;
             color: #404A56;
             font-family: Inter;
             font-size: 18px;
@@ -253,6 +259,20 @@
             font-weight: 400;
             line-height: 32px; /* 177.778% */
             letter-spacing: -0.18px;
+        }
+    }
+    .about_thumb {
+        &.style_1, &.style_3 {
+            img {
+                width: 348px;
+                height: 244px;
+            }
+        }
+        &.style_2 {
+            img {
+                width: 348px;
+                height: 504px;
+            }
         }
     }
     @include breakpoint (max-lg){
