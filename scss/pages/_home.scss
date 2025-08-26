@@ -296,6 +296,7 @@
 
 /*--Branding Start---*/
 .mb_branding_area{
+    position: relative;
     .mb_branding_wrapper  {
         @include flex(row, space-between, center);
         padding: 24px 0 24px 100px;

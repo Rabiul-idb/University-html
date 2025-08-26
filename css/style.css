@@ -32874,6 +32874,9 @@ header {
 }
 
 /*--Branding Start---*/
+.mb_branding_area {
+  position: relative;
+}
 .mb_branding_area .mb_branding_wrapper {
   display: flex;
   flex-direction: row;
