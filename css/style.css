@@ -32873,6 +32873,80 @@ header {
   letter-spacing: -0.16px;
 }
 
+.rb_notice_board1 .notice_card {
+  display: flex;
+  padding: 20px 20px 24px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 20px;
+  border: 1px solid #E5E9ED;
+  background: #FFF;
+}
+.rb_notice_board1 .notice_card .content .meta {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #F7F7F7;
+}
+.rb_notice_board1 .notice_card .content .meta .item {
+  display: flex;
+  gap: 6px;
+  color: #002147;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.14px;
+}
+.rb_notice_board1 .notice_card .content .meta .item span {
+  border-right: 1px solid rgba(0, 33, 71, 0.2);
+  padding-right: 20px;
+}
+.rb_notice_board1 .notice_card .content .profile {
+  display: flex;
+  align-items: center;
+  color: #002147;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+}
+.rb_notice_board1 .notice_card .content .profile img {
+  padding-right: 12px;
+}
+.rb_notice_board1 .notice_card .content h3 {
+  color: #002147;
+  font-family: Geist;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.56px;
+}
+.rb_notice_board1 .notice_card .content p {
+  color: #404A56;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+.rb_notice_board1 .notice_card:hover {
+  border: 1px solid #FF1949;
+  box-shadow: 30px 37px 44px 0 rgba(0, 33, 71, 0.15);
+}
+.rb_notice_board1 .notice_card:hover .btn_wrapper.style_1 a {
+  background: #FF1949;
+}
+
 /*--Branding Start---*/
 .mb_branding_area {
   position: relative;
