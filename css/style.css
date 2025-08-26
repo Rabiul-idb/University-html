@@ -32776,18 +32776,6 @@ header {
   color: #fff;
 }
 
-/*--Branding Start---*/
-.mb_branding_area .mb_branding_wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.mb_branding_area .mb_branding_wrapper_rtl {
-  direction: rtl;
-}
-
-/*--Branding End---*/
 .rb_about1 .about_card {
   display: flex;
   padding: 32px;
@@ -32885,131 +32873,37 @@ header {
   letter-spacing: -0.16px;
 }
 
-/*---Text Slider Start---*/
-.text_slider {
-  background-color: #4e45c8;
-  /* Keyframes for the scrolling animation */
-}
-.text_slider .scroll-container {
-  width: 100%;
-  overflow: hidden;
-  background: linear-gradient(90deg, #262262 0%, #4e45c8 100%);
-  white-space: nowrap;
-  padding: 30px 20px;
-}
-.text_slider .nav-item {
-  white-space: nowrap;
-  text-align: center;
+/*--Branding Start---*/
+.mb_branding_area .mb_branding_wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s ease;
+  padding: 24px 0 24px 100px;
+  gap: 40px;
+  background: #002147;
+  color: #FFF;
+  font-family: Geist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: -0.2px;
 }
-.text_slider .nav-item img {
-  display: inline;
+.mb_branding_area .mb_branding_wrapper .mb_brand a {
+  color: #FFF;
+  font-family: Geist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: -0.2px;
 }
-.text_slider .nav-item.style_1 {
-  font-weight: 700;
-  font-size: 45px;
-  color: #fff;
-}
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .text_slider .nav-item.style_1 {
-    font-size: 40px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  .text_slider .nav-item.style_1 {
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .text_slider .nav-item.style_1 {
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .text_slider .nav-item.style_1 {
-    font-size: 15px;
-  }
-}
-.text_slider .nav-item.style_2 {
-  font-weight: 700;
-  font-size: 45px;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  letter-spacing: 2px;
-}
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .text_slider .nav-item.style_2 {
-    font-size: 40px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  .text_slider .nav-item.style_2 {
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .text_slider .nav-item.style_2 {
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .text_slider .nav-item.style_2 {
-    font-size: 15px;
-  }
-}
-.text_slider .nav-item .icon {
-  margin-right: 8px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  .text_slider .nav-item .icon {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-  }
-  .text_slider .nav-item .icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .text_slider .nav-item .icon {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-  }
-  .text_slider .nav-item .icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .text_slider .nav-item .icon {
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-  }
-  .text_slider .nav-item .icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.mb_branding_area .mb_branding_wrapper_rtl {
+  direction: rtl;
 }
 
-/*---Text Slider End---*/
+/*--Branding End---*/
 .mb_hero_area .mb_hero_bg {
   height: 959px;
   background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
