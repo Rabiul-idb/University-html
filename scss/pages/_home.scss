@@ -319,6 +319,15 @@
                 letter-spacing: -0.2px;
             }
         }
+        .mb_brand_highlight {
+            position: absolute;
+            left: 0;
+            background: #FF1949;
+            display: flex;
+            padding: 24px 32px 24px 100px;
+            align-items: center;
+            gap: 40px;
+        }
     }
     .mb_branding_wrapper_rtl{
         direction: rtl;
