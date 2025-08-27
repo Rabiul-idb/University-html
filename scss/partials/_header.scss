@@ -7,10 +7,15 @@
 	background-color: $black2;
 	border-radius: 12px;
 	overflow: hidden;
+	
 }
 .top-header{
 	background-color: $black2;
 	padding: 10px 0;
+
+	@include md{
+		display: none;
+	}
 
 	ul{
 		display: flex;
@@ -21,7 +26,8 @@
 			border-right: 1px solid rgba(255, 255, 255, 0.25);
 			flex: 1;
 			text-align: center;
-
+			padding-left: 10px;
+			padding-right: 10px;
 			&:last-child{
 				border-right: none;
 			}
@@ -54,6 +60,16 @@
 	.logo{
 		.sticky-logo{
 			display: none;
+		}
+		a{
+			img{
+				@include md{
+					max-width: 126px;
+				}
+				@include xxs{
+					max-width: 116px;
+				}
+			}
 		}
 	}
 	.main-menu {
@@ -223,6 +239,10 @@
 		display: flex;
 		gap: 8px;
 		align-items: center;
+
+		@include md{
+			display: none;
+		}
 	}
 	.header-right{
 		display: flex;
@@ -230,14 +250,18 @@
 		align-items: center;
 
 		.offcanvas-bar{
-			border: 1.5px solid $black2;
+			border: 1px solid transparent;
+			height: 40px;
+			width: 40px;
+			border-radius: 50% !important;
 			font-size: 16px;
 			font-weight: 500;
 			border-radius: 6px;
 			padding: 5px 10px;
-			background: transparent;
+			background: $primary;
+			
 			span{
-				color: $black2
+				color: $white;
 			}
 		}
 	}
@@ -246,6 +270,7 @@
 header{
 	z-index: 999;
 	position: relative;
+	padding-top: 18px;
 }
 
 @include nesthub{
@@ -264,28 +289,25 @@ header{
 	position: fixed;
 	top: 0px;
 	margin: auto;
-	animation: slideDown 2s ease forwards;
+	animation: slideDown 1.5s ease forwards;
 	background-color: #fffdfd;
-	//box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 	transition: top 0.5s ease-in-out;
 
 	.AE-header-container{
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		// box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 	}
 	&.header-1{
 
- 		.header-wrap{
-			margin-top: 0;
-			@media (max-width: 1200px){
-				padding: 14px 0;
-			}
-			@media (max-width: 991px){
-				padding: 9px 0;
-			}
-			@include xs{
-				padding: 12px 0;
-			}
+		.top-header{
+			display: none;
+		}
 
+ 		.header-wrap{
+			border-radius: 0;
+			padding-left: 0;
+			padding-right: 0;
+			
 			.logo{
 				.primary-logo{
 					display: none;

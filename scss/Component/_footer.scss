@@ -14,6 +14,18 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+
+    @include lg{
+        padding: 40px 40px 0;
+        gap: 40px;
+    }
+    @include md{
+        padding: 30px 30px 0;
+    }
+    @include xs{
+        padding: 20px 20px 0;
+        gap: 24px;
+    };
 }
 
 .link-title{
@@ -23,6 +35,13 @@
     color: $black2;
     margin-bottom: 20px;
     text-transform: capitalize;
+
+    @include sm{
+        margin-bottom: 15px;
+    }
+    @include xs{
+        margin-bottom: 10px;
+    }
 }
 .contact-number{
     a{
@@ -55,7 +74,7 @@
         color: $text_color;
         border-radius: 100px;
         background-color: #F7F7F7;
-        padding: 9px 0;
+        padding: 9px;
     }
 
     &.brands{
@@ -70,6 +89,10 @@
         li{
             line-height: 22px;
             margin-bottom: 12px;
+
+            @include sm{
+                margin-bottom: 8px;
+            }
             a{
                 font-size: 14px;
                 font-weight: 400;
@@ -89,6 +112,12 @@
        font-weight: 400;
        line-height: 22px;
        color: $black2; 
+
+       br{
+        @include sm{
+            display: none;
+        }
+       }
     }
 }
 
@@ -98,6 +127,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include xxs{
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+    }
 
     p{
        font-size: 14px;

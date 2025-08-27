@@ -5,6 +5,17 @@
         windowOn.on('load', function () {
         });
         
+         // Preloader
+        $(window).on("load", function () {
+            const preloader = document.querySelector(".preloader_area");
+            preloader.style.transition = "all 0.5s ease";
+            preloader.style.opacity = "0";
+            preloader.style.visibility = "hidden";
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 600);
+        });
+
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
@@ -87,158 +98,54 @@
 
         // Brand Slider
         function Brand() {
-                $('.mb_branding_wrapper_ltr').slick({
-                    dots: false,
-                    arrows: false,
-                    infinite: true,
-                    speed: 3000,
-                    slidesToShow: 7,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 2,
-                                speed: 4000
-                            }
-                        },
-                        {
-                            breakpoint: 998,
-                            settings: {
-                                slidesToShow: 2,
-                                speed: 4000,
-
-                            }
-                        },
-                        {
-                            breakpoint: 1200,
-                            settings: {
-                                slidesToShow: 3,
-                                speed: 4000,
-
-                            }
-                        },
-                        {
-                            breakpoint: 1300,
-                            settings: {
-                                slidesToShow: 3,
-                                speed: 4000,
-
-                            }
+            $('.mb_branding_wrapper_ltr').slick({
+                dots: false,
+                arrows: false,
+                infinite: true,
+                speed: 3000,
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 0,
+                cssEase: 'linear',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            speed: 4000
                         }
-                    ]
-                });
-                $('.mb_branding_wrapper_rtl').slick({
-                    dots: false,
-                    arrows: false,
-                    infinite: true,
-                    speed: 3000,
-                    slidesToShow: 7,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    rtl: true,
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 2,
-                                speed: 4000
-                            }
-                        },
-                        {
-                            breakpoint: 998,
-                            settings: {
-                                slidesToShow: 2,
-                                speed: 4000,
+                    },
+                    {
+                        breakpoint: 998,
+                        settings: {
+                            slidesToShow: 2,
+                            speed: 4000,
 
-                            }
-                        },
-                        {
-                            breakpoint: 1200,
-                            settings: {
-                                slidesToShow: 3,
-                                speed: 4000,
-
-                            }
-                        },
-                        {
-                            breakpoint: 1300,
-                            settings: {
-                                slidesToShow: 3,
-                                speed: 4000,
-
-                            }
                         }
-                    ]
-                });
-            
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            speed: 4000,
+
+                        }
+                    },
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            slidesToShow: 3,
+                            speed: 4000,
+
+                        }
+                    }
+                ]
+            });
         }
         Brand()
 
-        $(document).ready(function () {
-            $('.mb_card_option').on('click', function () {
-                $('.mb_card_option').removeClass('mb_selected');
-
-                $(this).addClass('mb_selected');
-
-                $(this).find('input[type="radio"]').prop('checked', true);
-            });
-
-            $('input[name="mb_property_type"]').on('change', function () {
-                $('.mb_card_option').removeClass('mb_selected');
-
-                $(this).closest('.mb_card_option').addClass('mb_selected');
-            });
-        });
-
-        // How It Work
-        function howWork(){
-            $('.mb_how_work_slider').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    vertical: true, 
-                    verticalSwiping: true,
-                    arrows: true,
-                    dots: true,
-                    dotsClass: "mb_how_work_dots",
-                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-up"></i></span>`,
-                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-down"></i></span>`,
-                });
-        }
-        howWork()
-       
         
-        $('.open_more_content').on('click', () => {
-            $('.mb_casa_brokerage').toggleClass('active');
-            $('.mb_casa_brokerage_contains').toggleClass('active');
-        });
-        // Popular Types Of Housing
-        $('.mb_popular_house').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            speed: 3000,
-            dots: false,
-            infinite: true,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-            responsive: [
-                {
-                    breakpoint: 768, 
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
-        });
         $('.mb_saved_listing_slider').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -282,33 +189,6 @@
             ]
         });
 
-        $(document).ready(function () {
-            $('.read-more-btn').on('click', function (e) {
-                e.preventDefault();
-                var container = $(this).closest('.read-more-container');
-                container.toggleClass('expanded');
-
-                if (container.hasClass('expanded')) {
-                    $(this).text('Show less');
-                } else {
-                    $(this).text('More....');
-                }
-            });
-        });
-        $(document).ready(function () {
-            $('.header nav ul li').on('click', function () {
-                $('.header nav ul li').removeClass('active');
-                $(this).addClass('active');
-            });
-
-            $('.btn-action').on('click', function () {
-                alert('Action menu toggled!');
-            });
-
-            $('.btn-add-listing').on('click', function () {
-                alert('Redirecting to the "Add Listing" page.');
-            });
-        });
         // Gsap RegisterPlugin
         gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
 
@@ -321,24 +201,7 @@
             smoothTouch: 0.1,
         });
 
-        // Header h1 Animate
-        function textAnimation() {
-            const blogNewsContains = document.querySelectorAll(".heading h1");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".header_area",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    opacity: 0,
-                    y: 50,
-                    duration: 1.5,
-                    stagger: 0.3,
-                });
-            }
-        }
-        textAnimation()
+        
       
         // Counting
         $(".about_count").each(function () {
@@ -364,120 +227,6 @@
             });
         });
 
-        // Tour Schedule
-        function generateCalendar() {
-            let currentDate = new Date();
-            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-            // Function to populate month and year dropdowns
-            function populateDropdowns() {
-                const monthSelect = $('#mb_month_select');
-                const yearSelect = $('#mb_year_select');
-
-                // Populate months
-                monthSelect.empty();
-                $.each(monthNames, function (index, value) {
-                    const option = $('<option>').val(index).text(value);
-                    monthSelect.append(option);
-                });
-
-                // Populate years (e.g., current year +/- 5)
-                yearSelect.empty();
-                const currentYear = new Date().getFullYear();
-                for (let i = currentYear - 5; i <= currentYear + 5; i++) {
-                    const option = $('<option>').val(i).text(i);
-                    yearSelect.append(option);
-                }
-            }
-
-            // Function to generate the calendar days
-            function generateCalendar(date) {
-                const calendarContainer = $('#mb_calendar_days');
-                calendarContainer.empty();
-
-                const year = date.getFullYear();
-                const month = date.getMonth();
-
-                const firstDayOfMonth = new Date(year, month, 1);
-                const firstDayOfWeek = firstDayOfMonth.getDay(); // 0 for Sunday, 1 for Monday, etc.
-                const daysInMonth = new Date(year, month + 1, 0).getDate();
-                const today = new Date();
-
-                // Set dropdown values to match the current date
-                $('#mb_month_select').val(month);
-                $('#mb_year_select').val(year);
-
-                // Add empty placeholders for the days of the week before the 1st
-                for (let i = 0; i < firstDayOfWeek; i++) {
-                    const emptyDay = $('<div>').addClass('mb_day mb_inactive');
-                    calendarContainer.append(emptyDay);
-                }
-
-                // Add active days for the current month
-                for (let i = 1; i <= daysInMonth; i++) {
-                    const day = $('<div>').addClass('mb_day').text(i);
-                    // Check if this day is today and mark it as selected by default
-                    if (year === today.getFullYear() && month === today.getMonth() && i === today.getDate()) {
-                        day.addClass('mb_selected');
-                    }
-
-                    // Add a click event listener to select the day
-                    day.on('click', function () {
-                        $('.mb_day').removeClass('mb_selected');
-                        $(this).addClass('mb_selected');
-                    });
-                    calendarContainer.append(day);
-                }
-            }
-
-            // Event listeners for month navigation (left/right arrows)
-            $('#mb_prev_month').on('click', function () {
-                const newMonth = currentDate.getMonth() - 1;
-                const newYear = currentDate.getFullYear();
-                currentDate = new Date(newYear, newMonth, 1);
-                generateCalendar(currentDate);
-            });
-
-            $('#mb_next_month').on('click', function () {
-                const newMonth = currentDate.getMonth() + 1;
-                const newYear = currentDate.getFullYear();
-                currentDate = new Date(newYear, newMonth, 1);
-                generateCalendar(currentDate);
-            });
-
-            // Event listener for dropdown changes
-            $('#mb_month_select, #mb_year_select').on('change', function () {
-                const newMonth = $('#mb_month_select').val();
-                const newYear = $('#mb_year_select').val();
-                currentDate = new Date(newYear, newMonth, 1);
-                generateCalendar(currentDate);
-            });
-
-            // Generate the initial calendar and populate dropdowns
-            populateDropdowns();
-            generateCalendar(currentDate);
-        }
-        generateCalendar();
-
-        // Map Search Filter
-        $(document).ready(function () {
-            function searchFilter() {
-                $(".mb_single_filter button").on("click", function () {
-                    $(this).toggleClass("active");
-                });
-            }
-            searchFilter();
-
-            $('.view-button').on('click', function () {
-                $('.view-button').removeClass('selected');
-                $(this).addClass('selected');
-            });
-
-            $('.status-button').on('click', function () {
-                $('.status-button').removeClass('selected');
-                $(this).addClass('selected');
-            });
-        });
 
         // Back to Top Button
         $(window).on("scroll", function () {
@@ -531,15 +280,6 @@
         $('select').niceSelect();
     });
 
-    // Preloader
-    $(window).on("load", function () {
-        const preloader = document.querySelector(".preloader_area");
-        preloader.style.transition = "all 0.5s ease";
-        preloader.style.opacity = "0";
-        preloader.style.visibility = "hidden";
-        setTimeout(() => {
-            preloader.style.display = "none";
-        }, 600);
-    });
+   
 })(jQuery);
 
