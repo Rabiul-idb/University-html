@@ -24,7 +24,7 @@
     }
     &.style_1 {
         a {
-            background-color: $text_color;
+            background-color: $black2;
             color: $white;
             @include transition(0.4s);
             &:hover {
@@ -43,7 +43,7 @@
     &.style_2 {
         a {
             background-color: $white;
-            color: $text_color;
+            color: $black2;
             &:hover {
                 background-color: $primary;
                 color: $white;
@@ -53,7 +53,7 @@
     &.style_3 {
         a {
             background-color: $white;
-            color: $text_color;
+            color: $black2;
             border: 1px solid #002147;
             &:hover {
                 background-color: $primary;
@@ -64,7 +64,7 @@
     &.style_4 {
         a {
             background-color: $white;
-            color: $text_color;
+            color: $black2;
             border-radius: 24px;
             border: 1px solid #E5E9ED;
             &:hover {
