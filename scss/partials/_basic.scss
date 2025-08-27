@@ -212,12 +212,12 @@
                     background: $white;
                     border: 1px solid rgba(3, 26, 38, 0.10);
                     h3{
-                        color: #031A26;
+                        color: $text_color;
                     }                    
 
                     .icon {
                         transform: rotate(180deg); 
-                        background-color: #FF9916;
+                        background-color: $primary;
                         color: $white;
                     }
                 }
@@ -235,13 +235,14 @@
             }
             cursor: pointer;
                 transition: background 0.3s ease;
-            h3{
-                color: #031A26;
-                font-family: Inter;
-                font-size: 18px;
+            h3 {
+                color: $text_color;
+                font-family: $geist-font;
+                font-size: 24px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: normal;
+                font-weight: 500;
+                line-height: 36px; /* 150% */
+                letter-spacing: -0.48px;
                 @include sm{
                     font-size: 8px;
                 }
@@ -257,9 +258,10 @@
                 line-height: 32px;
                 text-align: center;
                 @include border-radius(50%);
-                background-color: #FFEED8;
                 transition: transform 0.3s ease;
-                box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+                border-radius: 24px;
+                border: 1px solid #E5E6EA;
+                background: #FFF;
                 @include sm{
                     width: 14px;
                     height: 14px;

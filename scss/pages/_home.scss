@@ -858,4 +858,22 @@
     }
 }
 
-
+.rb_faq_section {
+    .faq_thumb {
+        position: relative;
+        .faq_icon {
+            display: flex;
+            transform: rotate(15deg);
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            right: 176px;
+            top: 77px;
+            border-radius: 168px;
+            background: #FF1949;
+            box-shadow: 0 12px 25px 0 rgba(0, 33, 71, 0.15);
+        }
+    }
+}
