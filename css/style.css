@@ -31849,49 +31849,51 @@ header {
   color: #fff;
   border-color: #FF1949;
 }
-.btn_wrapper a.active:hover {
+.btn_wrapper a:hover.active:hover, .btn_wrapper a.active.active:hover {
   background-color: #fff;
   color: #002147;
   border-color: #FF1949;
 }
-.btn_wrapper.style_1 a {
-  background-color: #404A56;
+.btn_wrapper a.style_1 a {
+  background-color: #002147;
   color: #fff;
   transition: all 0.4s ease;
 }
-.btn_wrapper.style_1 a span {
-  background-color: #fff;
-  color: #404A56;
-}
-.btn_wrapper.style_1 a:hover {
+.btn_wrapper a.style_1 a:hover {
   background-color: #FF1949;
   color: #fff;
 }
-.btn_wrapper.style_1 a:hover i {
+.btn_wrapper a.style_1 a:hover i {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.btn_wrapper.style_2 a {
+.btn_wrapper a.style_2 a {
   background-color: #fff;
-  color: #404A56;
+  color: #002147;
 }
-.btn_wrapper.style_2 a span {
-  background-color: #404A56;
-  color: #fff;
-}
-.btn_wrapper.style_2 a:hover {
+.btn_wrapper a.style_2 a:hover {
   background-color: #FF1949;
   color: #fff;
 }
-.btn_wrapper.style_3 a {
+.btn_wrapper a.style_3 a {
   background-color: #fff;
-  color: #404A56;
+  color: #002147;
   border: 1px solid #002147;
 }
-.btn_wrapper.style_3 a:hover {
+.btn_wrapper a.style_3 a:hover {
+  background-color: #FF1949;
+  color: #fff;
+}
+.btn_wrapper a.style_4 a {
+  background-color: #fff;
+  color: #002147;
+  border-radius: 24px;
+  border: 1px solid #E5E9ED;
+}
+.btn_wrapper a.style_4 a:hover {
   background-color: #FF1949;
   color: #fff;
 }
@@ -31913,6 +31915,24 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+}
+
+.slider_arrow_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.slider_arrow_icon span {
+  color: #404A56;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+.slider_arrow_icon .icon {
+  cursor: pointer;
 }
 
 .rb_arrow_btn {
@@ -32063,12 +32083,12 @@ header {
   background: #fff;
   border: 1px solid rgba(3, 26, 38, 0.1);
 }
-.rb_faq_section .accordion .accordion-item.active .accordion-header h3 {
-  color: #031A26;
+.rb_faq_section .accordion .accordion-item.active .accordion-header h4 {
+  color: #002147;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header .icon {
   transform: rotate(180deg);
-  background-color: #FF9916;
+  background-color: #FF1949;
   color: #fff;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-content {
@@ -32088,17 +32108,23 @@ header {
     padding: 4px 15px;
   }
 }
-.rb_faq_section .accordion .accordion-header h3 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 18px;
+.rb_faq_section .accordion .accordion-header h4 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.48px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .rb_faq_section .accordion .accordion-header h3 {
-    font-size: 8px;
+@media (max-width: 1199px) {
+  .rb_faq_section .accordion .accordion-header h4 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 449px) {
+  .rb_faq_section .accordion .accordion-header h4 {
+    font-size: 16px !important;
   }
 }
 .rb_faq_section .accordion .accordion-header:hover {
@@ -32114,9 +32140,10 @@ header {
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: #FFEED8;
   transition: transform 0.3s ease;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  border: 1px solid #E5E6EA;
+  background: #FFF;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_faq_section .accordion .accordion-header .icon {
@@ -32134,12 +32161,17 @@ header {
 .rb_faq_section .accordion .accordion-content p {
   padding: 21px 24px 40px 24px;
   margin: 0;
-  color: rgba(3, 26, 38, 0.6);
-  font-family: Inter;
-  font-size: 16px;
+  color: #404A56;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.18px;
+}
+@media (max-width: 449px) {
+  .rb_faq_section .accordion .accordion-content p {
+    font-size: 14px !important;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_faq_section .accordion .accordion-content p {
@@ -32179,7 +32211,7 @@ header {
 .hero1-content__title {
   max-width: 588px;
   color: #FFF;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
@@ -32208,7 +32240,7 @@ header {
 .hero1-content__desc {
   max-width: 370px;
   color: #FFF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32269,7 +32301,7 @@ header {
 }
 .hero1 .video_card h5 {
   color: #FFF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -32315,7 +32347,7 @@ header {
 }
 .rb_service1 .service_card .content h3 {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32326,7 +32358,7 @@ header {
 .rb_service1 .service_card .content p {
   max-width: 300px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32402,7 +32434,7 @@ header {
 }
 .rb_about1 .about_card .card_title {
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -32411,7 +32443,7 @@ header {
 }
 .rb_about1 .about_card .card_numb {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32420,7 +32452,7 @@ header {
 }
 .rb_about1 .about_card .card_text {
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32430,7 +32462,7 @@ header {
 .rb_about1 .about_card .card_desc {
   max-width: 584px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -32499,7 +32531,7 @@ header {
   gap: 10px;
   color: #FFF;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -32558,7 +32590,7 @@ header {
 }
 .rb_program1 .program_card .content h3 {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32568,7 +32600,7 @@ header {
 .rb_program1 .program_card .content p {
   max-width: 408px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32615,7 +32647,7 @@ header {
   display: flex;
   gap: 6px;
   color: #002147;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -32635,7 +32667,7 @@ header {
   display: flex;
   align-items: center;
   color: #002147;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32656,7 +32688,7 @@ header {
 }
 .rb_notice_board1 .notice_card .content p {
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32686,7 +32718,7 @@ header {
   gap: 40px;
   background: #002147;
   color: #FFF;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -32695,7 +32727,7 @@ header {
 }
 .mb_branding_area .mb_branding_wrapper .mb_brand a {
   color: #FFF;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -32736,7 +32768,7 @@ header {
 .rb_campus_life .campus_card p {
   max-width: 550px;
   color: #FFF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -32777,7 +32809,7 @@ header {
 }
 .rb_future1 .future_card .content h3 {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32795,7 +32827,7 @@ header {
 }
 .rb_future1 .future_card .content .content_box .desc_one {
   color: #002147;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -32805,7 +32837,7 @@ header {
 .rb_future1 .future_card .content .content_box .desc_two {
   max-width: 486px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -32818,6 +32850,203 @@ header {
 }
 .rb_future1 .future_card .content .content_box .hr_line {
   border-bottom: 1px solid #E5E9ED;
+}
+
+.rb_testimonial1 {
+  border-radius: 20px;
+  background: #F7F7F7;
+}
+.rb_testimonial1 .testimonial_card {
+  display: flex;
+  padding: 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  border: 1px solid #E5E9ED;
+  background: #FFF;
+  transition: all 0.4s ease;
+}
+@media (max-width: 991px) {
+  .rb_testimonial1 .testimonial_card {
+    padding: 20px;
+  }
+}
+@media (max-width: 449px) {
+  .rb_testimonial1 .testimonial_card {
+    padding: 16px;
+  }
+}
+.rb_testimonial1 .testimonial_card .thumb {
+  width: 100%;
+}
+.rb_testimonial1 .testimonial_card .thumb img {
+  width: 100%;
+}
+.rb_testimonial1 .testimonial_card .content h4 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+}
+.rb_testimonial1 .testimonial_card .content p {
+  color: #404A56;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.rb_testimonial1 .testimonial_card .text_footer {
+  width: 100%;
+}
+.rb_testimonial1 .testimonial_card .text_footer h5 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: -0.2px;
+}
+.rb_testimonial1 .testimonial_card .text_footer h5 span {
+  color: #404A56;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+  padding-left: 7px;
+}
+.rb_testimonial1 .testimonial_card .text_footer .button_area {
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #F7F7F7;
+}
+.rb_testimonial1 .testimonial_card:hover {
+  box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+  transition: all 0.4s ease;
+}
+
+.rb_blog1 {
+  border-radius: 20px;
+  background: #F7F7F7;
+}
+.rb_blog1 .blog_card {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 20px;
+  border: 1px solid #E5E9ED;
+  background: #FFF;
+  transition: all 0.4s ease;
+}
+@media (max-width: 991px) {
+  .rb_blog1 .blog_card {
+    padding: 20px;
+  }
+}
+@media (max-width: 449px) {
+  .rb_blog1 .blog_card {
+    padding: 16px;
+  }
+}
+.rb_blog1 .blog_card .thumb {
+  position: relative;
+  width: 100%;
+}
+.rb_blog1 .blog_card .thumb .thumb_artical {
+  position: absolute;
+  right: 36px;
+  top: 36px;
+  display: flex;
+  padding: 6px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  border-radius: 8px;
+  background: #FFF;
+}
+.rb_blog1 .blog_card .thumb img {
+  width: 100%;
+}
+.rb_blog1 .blog_card .content h4 {
+  max-width: 330px;
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+}
+.rb_blog1 .blog_card .content .meta {
+  color: #404A56;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+.rb_blog1 .blog_card .content p {
+  color: #404A56;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.rb_blog1 .blog_card:hover {
+  border-radius: 20px;
+  border: 1px solid #FF1949;
+  box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+  transition: all 0.4s ease;
+}
+.rb_blog1 .blog_card:hover .btn_wrapper.style_4 a {
+  background: #002147;
+  color: #fff;
+}
+
+.rb_faq_section .rb_heading_area {
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .rb_faq_section .rb_heading_area {
+    margin-bottom: 0;
+  }
+}
+.rb_faq_section .faq_thumb {
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .rb_faq_section .faq_thumb {
+    display: none;
+  }
+}
+.rb_faq_section .faq_thumb .faq_icon {
+  display: flex;
+  transform: rotate(15deg);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 176px;
+  top: 77px;
+  border-radius: 168px;
+  background: #FF1949;
+  box-shadow: 0 12px 25px 0 rgba(0, 33, 71, 0.15);
 }
 
 .ae-footer {

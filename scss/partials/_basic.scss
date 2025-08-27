@@ -23,6 +23,24 @@
 }
 
 // Arrow icon
+.slider_arrow_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    span {
+        color: #404A56;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        letter-spacing: -0.18px;
+    }
+    .icon {
+        cursor: pointer;
+    }
+}
+
 .rb_arrow_btn {
     display: flex;
     gap: 48px;
@@ -34,6 +52,7 @@
         }
     }
 }
+
 .rb_arrow_slider_btn {
     .item_1 {
         @include flex(row, center, center);
@@ -192,13 +211,13 @@
                 .accordion-header {
                     background: $white;
                     border: 1px solid rgba(3, 26, 38, 0.10);
-                    h3{
-                        color: #031A26;
+                    h4 {
+                        color: $black2;
                     }                    
 
                     .icon {
                         transform: rotate(180deg); 
-                        background-color: #FF9916;
+                        background-color: $primary;
                         color: $white;
                     }
                 }
@@ -216,15 +235,19 @@
             }
             cursor: pointer;
                 transition: background 0.3s ease;
-            h3{
-                color: #031A26;
-                font-family: Inter;
-                font-size: 18px;
+            h4 {
+                color: $black2;
+                font-family: $geist-font;
+                font-size: 24px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                @include sm{
-                    font-size: 8px;
+                font-weight: 500;
+                line-height: 36px; /* 150% */
+                letter-spacing: -0.48px;
+                @include breakpoint (max-xl){
+                    font-size: 20px !important;
+                }
+                @include breakpoint (max-xsmall){
+                    font-size: 16px !important;
                 }
             }
 
@@ -238,9 +261,10 @@
                 line-height: 32px;
                 text-align: center;
                 @include border-radius(50%);
-                background-color: #FFEED8;
                 transition: transform 0.3s ease;
-                box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+                border-radius: 24px;
+                border: 1px solid #E5E6EA;
+                background: #FFF;
                 @include sm{
                     width: 14px;
                     height: 14px;
@@ -257,12 +281,15 @@
             p {
                 padding: 21px 24px 40px 24px;
                 margin: 0; 
-                color: rgba(3, 26, 38, 0.60);
-                font-family: Inter;
-                font-size: 16px;
+                color: #404A56;
+                font-size: 18px;
                 font-style: normal;
-                font-weight: 500;
-                line-height: 30px; 
+                font-weight: 400;
+                line-height: 32px; /* 177.778% */
+                letter-spacing: -0.18px;
+                @include breakpoint (max-xsmall){
+                    font-size: 14px !important;
+                }
                 @include sm{
                     font-size: 8px;
                     padding: 10px;
