@@ -6,7 +6,7 @@
         align-items: center;
         gap: 8px;
         border-radius: 24px;
-        background: #FF1949;
+        background: $primary;
         color: #FFF;
         font-family: Inter;
         font-size: 14px;
@@ -17,10 +17,6 @@
         &:hover {
             background-color: $primary;
             color: white;
-            span {
-                background-color: white;
-                color: #031a26;
-            }
         }
     }
     &.style_1 {
