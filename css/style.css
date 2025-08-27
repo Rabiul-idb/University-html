@@ -32089,10 +32089,12 @@ header {
   font-weight: 500;
   line-height: 22px; /* 157.143% */
   letter-spacing: -0.28px;
+  transition: all 0.4s ease;
 }
 .btn_wrapper a:hover {
   background-color: #FF1949;
   color: white;
+  transition: all 0.4s ease;
 }
 .btn_wrapper.style_1 a {
   background-color: #002147;
@@ -32419,7 +32421,7 @@ header {
 .hero1-content__title {
   max-width: 588px;
   color: #FFF;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
@@ -32448,7 +32450,7 @@ header {
 .hero1-content__desc {
   max-width: 370px;
   color: #FFF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32508,7 +32510,7 @@ header {
 }
 .hero1 .video_card h5 {
   color: #FFF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -32554,7 +32556,7 @@ header {
 }
 .rb_service1 .service_card .content h3 {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32565,7 +32567,7 @@ header {
 .rb_service1 .service_card .content p {
   max-width: 300px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32641,7 +32643,7 @@ header {
 }
 .rb_about1 .about_card .card_title {
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -32650,7 +32652,7 @@ header {
 }
 .rb_about1 .about_card .card_numb {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32659,7 +32661,7 @@ header {
 }
 .rb_about1 .about_card .card_text {
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32669,7 +32671,7 @@ header {
 .rb_about1 .about_card .card_desc {
   max-width: 584px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -32738,7 +32740,7 @@ header {
   gap: 10px;
   color: #FFF;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -32797,7 +32799,7 @@ header {
 }
 .rb_program1 .program_card .content h3 {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -32807,7 +32809,7 @@ header {
 .rb_program1 .program_card .content p {
   max-width: 408px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32854,7 +32856,7 @@ header {
   display: flex;
   gap: 6px;
   color: #002147;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -32874,7 +32876,7 @@ header {
   display: flex;
   align-items: center;
   color: #002147;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32895,7 +32897,7 @@ header {
 }
 .rb_notice_board1 .notice_card .content p {
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32925,7 +32927,7 @@ header {
   gap: 40px;
   background: #002147;
   color: #FFF;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -32934,7 +32936,7 @@ header {
 }
 .mb_branding_area .mb_branding_wrapper .mb_brand a {
   color: #FFF;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -32975,7 +32977,7 @@ header {
 .rb_campus_life .campus_card p {
   max-width: 550px;
   color: #FFF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -33016,7 +33018,7 @@ header {
 }
 .rb_future1 .future_card .content h3 {
   color: #002147;
-  font-family: Geist;
+  font-family: "Geist", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -33034,7 +33036,7 @@ header {
 }
 .rb_future1 .future_card .content .content_box .desc_one {
   color: #002147;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -33044,7 +33046,7 @@ header {
 .rb_future1 .future_card .content .content_box .desc_two {
   max-width: 486px;
   color: #404A56;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

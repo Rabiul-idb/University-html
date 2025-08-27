@@ -14,9 +14,12 @@
         font-weight: 500;
         line-height: 22px; /* 157.143% */
         letter-spacing: -0.28px;
+        @include transition(0.4s);
+
         &:hover {
             background-color: $primary;
             color: white;
+            @include transition(0.4s);
         }
     }
     &.style_1 {

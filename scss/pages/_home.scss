@@ -26,7 +26,7 @@
         &__title { 
             max-width: 588px;
             color: #FFF;
-            font-family: Geist;
+            font-family: $geist-font;
             font-size: 64px;
             font-style: normal;
             font-weight: 600;
@@ -50,7 +50,7 @@
         &__desc {
             max-width: 370px;
             color: #FFF;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -104,7 +104,7 @@
         }
         h5 {
             color: #FFF;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
@@ -151,7 +151,7 @@
         .content {
             h3 {
                 color: #002147;
-                font-family: Geist;
+                font-family: $geist-font;
                 font-size: 28px;
                 font-style: normal;
                 font-weight: 500;
@@ -162,7 +162,7 @@
             p {
                 max-width: 300px;
                 color: #404A56;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -233,7 +233,7 @@
         }
         .card_title {
             color: #404A56;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -242,7 +242,7 @@
         }
         .card_numb {
             color: #002147;
-            font-family: Geist;
+            font-family: $geist-font;
             font-size: 28px;
             font-style: normal;
             font-weight: 500;
@@ -251,7 +251,7 @@
         }
         .card_text {
             color: #404A56;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -261,7 +261,7 @@
         .card_desc {
             max-width: 584px;
             color: #404A56;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -353,7 +353,7 @@
         
         color: #FFF;
         text-align: center;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -415,7 +415,7 @@
         .content {
             h3 {
                 color: #002147;
-                font-family: Geist;
+                font-family: $geist-font;
                 font-size: 28px;
                 font-style: normal;
                 font-weight: 500;
@@ -425,7 +425,7 @@
             p {
                 max-width: 408px;
                 color: #404A56;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -480,7 +480,7 @@
                     display: flex;
                     gap: 6px;
                     color: #002147;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
@@ -499,7 +499,7 @@
                 display: flex;
                 align-items: center;
                 color: #002147;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -520,7 +520,7 @@
             }
             p {
                 color: #404A56;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -551,7 +551,7 @@
         gap: 40px;
         background: #002147;
         color: #FFF;
-        font-family: Geist;
+        font-family: $geist-font;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -560,7 +560,7 @@
         .mb_brand {
             a {
                 color: #FFF;
-                font-family: Geist;
+                font-family: $geist-font;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
@@ -607,7 +607,7 @@
         p {
             max-width: 550px;
             color: #FFF;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -644,7 +644,7 @@
             width: 100%;
             h3 {
                 color: #002147;
-                font-family: Geist;
+                font-family: $geist-font;
                 font-size: 28px;
                 font-style: normal;
                 font-weight: 500;
@@ -661,7 +661,7 @@
                 background: #F7F7F7;
                 .desc_one {
                     color: #002147;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 500;
@@ -671,7 +671,7 @@
                 .desc_two {
                     max-width: 486px;
                     color: #404A56;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
