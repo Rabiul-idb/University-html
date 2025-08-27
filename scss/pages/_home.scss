@@ -584,6 +584,7 @@
         box-shadow: 0 20px 35px 0 #002147;
 
         .content {
+            width: 100%;
             h3 {
                 color: #002147;
                 font-family: Geist;
@@ -611,6 +612,7 @@
                     letter-spacing: -0.18px;
                 }
                 .desc_two {
+                    max-width: 486px;
                     color: #404A56;
                     font-family: Inter;
                     font-size: 14px;
@@ -618,6 +620,10 @@
                     font-weight: 400;
                     line-height: 22px; /* 157.143% */
                     letter-spacing: -0.14px;
+                }
+                .hr_line_one {
+                    border-bottom: 1px solid #E5E9ED;
+                    padding-top: 10px;
                 }
                 .hr_line {
                     border-bottom: 1px solid #E5E9ED;
