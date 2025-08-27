@@ -33204,14 +33204,35 @@ header {
   line-height: 40px;
   letter-spacing: -0.56px;
 }
-.rb_future1 .future_card .content p {
+.rb_future1 .future_card .content .content_box {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: #F7F7F7;
+}
+.rb_future1 .future_card .content .content_box .desc_one {
+  color: #002147;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.18px;
+}
+.rb_future1 .future_card .content .content_box .desc_two {
   color: #404A56;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.16px;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.14px;
+}
+.rb_future1 .future_card .content .content_box .hr_line {
+  border-bottom: 1px solid #E5E9ED;
 }
 
 .mb_hero_area .mb_hero_bg {
