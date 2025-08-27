@@ -126,6 +126,9 @@
         border: 1px solid #E5E9ED;
         background: #FFF;
         @include transition(0.4s);
+        @include breakpoint (max-xl){
+            padding: 28px 20px;
+        }
         .icon {
             display: flex;
             width: 100%;
@@ -160,12 +163,17 @@
                 max-width: 300px;
                 color: #404A56;
                 font-family: Inter;
-                font-size: 14px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 22px; 
-                letter-spacing: -0.14px;
+                line-height: 24px; 
+                letter-spacing: -0.32px;
                 @include transition(0.4s);
+                @include breakpoint (max-xxxl){
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.14px;
+                }
             }
         }
         &:hover {

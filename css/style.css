@@ -30702,6 +30702,57 @@ p {
   margin: 0;
 }
 
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 64px !important;
+  }
+  h2 {
+    font-size: 48px !important;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  h4 {
+    font-size: 24px !important;
+  }
+  h5 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 48px !important;
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  h4 {
+    font-size: 24px !important;
+  }
+  h5 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 449px) {
+  h1 {
+    font-size: 36px !important;
+  }
+  h2 {
+    font-size: 28px !important;
+  }
+  h3 {
+    font-size: 24px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -32721,6 +32772,11 @@ header {
   background: #FFF;
   transition: all 0.4s ease;
 }
+@media (max-width: 1199px) {
+  .rb_service1 .service_card {
+    padding: 28px 20px;
+  }
+}
 .rb_service1 .service_card .icon {
   display: flex;
   width: 100%;
@@ -32754,12 +32810,19 @@ header {
   max-width: 300px;
   color: #404A56;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.14px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
   transition: all 0.4s ease;
+}
+@media (max-width: 1599px) {
+  .rb_service1 .service_card .content p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
 }
 .rb_service1 .service_card:hover {
   background: #FF1949;

@@ -33,6 +33,59 @@ p {
     margin: 0;
 }
 
+// Font size Responsive
+@include breakpoint (max-xl){
+    h1 {
+        font-size: 64px !important;
+    }
+    h2 {
+        font-size: 48px !important;
+    }
+    h3 {
+        font-size: 28px !important;
+    }
+    h4 {
+        font-size: 24px !important;
+    }
+    h5 {
+        font-size: 20px !important;
+    }
+}
+@include breakpoint (max-lg){
+    h1 {
+        font-size: 48px !important;
+    }
+    h2 {
+        font-size: 40px !important;
+    }
+    h3 {
+        font-size: 28px !important;
+    }
+    h4 {
+        font-size: 24px !important;
+    }
+    h5 {
+        font-size: 20px !important;
+    }
+}
+@include breakpoint (max-xsmall){
+    h1 {
+        font-size: 36px !important;
+    }
+    h2 {
+        font-size: 28px !important;
+    }
+    h3 {
+        font-size: 24px !important;
+    }
+    h4 {
+        font-size: 20px !important;
+    }
+    h5 {
+        font-size: 18px !important;
+    }
+}
+
 img {
     max-width: 100%;
     height: auto;
