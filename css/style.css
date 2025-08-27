@@ -32831,6 +32831,54 @@ header {
   border-radius: 20px;
   background: #002147;
 }
+.rb_program1 .custom-pills {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  align-self: stretch;
+  border-radius: 28px;
+  background: #1A3759;
+}
+@media (max-width: 767px) {
+  .rb_program1 .custom-pills {
+    flex-direction: column;
+  }
+}
+.rb_program1 .custom-pills .nav-link {
+  border-radius: 28px;
+  display: flex;
+  padding: 16px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.rb_program1 .custom-pills .nav-link.active {
+  border-radius: 28px;
+  background: #FF1949;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .rb_program1 .custom-pills .nav-link.active {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .rb_program1 .nav-pills .nav-item {
+    width: 100%;
+  }
+}
 .rb_program1 .program_card {
   display: flex;
   padding: 12px 12px 24px 12px;
@@ -32905,6 +32953,7 @@ header {
   border-radius: 20px;
   border: 1px solid #E5E9ED;
   background: #FFF;
+  transition: all 0.4s ease;
 }
 .rb_notice_board1 .notice_card .content .meta {
   display: flex;
@@ -32971,9 +33020,11 @@ header {
 .rb_notice_board1 .notice_card:hover {
   border: 1px solid #FF1949;
   box-shadow: 30px 37px 44px 0 rgba(0, 33, 71, 0.15);
+  transition: all 0.4s ease;
 }
 .rb_notice_board1 .notice_card:hover .btn_wrapper.style_1 a {
   background: #FF1949;
+  transition: all 0.4s ease;
 }
 
 /*--Branding Start---*/
