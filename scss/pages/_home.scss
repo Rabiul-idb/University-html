@@ -859,8 +859,17 @@
 }
 
 .rb_faq_section {
+    .rb_heading_area {
+        margin-bottom: 30px;
+        @include breakpoint (max-xl){
+            margin-bottom: 0;
+        }
+    }
     .faq_thumb {
         position: relative;
+        @include breakpoint (max-xl){
+            display: none;
+        }
         .faq_icon {
             display: flex;
             transform: rotate(15deg);

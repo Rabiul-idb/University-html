@@ -32325,7 +32325,7 @@ header {
   background: #fff;
   border: 1px solid rgba(3, 26, 38, 0.1);
 }
-.rb_faq_section .accordion .accordion-item.active .accordion-header h3 {
+.rb_faq_section .accordion .accordion-item.active .accordion-header h4 {
   color: #002147;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header .icon {
@@ -32350,7 +32350,7 @@ header {
     padding: 4px 15px;
   }
 }
-.rb_faq_section .accordion .accordion-header h3 {
+.rb_faq_section .accordion .accordion-header h4 {
   color: #002147;
   font-family: "Geist", sans-serif;
   font-size: 24px;
@@ -32359,9 +32359,14 @@ header {
   line-height: 36px; /* 150% */
   letter-spacing: -0.48px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .rb_faq_section .accordion .accordion-header h3 {
-    font-size: 8px;
+@media (max-width: 1199px) {
+  .rb_faq_section .accordion .accordion-header h4 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 449px) {
+  .rb_faq_section .accordion .accordion-header h4 {
+    font-size: 16px !important;
   }
 }
 .rb_faq_section .accordion .accordion-header:hover {
@@ -32398,12 +32403,17 @@ header {
 .rb_faq_section .accordion .accordion-content p {
   padding: 21px 24px 40px 24px;
   margin: 0;
-  color: rgba(3, 26, 38, 0.6);
-  font-family: Inter;
-  font-size: 16px;
+  color: #404A56;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.18px;
+}
+@media (max-width: 449px) {
+  .rb_faq_section .accordion .accordion-content p {
+    font-size: 14px !important;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_faq_section .accordion .accordion-content p {
@@ -33249,8 +33259,21 @@ header {
   color: #fff;
 }
 
+.rb_faq_section .rb_heading_area {
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .rb_faq_section .rb_heading_area {
+    margin-bottom: 0;
+  }
+}
 .rb_faq_section .faq_thumb {
   position: relative;
+}
+@media (max-width: 1199px) {
+  .rb_faq_section .faq_thumb {
+    display: none;
+  }
 }
 .rb_faq_section .faq_thumb .faq_icon {
   display: flex;
