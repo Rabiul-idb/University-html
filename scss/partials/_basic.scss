@@ -23,6 +23,24 @@
 }
 
 // Arrow icon
+.slider_arrow_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    span {
+        color: #404A56;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        letter-spacing: -0.18px;
+    }
+    .icon {
+        cursor: pointer;
+    }
+}
+
 .rb_arrow_btn {
     display: flex;
     gap: 48px;
@@ -34,6 +52,7 @@
         }
     }
 }
+
 .rb_arrow_slider_btn {
     .item_1 {
         @include flex(row, center, center);

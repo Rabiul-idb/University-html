@@ -690,6 +690,87 @@
     }
 }
 
+.rb_testimonial1 {
+    border-radius: 20px;
+    background: #F7F7F7;
+    .testimonial_card {
+        display: flex;
+        padding: 28px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        flex: 1 0 0;
+        border-radius: 20px;
+        border: 1px solid #E5E9ED;
+        background: #FFF;
+        @include transition(0.4s);
+        @include breakpoint (max-lg){
+            padding: 20px;
+        }
+        @include breakpoint (max-xsmall){
+            padding: 16px;
+        }
+        .thumb {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            h4 {
+                color: #002147;
+                font-family: $geist-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36px; 
+                letter-spacing: -0.48px;
+            }
+            p {
+                color: #404A56;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; 
+            }
+        }
+        .text_footer {
+            width: 100%;
+            h5 {
+                color: #002147;
+                font-family: $geist-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px; /* 160% */
+                letter-spacing: -0.2px;
+                span {
+                    color: #404A56;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                    letter-spacing: -0.16px;
+                    padding-left: 7px;
+                }
+            }
+            .button_area {
+                display: flex;
+                padding: 12px 20px;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                border-radius: 12px;
+                background: #F7F7F7;
+            }
+        }
 
+        &:hover {
+            box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+            @include transition(0.4s);
+        }
+    }
+}
 
 

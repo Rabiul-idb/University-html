@@ -32157,6 +32157,24 @@ header {
   line-height: 30px;
 }
 
+.slider_arrow_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.slider_arrow_icon span {
+  color: #404A56;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+.slider_arrow_icon .icon {
+  cursor: pointer;
+}
+
 .rb_arrow_btn {
   display: flex;
   gap: 48px;
@@ -33059,4 +33077,88 @@ header {
 }
 .rb_future1 .future_card .content .content_box .hr_line {
   border-bottom: 1px solid #E5E9ED;
+}
+
+.rb_testimonial1 {
+  border-radius: 20px;
+  background: #F7F7F7;
+}
+.rb_testimonial1 .testimonial_card {
+  display: flex;
+  padding: 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  border: 1px solid #E5E9ED;
+  background: #FFF;
+  transition: all 0.4s ease;
+}
+@media (max-width: 991px) {
+  .rb_testimonial1 .testimonial_card {
+    padding: 20px;
+  }
+}
+@media (max-width: 449px) {
+  .rb_testimonial1 .testimonial_card {
+    padding: 16px;
+  }
+}
+.rb_testimonial1 .testimonial_card .thumb {
+  width: 100%;
+}
+.rb_testimonial1 .testimonial_card .thumb img {
+  width: 100%;
+}
+.rb_testimonial1 .testimonial_card .content h4 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+}
+.rb_testimonial1 .testimonial_card .content p {
+  color: #404A56;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.rb_testimonial1 .testimonial_card .text_footer {
+  width: 100%;
+}
+.rb_testimonial1 .testimonial_card .text_footer h5 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: -0.2px;
+}
+.rb_testimonial1 .testimonial_card .text_footer h5 span {
+  color: #404A56;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+  padding-left: 7px;
+}
+.rb_testimonial1 .testimonial_card .text_footer .button_area {
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #F7F7F7;
+}
+.rb_testimonial1 .testimonial_card:hover {
+  box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+  transition: all 0.4s ease;
 }/*# sourceMappingURL=style.css.map */
