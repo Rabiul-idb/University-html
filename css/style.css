@@ -32928,7 +32928,12 @@ header {
   width: 348px;
   height: 504px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
+  .rb_about1 .about_thumb img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
   .rb_about1 .about_thumb.style_1 img, .rb_about1 .about_thumb.style_3 img {
     width: 346px;
     height: 236px;

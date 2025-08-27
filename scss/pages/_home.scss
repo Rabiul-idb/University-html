@@ -282,8 +282,17 @@
                 height: 504px;
             }
         }
+
     }
-    @include breakpoint (max-lg){
+    @include breakpoint (max-xl){     
+        .about_thumb {
+            img {
+                width: 100% !important;
+            }
+        }   
+    }
+
+    @include breakpoint (max-md){
         .about_thumb {
             &.style_1, &.style_3 {
                 img {
