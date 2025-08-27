@@ -403,6 +403,7 @@
 }
 
 .rb_notice_board1 {
+    background: #F7F7F7;
     .notice_card {
         display: flex;
         padding: 20px 20px 24px 20px;
@@ -424,6 +425,7 @@
                 align-self: stretch;
                 border-radius: 12px;
                 background: #F7F7F7;
+                flex-wrap: wrap;
                 .item {
                     display: flex;
                     gap: 6px;
@@ -437,6 +439,9 @@
                     span {
                         border-right: 1px solid rgba(0, 33, 71, 0.20);
                         padding-right: 20px;
+                        @include breakpoint (max-md){
+                            border: none;
+                        }
                     }
                 }
             }

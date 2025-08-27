@@ -32257,135 +32257,6 @@ header {
   }
 }
 
-.rb-t50 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-}
-
-.rb-t24 {
-  color: #031A26;
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.rb-t24.style1 {
-  color: #FFF;
-}
-
-.rb-t22 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.rb-t20 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-.rb-p18 {
-  color: rgba(3, 26, 38, 0.6);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.rb-p18.style1 {
-  color: rgba(255, 255, 255, 0.6);
-}
-.rb-p18.style2 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-}
-.rb-p18.style3 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.rb-p16 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-}
-.rb-p16.style1 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.rb-p16.style2 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.rb-p16.style3 {
-  color: rgba(3, 26, 38, 0.6);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-}
-
-.rb-p15 {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  opacity: 0.7;
-}
-.rb-p15.style1 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  opacity: 0.7;
-}
-
-.rb-p14 {
-  color: rgba(3, 26, 38, 0.6);
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .rb_list ul li {
   margin-bottom: 30px;
   display: flex;
@@ -33022,6 +32893,9 @@ header {
   transition: all 0.4s ease;
 }
 
+.rb_notice_board1 {
+  background: #F7F7F7;
+}
 .rb_notice_board1 .notice_card {
   display: flex;
   padding: 20px 20px 24px 20px;
@@ -33040,6 +32914,7 @@ header {
   align-self: stretch;
   border-radius: 12px;
   background: #F7F7F7;
+  flex-wrap: wrap;
 }
 .rb_notice_board1 .notice_card .content .meta .item {
   display: flex;
@@ -33055,6 +32930,11 @@ header {
 .rb_notice_board1 .notice_card .content .meta .item span {
   border-right: 1px solid rgba(0, 33, 71, 0.2);
   padding-right: 20px;
+}
+@media (max-width: 767px) {
+  .rb_notice_board1 .notice_card .content .meta .item span {
+    border: none;
+  }
 }
 .rb_notice_board1 .notice_card .content .profile {
   display: flex;
