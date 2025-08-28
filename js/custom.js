@@ -96,19 +96,7 @@
         }
         Faq();
 
-        // Brand Slider
-        // $('.mb_branding_slider_ltr').slick({
-        //     dots: false,
-        //     arrows: false,
-        //     infinite: true,
-        //     speed: 3000,
-        //     slidesToShow: 4,
-        //     slidesToScroll: 1,
-        //     autoplay: true,
-        //     autoplaySpeed: 0,
-        //     cssEase: 'linear'
-        // });
-
+        // brand slider
     let $slider = $('.mb_branding_slider_ltr');
 
         $slider.slick({
@@ -123,20 +111,7 @@
         slidesToShow: 1,
         pauseOnHover: false,
         pauseOnFocus: false,
-    //      responsive: [
-    //     { breakpoint: 1300, 
-    //         settings: { slidesToShow: 4, } 
-    //     },
-    //     { breakpoint: 1200,
-    //          settings: { slidesToShow: 3, speed: 9000 } 
-    //         },
-    //     { breakpoint: 998, 
-    //          settings: { slidesToShow: 2, speed: 9000 } 
-    //         },
-    //     { breakpoint: 768,  
-    //         settings: { slidesToShow: 2, speed: 9000 } 
-    //     }
-    //   ]
+   
     });
 
     // instant pause
@@ -151,28 +126,48 @@
         $slider.slick('slickPlay');
     });
 
+    // Ends brand slider
+
         
-        $('.mb_saved_listing_slider').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            speed: 3000,
-            dots: true,
-            
-            dotsClass: "mb_seved_listing",
-            infinite: true,
-            responsive: [
-                {
-                    breakpoint: 768, 
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
-        });
+        $('.testimonial-slider-wrapper').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true, // enable navigation arrows
+  prevArrow: $('.testimonial-prev'),
+  nextArrow: $('.testimonial-next'),
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 3000,
+  dots: false, // we will use custom fraction
+  infinite: true,
+  cssEase: 'linear',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+// Add 24px space between slides
+$('.testimonial-slider-wrapper .slick-slide').css('margin', '12px');
+
+// Fraction pagination
+function updateFraction(slick, currentSlide){
+  let total = slick.slideCount;
+  let current = currentSlide + 1; // slick index starts at 0
+  $('.testimonial-fraction').text(current + ' / ' + total);
+}
+
+$('.testimonial-slider-wrapper').on('init reInit afterChange', function(event, slick, currentSlide){
+  currentSlide = currentSlide ? currentSlide : 0;
+  updateFraction(slick, currentSlide);
+});
+
+
         $('.mb_image_slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -284,6 +279,28 @@
 
         // Nice Select
         $('select').niceSelect();
+
+        // program and coureses filtering       
+        $('.custom-pills .nav-link').on('click', function(e){
+            e.preventDefault();
+
+            $('.custom-pills .nav-link').removeClass('active');
+            $(this).addClass('active');
+            
+        });
+
+        // Check if the filtering class exists
+        if (document.querySelector('.filtering')) {
+            var mixer = mixitup('.filtering', {
+                animation: {
+                    effects: 'fade rotateZ(180deg)',
+                    duration: 800
+                }
+            });
+        }
+
+
+
     });
 
    

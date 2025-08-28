@@ -203,10 +203,10 @@
                       <p class="hero1-content__desc">Join a vibrant learning community with industry-aligned programs, world-class faculty, and 95% graduate employability.</p>
                       <div class="hero1-content-cta pt-35">
                           <div class="btn_wrapper">
-                            <a href="#">Start Your Application <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="#" class="active">Start Your Application <i class="fa-solid fa-arrow-right-long"></i></a>
                           </div>
                           <div class="btn_wrapper style_2">
-                            <a href="#" class="active">View Our Programs</a>
+                            <a href="#" >View Our Programs</a>
                           </div>
                       </div>
                   </div>
@@ -214,7 +214,7 @@
                     <div class="video-thumb">
                       <img src="images/hero/hero-thumb1_2.png" alt="png">
                       <div class="rb_video_icon">
-                          <a href="https://www.youtube.com/watch?v=QLLCjZl4YJk" class="play_icon popup-video">
+                          <a href="https://www.youtube.com/watch?v=QLLCjZl4YJk" class="play_icon popup-video playBtn">
                               <img src="images/icon/play-icon.svg" alt="icon">
                           </a>
                       </div>
@@ -343,7 +343,7 @@
       </div>
     </section>
     <!-- Branding Logo Slider End -->
-     
+
     <!-- Branding Logo Slider Start -->
     <section class="mb_branding_area mt-132">
       <div class="mb_branding_wrapper">
@@ -462,8 +462,8 @@
       </div>
     </section>
     <!-- About One Section End-->
-
-    <!-- Program Section Start-->
+ 
+    <!-- Program Section Start -->
     <div class="rb_program1 pt-132 pb-132">
       <div class="container">
         <div class="row mb-30">
@@ -479,28 +479,29 @@
           </div>
           <div class="col-12">
             <div>
-                <ul class="nav nav-pills custom-pills justify-content-between">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Postgraduate Programs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Diplomas & Certificates</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Short Courses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Undergraduate Programs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Level 4 & 5 Courses</a>
-                  </li>
+              <ul class="nav nav-pills custom-pills justify-content-between">
+               
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" data-filter=".postgraduate">Postgraduate Programs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-filter=".diploma">Diplomas & Certificates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-filter=".short-course">Short Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-filter=".undergraduate">Undergraduate Programs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-filter=".level4-5">Level 4 & 5 Courses</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
+        <div class="row g-4 filtering">
+          <div class="col-md-6 col-lg-4 mix postgraduate short-course undergraduate">
             <div class="program_card">
               <div class="thumb">
                 <img src="images/programs/program-thumb1_1.png" alt="png">
@@ -515,7 +516,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 mix postgraduate diploma undergraduate level4-5">
             <div class="program_card">
               <div class="thumb">
                 <img src="images/programs/program-thumb1_2.png" alt="png">
@@ -530,7 +531,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 mix postgraduate short-course level4-5">
             <div class="program_card">
               <div class="thumb">
                 <img src="images/programs/program-thumb1_3.png" alt="png">
@@ -545,7 +546,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 mix postgraduate diploma level4-5">
             <div class="program_card">
               <div class="thumb">
                 <img src="images/programs/program-thumb1_4.png" alt="png">
@@ -560,7 +561,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 mix postgraduate short-course undergraduate">
             <div class="program_card">
               <div class="thumb">
                 <img src="images/programs/program-thumb1_5.png" alt="png">
@@ -575,8 +576,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="program_card">
+          <div class="col-md-6 col-lg-4 mix postgraduate diploma">
+            <div class="program_card diploma">
               <div class="thumb">
                 <img src="images/programs/program-thumb1_6.png" alt="png">
                 <div class="postgraduate_btn">Postgraduate</div>
@@ -760,7 +761,103 @@
             </div>
           </div>
         </div>
-        <div class="row g-4">
+        <div class="row ">
+          <div class="testimonial-slider-wrapper">
+            <div class="testimonial_card">
+              <div class="thumb">
+                <img src="images/testimonial/testi-thumb1_1.png" alt="png">
+              </div>
+              <div class="content">
+                <h4 class="mb-7">Student of BSc</h4>
+                <p>"My journey here has been incredible. The professors genuinely care about our growth and encourage curiosity. Modern facilities and research opportunities pushed me to think beyond textbooks."</p>
+              </div>
+              <div class="text_footer">
+                <h5>Mustafa Sabry <span>Class of 2022</span></h5>
+                <div class="button_area mt-10">
+                  <div class="icon"><img src="images/icon/alfa_bank.png" alt="icon"></div>
+                  <h5>Junior Analyst <span>at HSBC</span></h5>
+                </div>
+              </div>
+
+            </div>
+            <div class="testimonial_card">
+              <div class="thumb">
+                <img src="images/testimonial/testi-thumb1_2.png" alt="png">
+              </div>
+              <div class="content">
+                <h4 class="mb-7">Student of MBA</h4>
+                <p>"As an international student, I found welcoming support, cultural diversity, & excellent academics, helping me grow globally with confidence, adaptability, and valuable knowledge."</p>
+              </div>
+              <div class="text_footer">
+                <h5>Mustafa Sabry <span>Class of 2022</span></h5>
+                <div class="button_area mt-10">
+                  <div class="icon"><img src="images/icon/google_icon.png" alt="icon"></div>
+                  <h5>Managing Director <span>at UNO</span></h5>
+                </div>
+              </div>
+
+            </div>
+            <div class="testimonial_card">
+              <div class="thumb">
+                <img src="images/testimonial/testi-thumb1_1.png" alt="png">
+              </div>
+              <div class="content">
+                <h4 class="mb-7">Student of Data Science</h4>
+                <p>“Practical programs, internships, and career guidance prepared me for the job market. This university gave me skills, confidence, and opportunities that shaped my future for the better.”</p>
+              </div>
+              <div class="text_footer">
+                <h5>Mustafa Sabry <span>Class of 2022</span></h5>
+                <div class="button_area mt-10">
+                  <div class="icon"><img src="images/icon/airbnb.png" alt="icon"></div>
+                  <h5>Data Sciencetist <span>at Airbnb</span></h5>
+                </div>
+              </div>
+
+            </div>
+            <div class="testimonial_card">
+              <div class="thumb">
+                <img src="images/testimonial/testi-thumb1_2.png" alt="png">
+              </div>
+              <div class="content">
+                <h4 class="mb-7">Student of MBA</h4>
+                <p>"As an international student, I found welcoming support, cultural diversity, & excellent academics, helping me grow globally with confidence, adaptability, and valuable knowledge."</p>
+              </div>
+              <div class="text_footer">
+                <h5>Mustafa Sabry <span>Class of 2022</span></h5>
+                <div class="button_area mt-10">
+                  <div class="icon"><img src="images/icon/google_icon.png" alt="icon"></div>
+                  <h5>Managing Director <span>at UNO</span></h5>
+                </div>
+              </div>
+
+            </div>
+            <div class="testimonial_card">
+              <div class="thumb">
+                <img src="images/testimonial/testi-thumb1_1.png" alt="png">
+              </div>
+              <div class="content">
+                <h4 class="mb-7">Student of Data Science</h4>
+                <p>“Practical programs, internships, and career guidance prepared me for the job market. This university gave me skills, confidence, and opportunities that shaped my future for the better.”</p>
+              </div>
+              <div class="text_footer">
+                <h5>Mustafa Sabry <span>Class of 2022</span></h5>
+                <div class="button_area mt-10">
+                  <div class="icon"><img src="images/icon/airbnb.png" alt="icon"></div>
+                  <h5>Data Sciencetist <span>at Airbnb</span></h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="slider_arrow_icon pt-20">
+              <div class="icon"><img src="images/icon/left-arrow_icon.svg" alt="icon"></div>
+              <span>3 of 32</span>
+              <div class="icon"><img src="images/icon/right-arrow-icon.svg" alt="icon"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row g-4">
           <div class="col-lg-6 col-xl-4">
             <div class="testimonial_card">
               <div class="thumb">
@@ -825,7 +922,7 @@
               <div class="icon"><img src="images/icon/right-arrow-icon.svg" alt="icon"></div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- Testimonial Section  End-->
@@ -1226,6 +1323,7 @@
     <script src="./js/jquery.meanmenu.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
     <script src="./js/jquery.nice-select.js"></script>
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
