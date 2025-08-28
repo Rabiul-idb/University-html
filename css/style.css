@@ -27177,6 +27177,9 @@ header {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.14px; }
+  @media only screen and (min-width: 0px) and (max-width: 479px) {
+    .rb_heading_area .rb_subtitle {
+      margin-bottom: 8px; } }
   .rb_heading_area .rb_subtitle.style_1 {
     border-radius: 100px;
     border: 0.6px solid rgba(255, 255, 255, 0.2);
@@ -27214,6 +27217,10 @@ header {
     .rb_heading_area .rb_title {
       font-size: 28px;
       letter-spacing: -0.8px; } }
+  @media only screen and (min-width: 0px) and (max-width: 479px) {
+    .rb_heading_area .rb_title {
+      font-size: 28px;
+      line-height: 40px; } }
 .rb_heading_area .rb_desc {
   color: #404A56;
   font-family: "Inter", sans-serif;
@@ -27391,6 +27398,38 @@ header {
   transform: translate(-50%, -50%);
   animation: ripple 2s linear infinite; }
 
+.over-hidden {
+  overflow: hidden; }
+
+.slider-controller,
+.blog-slider-controller {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px; }
+  @media only screen and (min-width: 0px) and (max-width: 479px) {
+    .slider-controller,
+    .blog-slider-controller {
+      display: none; } }
+  .slider-controller .blog-btn-next:focus i,
+  .slider-controller .blog-btn-prev:focus i,
+  .blog-slider-controller .blog-btn-next:focus i,
+  .blog-slider-controller .blog-btn-prev:focus i {
+    color: #FF1949; }
+  .slider-controller .blog-btn-next i,
+  .slider-controller .blog-btn-prev i,
+  .blog-slider-controller .blog-btn-next i,
+  .blog-slider-controller .blog-btn-prev i {
+    font-size: 32px;
+    font-weight: 600;
+    color: #636363; }
+  .slider-controller .blog-fraction,
+  .blog-slider-controller .blog-fraction {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #404A56; }
+
 .rb_page_nav_wrap ul {
   display: flex;
   align-items: center;
@@ -27432,6 +27471,9 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center; }
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
+      .nav-pills .nav-item {
+        justify-content: center; } }
   .nav-pills .nav-link {
     color: #031A26;
     font-family: Inter;
@@ -27554,12 +27596,18 @@ header {
   @media (max-width: 575px) {
     .hero1 {
       padding: 110px 0 110px; } }
+  @media only screen and (min-width: 0px) and (max-width: 479px) {
+    .hero1 {
+      padding: 110px 0 50px; } }
   .hero1-background-image {
     position: absolute;
     inset: 0;
     z-index: 5;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .hero1-background-image {
+        min-height: 612px; } }
     .hero1-background-image::before {
       content: '';
       position: absolute;
@@ -27570,6 +27618,9 @@ header {
   .hero1-content {
     position: relative;
     z-index: 9; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .hero1-content {
+        padding-top: 180px; } }
     .hero1-content__title {
       max-width: 588px;
       color: #fff;
@@ -27593,6 +27644,10 @@ header {
         .hero1-content__title {
           font-size: 36px;
           line-height: 50px; } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .hero1-content__title {
+          font-size: 36px;
+          line-height: 48px; } }
     .hero1-content__desc {
       max-width: 370px;
       color: #fff;
@@ -27601,7 +27656,6 @@ header {
       font-style: normal;
       font-weight: 400;
       line-height: 24px;
-      /* 150% */
       letter-spacing: -0.16px; }
     .hero1-content-cta {
       display: flex;
@@ -27612,6 +27666,10 @@ header {
           flex-direction: column;
           align-items: self-start;
           gap: 25px; } }
+      @media only screen and (min-width: 0px) and (max-width: 575px) {
+        .hero1-content-cta {
+          gap: 12px;
+          margin-top: 7px; } }
   .hero1 .video_card {
     position: absolute;
     right: 0;
@@ -28235,6 +28293,11 @@ header {
 .rb_testimonial1 {
   border-radius: 20px;
   background: #F7F7F7; }
+  .rb_testimonial1 .testimonial-slider-wrapper {
+    padding-bottom: 60px; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_testimonial1 .testimonial-slider-wrapper {
+        padding-bottom: 0; } }
   .rb_testimonial1 .testimonial_card {
     display: flex;
     padding: 28px;
@@ -28306,6 +28369,8 @@ header {
 .rb_blog1 {
   border-radius: 20px;
   background: #F7F7F7; }
+  .rb_blog1 .blog-slider-container {
+    padding-bottom: 10px; }
   .rb_blog1 .blog_card {
     display: flex;
     padding: 24px;
