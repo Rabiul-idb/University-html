@@ -43,21 +43,24 @@
         font-size: 56px;
         font-style: normal;
         font-weight: 500;
-        line-height: 68px;
+        // line-height: 68px;
         letter-spacing: -1.12px;
         &.style_1 {
             color: $white;
         }
         @include breakpoint (max-lg){
             font-size: 48px;
-            line-height: 60px; 
+            // line-height: 60px; 
             letter-spacing: -0.96px;
         }
         @include breakpoint (max-xsmall){
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 28px;
+            // line-height: 52px;
             letter-spacing: -0.8px;
         }
+        // @include sm{
+        //     font-size: 28px;
+        // }
     }
     .rb_desc {
         color: $text_color;

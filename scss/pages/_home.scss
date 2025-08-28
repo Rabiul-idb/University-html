@@ -43,7 +43,7 @@
                 line-height: 50px;
             }
             @include breakpoint (max-sm) {
-                font-size: 42px;
+                font-size: 36px;
                 line-height: 50px;
             }
         } 
@@ -153,6 +153,9 @@
                 color: $black2;
                 font-family: $geist-font;
                 font-size: 28px;
+                @media (max-width:768px){
+                    font-size: 24px;
+                }
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
@@ -417,6 +420,9 @@
                 color: $black2;
                 font-family: $geist-font;
                 font-size: 28px;
+                @media (max-width:768px){
+                    font-size: 24px;
+                }
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
@@ -513,6 +519,9 @@
                 color: $black2;
                 font-family: $geist-font;
                 font-size: 28px;
+                @media (max-width:768px){
+                    font-size: 24px;
+                }
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
