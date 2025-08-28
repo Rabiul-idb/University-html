@@ -225,7 +225,7 @@
     &.active {
         color: #031A26;
         border-radius: 100px;
-        background: #FFF;
+        background: $white;
         height: 50px;
         padding: 8px 30px;
         margin-left: 2px;
@@ -248,8 +248,9 @@
     .accordion {
         width: 100%;
         .accordion-item {
-            border-radius: 14px;
-            border: 1px solid rgba(3, 26, 38, 0.10);
+            border-radius: 12px;
+            background: $bg_color;
+            border: none;
             margin-bottom: 30px;
             overflow: hidden; 
             @include sm{
@@ -257,8 +258,8 @@
             }
             &.active {
                 .accordion-header {
-                    background: $white;
-                    border: 1px solid rgba(3, 26, 38, 0.10);
+                    border-radius: 12px;
+                    background: $bg_color;
                     h4 {
                         color: $black2;
                     }                    
@@ -296,6 +297,7 @@
                 }
                 @include breakpoint (max-xsmall){
                     font-size: 16px !important;
+                    line-height: 24px;
                 }
             }
 
@@ -304,20 +306,24 @@
             }
 
             .icon {
-                width: 32px;
-                height: 32px;
-                line-height: 32px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
                 text-align: center;
                 @include border-radius(50%);
                 transition: transform 0.3s ease;
                 border-radius: 24px;
                 border: 1px solid #E5E6EA;
-                background: #FFF;
-                @include sm{
-                    width: 14px;
-                    height: 14px;
-                    line-height: 13px;
-                    font-size: 8px;
+                background: $white;
+                min-width: 40px;
+                min-height: 40px;
+                @include breakpoint (max-xsmall) {
+                    width: 28px;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: 12px;
+                    min-width: 28px;
+                    min-height: 28px;
                 }
             }
         }
@@ -337,10 +343,7 @@
                 letter-spacing: -0.18px;
                 @include breakpoint (max-xsmall){
                     font-size: 14px !important;
-                }
-                @include sm{
-                    font-size: 8px;
-                    padding: 10px;
+                    line-height: 22px;
                 }
             }
         }
