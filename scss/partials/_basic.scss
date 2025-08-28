@@ -104,7 +104,41 @@
     transform: translate(-50%, -50%);
     animation: ripple 2s linear infinite;
 } 
+.over-hidden{
+    overflow: hidden;
+}
 
+.slider-controller,
+.blog-slider-controller {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    
+    @include xxs{
+        display: none;
+    }
+
+    .blog-btn-next,
+    .blog-btn-prev{
+        &:focus{
+            i{
+                color: $primary;
+            }
+        }
+        i{
+            font-size: 32px;
+            font-weight: 600;
+            color: #636363;
+        }
+    }
+    .blog-fraction{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $text_color;
+    }
+}
 // Pagination with Number
 .rb_page_nav_wrap {
     ul {

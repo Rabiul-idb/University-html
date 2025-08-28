@@ -128,46 +128,105 @@
 
     // Ends brand slider
 
+    //  Testimonial Slider // ###########
+      const testimonial_slider = new Swiper('.testimonial-slider-wrapper', {
+        loop: true,
+        speed: 1500,
+        slidesPerView: 3,
+        spaceBetween: 24,
+        autoplay: true,
+        navigation: {
+          prevEl: '.tsm-btn-prev',
+          nextEl: '.tsm-btn-next',
+        },
+        pagination: {
+          el: ".fraction",
+          type: "fraction",
+          renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' of ' +
+                    '<span class="' + totalClass + '"></span>';
+            }
+        },
+
+        breakpoints: {
+          350: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          }
+         
+        },
         
-        $('.testimonial-slider-wrapper').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true, // enable navigation arrows
-  prevArrow: $('.testimonial-prev'),
-  nextArrow: $('.testimonial-next'),
-  autoplay: true,
-  autoplaySpeed: 4000,
-  speed: 3000,
-  dots: false, // we will use custom fraction
-  infinite: true,
-  cssEase: 'linear',
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-  ]
-});
+      })
+    //  Blog Slider // ###########
+      const blog_slider = new Swiper('.blog-slider-container', {
+        loop: true,
+        speed: 1500,
+        slidesPerView: 3,
+        spaceBetween: 24,
+        autoplay: true,
+        navigation: {
+          prevEl: '.blog-btn-prev',
+          nextEl: '.blog-btn-next',
+        },
+        pagination: {
+          el: ".blog-fraction",
+          type: "fraction",
+          renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' of ' +
+                    '<span class="' + totalClass + '"></span>';
+            }
+        },
 
-// Add 24px space between slides
-$('.testimonial-slider-wrapper .slick-slide').css('margin', '12px');
+        breakpoints: {
+          350: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 3,
+          }
+         
+        },
+        
+      })
 
-// Fraction pagination
-function updateFraction(slick, currentSlide){
-  let total = slick.slideCount;
-  let current = currentSlide + 1; // slick index starts at 0
-  $('.testimonial-fraction').text(current + ' / ' + total);
-}
-
-$('.testimonial-slider-wrapper').on('init reInit afterChange', function(event, slick, currentSlide){
-  currentSlide = currentSlide ? currentSlide : 0;
-  updateFraction(slick, currentSlide);
-});
-
-
+     
         $('.mb_image_slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,

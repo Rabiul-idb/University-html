@@ -32027,6 +32027,45 @@ header {
   animation: ripple 2s linear infinite;
 }
 
+.over-hidden {
+  overflow: hidden;
+}
+
+.slider-controller,
+.blog-slider-controller {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .slider-controller,
+  .blog-slider-controller {
+    display: none;
+  }
+}
+.slider-controller .blog-btn-next:focus i,
+.slider-controller .blog-btn-prev:focus i,
+.blog-slider-controller .blog-btn-next:focus i,
+.blog-slider-controller .blog-btn-prev:focus i {
+  color: #FF1949;
+}
+.slider-controller .blog-btn-next i,
+.slider-controller .blog-btn-prev i,
+.blog-slider-controller .blog-btn-next i,
+.blog-slider-controller .blog-btn-prev i {
+  font-size: 32px;
+  font-weight: 600;
+  color: #636363;
+}
+.slider-controller .blog-fraction,
+.blog-slider-controller .blog-fraction {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #404A56;
+}
+
 .rb_page_nav_wrap ul {
   display: flex;
   align-items: center;
@@ -33044,6 +33083,14 @@ header {
   border-radius: 20px;
   background: #F7F7F7;
 }
+.rb_testimonial1 .testimonial-slider-wrapper {
+  padding-bottom: 60px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_testimonial1 .testimonial-slider-wrapper {
+    padding-bottom: 0;
+  }
+}
 .rb_testimonial1 .testimonial_card {
   display: flex;
   padding: 28px;
@@ -33127,6 +33174,9 @@ header {
 .rb_blog1 {
   border-radius: 20px;
   background: #F7F7F7;
+}
+.rb_blog1 .blog-slider-container {
+  padding-bottom: 10px;
 }
 .rb_blog1 .blog_card {
   display: flex;

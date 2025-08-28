@@ -830,6 +830,15 @@
 .rb_testimonial1 {
     border-radius: 20px;
     background: #F7F7F7;
+
+    .testimonial-slider-wrapper{
+        padding-bottom: 60px;
+
+        @include xxs{
+            padding-bottom: 0;
+        }
+    }
+
     .testimonial_card {
         display: flex;
         padding: 28px;
@@ -906,6 +915,7 @@
         &:hover {
             box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
             @include transition(0.4s);
+            
         }
     }
 }
@@ -913,6 +923,10 @@
 .rb_blog1 {
     border-radius: 20px;
     background: #F7F7F7;
+
+    .blog-slider-container{
+        padding-bottom: 10px;
+    }
     .blog_card {
         display: flex;
         padding: 24px;
