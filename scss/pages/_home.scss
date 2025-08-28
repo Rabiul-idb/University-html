@@ -584,6 +584,143 @@
 }
 /*--Branding End---*/
 
+/*--Branding Start---*/
+.mb_branding_area {
+  position: relative;
+
+  .mb_branding_wrapper  {
+    // wrapper can be flex if you want, but NOT the slider itself
+    padding: 24px 0 24px 100px;
+    background: $black2;
+    color: $white;
+    font-family: $geist-font;
+
+    @include md{
+        padding: 20px 30px 20px 40px;
+    }
+    @include xs{
+        padding: 16px 24px 16px 30px;
+    }
+    @include xxs{
+        padding: 14px 20px 14px 25px;
+    }
+
+    .mb_brand_highlight {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: $primary;
+      display: flex;
+      padding: 24px 32px 24px 100px;
+      align-items: center;
+      gap: 40px;
+      z-index: 2;
+      color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: -2%;
+
+        @include xxl{
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -1%;
+        }
+
+        @include lg{
+            padding-left: 60px;
+        }
+        @include md{
+            padding: 20px 30px 20px 40px;
+            font-size: 16px;
+            line-height: 24px;
+            gap: 24px;
+
+        }
+        @include xs{
+            font-size: 14px;
+            line-height: 22px;
+            padding: 16px 18px 16px 18px;
+            gap: 15px;
+        }
+    }
+
+    /* Slider container – important: no flex here */
+    .mb_branding_slider_ltr {
+      position: relative;
+      z-index: 1;
+      overflow: hidden; // so cloned slides don't poke out
+
+    }
+
+    /* Slides */
+    .mb_branding_slider_ltr {
+        .mb_brand {
+            display: inline-block;    
+            padding: 0 48px;
+            position: relative;
+
+            @include sm{
+                padding: 0 40px;
+            }
+            @include xs{
+                padding: 0 30px;
+            }
+            @include xxs{
+                padding: 0 20px;
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 28px;
+                background-color: $white;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+
+                @include md{
+                    height: 24px;
+                }
+                @include xs{
+                    height: 20px;
+                }
+            }
+
+            h4 {
+            color: $white;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: -2%;
+            white-space: nowrap;   
+            
+                @include xxl{
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -1%;
+                }
+
+                @include md{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                @include xxs{
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+  }
+
+  .mb_branding_wrapper_rtl { direction: rtl; }
+}
+/*--Branding End---*/
+
 
 .rb_campus_life {
     .rb_heading_area {

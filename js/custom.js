@@ -97,53 +97,59 @@
         Faq();
 
         // Brand Slider
-        function Brand() {
-            $('.mb_branding_wrapper_ltr').slick({
-                dots: false,
-                arrows: false,
-                infinite: true,
-                speed: 3000,
-                slidesToShow: 7,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 0,
-                cssEase: 'linear',
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            speed: 4000
-                        }
-                    },
-                    {
-                        breakpoint: 998,
-                        settings: {
-                            slidesToShow: 2,
-                            speed: 4000,
+        // $('.mb_branding_slider_ltr').slick({
+        //     dots: false,
+        //     arrows: false,
+        //     infinite: true,
+        //     speed: 3000,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 0,
+        //     cssEase: 'linear'
+        // });
 
-                        }
-                    },
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3,
-                            speed: 4000,
+    let $slider = $('.mb_branding_slider_ltr');
 
-                        }
-                    },
-                    {
-                        breakpoint: 1300,
-                        settings: {
-                            slidesToShow: 3,
-                            speed: 4000,
+        $slider.slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 12000,
+        cssEase: 'linear',
+        variableWidth: true,
+        slidesToShow: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    //      responsive: [
+    //     { breakpoint: 1300, 
+    //         settings: { slidesToShow: 4, } 
+    //     },
+    //     { breakpoint: 1200,
+    //          settings: { slidesToShow: 3, speed: 9000 } 
+    //         },
+    //     { breakpoint: 998, 
+    //          settings: { slidesToShow: 2, speed: 9000 } 
+    //         },
+    //     { breakpoint: 768,  
+    //         settings: { slidesToShow: 2, speed: 9000 } 
+    //     }
+    //   ]
+    });
 
-                        }
-                    }
-                ]
-            });
-        }
-        Brand()
+    // instant pause
+    $slider.on('mouseenter', function () {
+        $slider.slick('slickSetOption', 'speed', 0, true);
+        $slider.slick('slickPause');
+    });
+
+    // instant resume
+    $slider.on('mouseleave', function () {
+        $slider.slick('slickSetOption', 'speed', 8000, true);
+        $slider.slick('slickPlay');
+    });
 
         
         $('.mb_saved_listing_slider').slick({
