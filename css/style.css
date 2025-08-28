@@ -31754,6 +31754,11 @@ header {
   line-height: 22px;
   letter-spacing: -0.14px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_heading_area .rb_subtitle {
+    margin-bottom: 8px;
+  }
+}
 .rb_heading_area .rb_subtitle.style_1 {
   border-radius: 100px;
   border: 0.6px solid rgba(255, 255, 255, 0.2);
@@ -31803,6 +31808,12 @@ header {
     font-size: 40px;
     line-height: 52px;
     letter-spacing: -0.8px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_heading_area .rb_title {
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 .rb_heading_area .rb_desc {
@@ -32114,6 +32125,11 @@ header {
   flex-direction: row;
   align-items: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .nav-pills .nav-item {
+    justify-content: center;
+  }
+}
 .nav-pills .nav-link {
   color: #031A26;
   font-family: Inter;
@@ -32267,12 +32283,22 @@ header {
     padding: 110px 0 110px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .hero1 {
+    padding: 110px 0 50px;
+  }
+}
 .hero1-background-image {
   position: absolute;
   inset: 0;
   z-index: 5;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .hero1-background-image {
+    min-height: 612px;
+  }
 }
 .hero1-background-image::before {
   content: "";
@@ -32285,6 +32311,11 @@ header {
 .hero1-content {
   position: relative;
   z-index: 9;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .hero1-content {
+    padding-top: 180px;
+  }
 }
 .hero1-content__title {
   max-width: 588px;
@@ -32315,6 +32346,12 @@ header {
     line-height: 50px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .hero1-content__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
 .hero1-content__desc {
   max-width: 370px;
   color: #fff;
@@ -32322,7 +32359,7 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.16px;
 }
 .hero1-content-cta {
@@ -32335,6 +32372,12 @@ header {
     flex-direction: column;
     align-items: self-start;
     gap: 25px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .hero1-content-cta {
+    gap: 12px;
+    margin-top: 7px;
   }
 }
 .hero1 .video_card {

@@ -15,6 +15,10 @@
         font-weight: 400;
         line-height: 22px;
         letter-spacing: -0.14px;
+
+        @include xxs{
+            margin-bottom: 8px;
+        }
         &.style_1 {
             border-radius: 100px;
             border: 0.6px solid rgba(255, 255, 255, 0.20);
@@ -25,6 +29,7 @@
             font-weight: 500;
             line-height: 24px; 
             letter-spacing: -0.16px;
+            
         }
         @include breakpoint (max-lg){
             font-size: 14px;
@@ -57,6 +62,10 @@
             font-size: 40px;
             line-height: 52px;
             letter-spacing: -0.8px;
+        }
+        @include xxs{
+            font-size: 28px;
+            line-height: 40px;
         }
     }
     .rb_desc {
