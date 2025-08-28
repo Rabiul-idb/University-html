@@ -30745,9 +30745,6 @@ img {
   line-height: normal;
   opacity: 0.7;
 }
-.common_input .form-group input[type=text]::-moz-placeholder, .common_input .form-group input[type=number]::-moz-placeholder, .common_input .form-group input[type=tel]::-moz-placeholder, .common_input .form-group input[type=date]::-moz-placeholder, .common_input .form-group input[type=time]::-moz-placeholder, .common_input .form-group input[type=email]::-moz-placeholder, .common_input .form-group input[type=password]::-moz-placeholder, .common_input .form-group textarea::-moz-placeholder {
-  color: #031A26;
-}
 .common_input .form-group input[type=text]::placeholder,
 .common_input .form-group input[type=number]::placeholder,
 .common_input .form-group input[type=tel]::placeholder,
@@ -30854,11 +30851,6 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-}
-.common_input .form-group .password-input-container.style_1 input::-moz-placeholder {
-  font-size: 50px;
-  letter-spacing: 5px;
-  color: black;
 }
 .common_input .form-group .password-input-container.style_1 input::placeholder {
   font-size: 50px;
@@ -31355,18 +31347,23 @@ header {
 /* Animation for Tada */
 @keyframes tada {
   0% {
+    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
   10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
   30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
   40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
   100% {
+    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
@@ -31504,7 +31501,13 @@ header {
   top: 0;
   width: 350px;
   height: 100%;
+  -webkit-transform: translateX(calc(100% + 80px));
+  -moz-transform: translateX(calc(100% + 80px));
+  -ms-transform: translateX(calc(100% + 80px));
+  -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
+  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
   transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
   z-index: 99999;
   overflow-y: scroll;
@@ -31517,6 +31520,10 @@ header {
 
 .offcanvas__info.info-open {
   opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -32238,7 +32245,7 @@ header {
 }
 .hero1-content__title {
   max-width: 588px;
-  color: #FFF;
+  color: #fff;
   font-family: "Geist", sans-serif;
   font-size: 64px;
   font-style: normal;
@@ -32267,7 +32274,7 @@ header {
 }
 .hero1-content__desc {
   max-width: 370px;
-  color: #FFF;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -32299,8 +32306,7 @@ header {
   gap: 4px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 @media (max-width: 991px) {
   .hero1 .video_card {
@@ -32321,14 +32327,14 @@ header {
   align-items: center;
   gap: 10px;
   border-radius: 53px;
-  background: #FFF;
+  background: #fff;
 }
 .hero1 .video_card .video-thumb .play_icon:hover {
   background: #002147;
   transition: all 0.4s ease;
 }
 .hero1 .video_card h5 {
-  color: #FFF;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -32346,7 +32352,7 @@ header {
   flex-shrink: 0;
   border-radius: 16px;
   border: 1px solid #E5E9ED;
-  background: #FFF;
+  background: #fff;
   transition: all 0.4s ease;
 }
 @media (max-width: 1199px) {
@@ -32406,7 +32412,7 @@ header {
   transition: all 0.4s ease;
 }
 .rb_service1 .service_card:hover .icon {
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 20px 35px 0 rgba(0, 33, 71, 0.5);
 }
 .rb_service1 .service_card:hover .content h3 {
@@ -32557,7 +32563,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -32614,7 +32620,7 @@ header {
   right: 10px;
   top: 10px;
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
 }
 .rb_program1 .program_card .content h3 {
   color: #002147;
@@ -32658,7 +32664,7 @@ header {
   gap: 24px;
   border-radius: 20px;
   border: 1px solid #E5E9ED;
-  background: #FFF;
+  background: #fff;
   transition: all 0.4s ease;
 }
 .rb_notice_board1 .notice_card .content .meta {
@@ -32745,7 +32751,7 @@ header {
   padding: 24px 0 24px 100px;
   gap: 40px;
   background: #002147;
-  color: #FFF;
+  color: #fff;
   font-family: "Geist", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -32754,7 +32760,7 @@ header {
   letter-spacing: -0.2px;
 }
 .mb_branding_area .mb_branding_wrapper .mb_brand a {
-  color: #FFF;
+  color: #fff;
   font-family: "Geist", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -32795,7 +32801,7 @@ header {
 }
 .rb_campus_life .campus_card p {
   max-width: 550px;
-  color: #FFF;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -32829,7 +32835,7 @@ header {
   gap: 10px;
   flex: 1 0 0;
   border-radius: 20px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 20px 35px 0 #002147;
 }
 .rb_future1 .future_card .content {
@@ -32894,7 +32900,7 @@ header {
   flex: 1 0 0;
   border-radius: 20px;
   border: 1px solid #E5E9ED;
-  background: #FFF;
+  background: #fff;
   transition: all 0.4s ease;
 }
 @media (max-width: 991px) {
@@ -32977,7 +32983,7 @@ header {
   gap: 24px;
   border-radius: 20px;
   border: 1px solid #E5E9ED;
-  background: #FFF;
+  background: #fff;
   transition: all 0.4s ease;
 }
 @media (max-width: 991px) {
@@ -33005,7 +33011,7 @@ header {
   align-items: center;
   gap: 28px;
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
 }
 .rb_blog1 .blog_card .thumb img {
   width: 100%;
