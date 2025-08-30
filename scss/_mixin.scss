@@ -220,12 +220,12 @@
         }
     }
     @if $point==xxs {
-        @media (min-width: 470px) {
+        @media (min-width: 480px) {
             @content ;
         }
     }
     @else if $point==max-xxs {
-        @media (max-width:469px) {
+        @media (max-width:479px) {
             @content ;
         }
     }

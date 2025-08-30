@@ -41,42 +41,49 @@
         }
         z-index: 9;
         &__title { 
-            max-width: 588px;
+            max-width: 662px;
             color: $white;
             font-family: $geist-font;
-            font-size: 64px;
+            font-size: 72px;
             font-style: normal;
             font-weight: 600;
-            line-height: 72px; /* 112.5% */
-            letter-spacing: -1.28px;
+            line-height: 80px; /* 111.111% */
+            letter-spacing: -1.44px;
 
+            @include breakpoint (max-xxxl) {
+                font-size: 64px;
+                line-height: 72px;
+                letter-spacing: -1.28px;
+            }
             @include breakpoint (max-lg) {
                 font-size: 48px;
                 line-height: 56px; 
                 letter-spacing: -0.96px;
             }
-            @include breakpoint (max-md) {
-                font-size: 45px;
-                line-height: 50px;
-            }
-            @include breakpoint (max-sm) {
+            @include breakpoint (max-xxs) {
                 font-size: 36px;
-                line-height: 50px;
-            }
-            @include xxs{
-                font-size: 36px;
-                line-height: 48px;
+                line-height: 48px; 
+                letter-spacing: -1.08px;
             }
         } 
         &__desc {
-            max-width: 370px;
+            max-width: 410px;
             color: $white;
-            font-family: $inter-font;
-            font-size: 16px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 24px; 
-            letter-spacing: -0.16px;
+            line-height: 32px;
+            letter-spacing: -0.18px;
+            @include breakpoint (max-xxxl) {
+                font-size: 16px;
+                line-height: 24px; 
+                letter-spacing: -0.16px;
+            }
+            @include breakpoint (max-xxs) {
+                font-size: 14px;
+                line-height: 22px; 
+                letter-spacing: -0.14px;
+            }
         }
         &-cta {
             display: flex;
@@ -130,11 +137,22 @@
         h5 {
             color: $white;
             font-family: $inter-font;
-            font-size: 14px;
+            font-size: 18px;
             font-style: normal;
-            font-weight: 500;
-            line-height: 22px;
-            letter-spacing: -0.28px;
+            font-weight: 400;
+            line-height: 28px; 
+            letter-spacing: -0.18px;
+            @include breakpoint (max-xxxl) {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px; 
+                letter-spacing: -0.28px;
+            }
+            @include breakpoint (max-lg) {
+                font-size: 12px;
+                line-height: 18px; 
+                letter-spacing: -0.24px;
+            }
         }
     }
 }
@@ -178,17 +196,19 @@
                 color: $black2;
                 font-family: $geist-font;
                 font-size: 28px;
-                @media (max-width:768px){
-                    font-size: 24px;
-                }
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
                 letter-spacing: -0.56px;
                 @include transition(0.4s);
+                @include breakpoint (max-xxs) {
+                    font-size: 24px;
+                    line-height: 36px; /* 150% */
+                    letter-spacing: -0.48px;
+                }
             }
             p {
-                max-width: 300px;
+                max-width: 312px;
                 color: $text_color;
                 font-family: $inter-font;
                 font-size: 16px;
@@ -262,11 +282,16 @@
         .card_title {
             color: $text_color;
             font-family: $inter-font;
-            font-size: 14px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 22px; /* 157.143% */
-            letter-spacing: -0.14px;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.32px;
+            @include breakpoint (max-xxxl) {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: -0.14px;
+            }
         }
         .card_numb {
             color: $black2;
@@ -391,6 +416,11 @@
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        @include breakpoint (max-xxs) {
+            font-size: 14px;
+            line-height: 22px; 
+            letter-spacing: -0.14px;
+        }
     }
 
     .custom-pills .nav-link.active {
@@ -437,6 +467,18 @@
                 top: 10px;
                 border-radius: 8px;
                 background: $white;
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px; 
+                letter-spacing: -0.14px;
+                @include breakpoint (max-xxs){
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: -0.12px;
+                }
             }
         }
 
@@ -445,13 +487,15 @@
                 color: $black2;
                 font-family: $geist-font;
                 font-size: 28px;
-                @media (max-width:768px){
-                    font-size: 24px;
-                }
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
                 letter-spacing: -0.56px;
+                @include breakpoint (max-xxs) {
+                    font-size: 24px;
+                    line-height: 36px; /* 150% */
+                    letter-spacing: -0.48px;
+                }
             }
             p {
                 max-width: 408px;
@@ -462,6 +506,11 @@
                 font-weight: 400;
                 line-height: 24px; 
                 letter-spacing: -0.16px;
+                @include breakpoint (max-xxs){
+                    font-size: 14px;
+                    line-height: 22px; 
+                    letter-spacing: -0.14px;
+                }
             }
         }
         &:hover {
@@ -532,8 +581,13 @@
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 24px; /* 150% */
+                line-height: 24px; 
                 letter-spacing: -0.16px;
+                @include breakpoint (max-xxs){
+                    font-size: 14px;
+                    line-height: 22px; 
+                    letter-spacing: -0.14px;
+                }
                 img {
                     padding-right: 12px;
                 }
@@ -542,13 +596,15 @@
                 color: $black2;
                 font-family: $geist-font;
                 font-size: 28px;
-                @media (max-width:768px){
-                    font-size: 24px;
-                }
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
                 letter-spacing: -0.56px;
+                @include breakpoint (max-xxs){
+                    font-size: 24px;
+                    line-height: 36px; 
+                    letter-spacing: -0.48px;
+                }
             }
             p {
                 color: $text_color;
@@ -558,6 +614,11 @@
                 font-weight: 400;
                 line-height: 24px; 
                 letter-spacing: -0.16px;
+                @include breakpoint (max-xxs){
+                    font-size: 14px;
+                    line-height: 22px; 
+                    letter-spacing: -0.14px;
+                }
             }
         }
         &:hover {
@@ -780,8 +841,13 @@
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 32px; /* 177.778% */
+            line-height: 32px; 
             letter-spacing: -0.18px;
+            @include breakpoint (max-xxs){
+                font-size: 16px;
+                line-height: 24px; 
+                letter-spacing: -0.16px;
+            }
         }
         @include breakpoint (max-xxl){
             padding: 15px 20px;
@@ -904,6 +970,11 @@
                 font-weight: 500;
                 line-height: 36px; 
                 letter-spacing: -0.48px;
+                @include breakpoint (max-xxs){
+                    font-size: 20px;
+                    line-height: 32px; 
+                    letter-spacing: -0.4px;
+                }
             }
             p {
                 color: $text_color;

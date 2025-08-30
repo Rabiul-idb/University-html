@@ -32162,14 +32162,21 @@ header {
   }
 }
 .hero1-content__title {
-  max-width: 588px;
+  max-width: 662px;
   color: #fff;
   font-family: "Geist", sans-serif;
-  font-size: 64px;
+  font-size: 72px;
   font-style: normal;
   font-weight: 600;
-  line-height: 72px; /* 112.5% */
-  letter-spacing: -1.28px;
+  line-height: 80px; /* 111.111% */
+  letter-spacing: -1.44px;
+}
+@media (max-width: 1599px) {
+  .hero1-content__title {
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -1.28px;
+  }
 }
 @media (max-width: 991px) {
   .hero1-content__title {
@@ -32178,33 +32185,35 @@ header {
     letter-spacing: -0.96px;
   }
 }
-@media (max-width: 767px) {
-  .hero1-content__title {
-    font-size: 45px;
-    line-height: 50px;
-  }
-}
-@media (max-width: 575px) {
-  .hero1-content__title {
-    font-size: 36px;
-    line-height: 50px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
+@media (max-width: 479px) {
   .hero1-content__title {
     font-size: 36px;
     line-height: 48px;
+    letter-spacing: -1.08px;
   }
 }
 .hero1-content__desc {
-  max-width: 370px;
+  max-width: 410px;
   color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.16px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+@media (max-width: 1599px) {
+  .hero1-content__desc {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+  }
+}
+@media (max-width: 479px) {
+  .hero1-content__desc {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
 }
 .hero1-content-cta {
   display: flex;
@@ -32266,11 +32275,26 @@ header {
 .hero1 .video_card h5 {
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: -0.28px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+}
+@media (max-width: 1599px) {
+  .hero1 .video_card h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+  }
+}
+@media (max-width: 991px) {
+  .hero1 .video_card h5 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.24px;
+  }
 }
 
 .rb_service1 .service_card {
@@ -32319,13 +32343,15 @@ header {
   letter-spacing: -0.56px;
   transition: all 0.4s ease;
 }
-@media (max-width: 768px) {
+@media (max-width: 479px) {
   .rb_service1 .service_card .content h3 {
     font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.48px;
   }
 }
 .rb_service1 .service_card .content p {
-  max-width: 300px;
+  max-width: 312px;
   color: #404A56;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -32404,11 +32430,18 @@ header {
 .rb_about1 .about_card .card_title {
   color: #404A56;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
-  letter-spacing: -0.14px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+@media (max-width: 1599px) {
+  .rb_about1 .about_card .card_title {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
 }
 .rb_about1 .about_card .card_numb {
   color: #002147;
@@ -32511,6 +32544,13 @@ header {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
+@media (max-width: 479px) {
+  .rb_program1 .custom-pills .nav-link {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
+}
 .rb_program1 .custom-pills .nav-link.active {
   border-radius: 28px;
   background: #FF1949;
@@ -32556,6 +32596,20 @@ header {
   top: 10px;
   border-radius: 8px;
   background: #fff;
+  color: #404A56;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+@media (max-width: 479px) {
+  .rb_program1 .program_card .thumb .postgraduate_btn {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.12px;
+  }
 }
 .rb_program1 .program_card .content h3 {
   color: #002147;
@@ -32566,9 +32620,11 @@ header {
   line-height: 40px;
   letter-spacing: -0.56px;
 }
-@media (max-width: 768px) {
+@media (max-width: 479px) {
   .rb_program1 .program_card .content h3 {
     font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.48px;
   }
 }
 .rb_program1 .program_card .content p {
@@ -32580,6 +32636,13 @@ header {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.16px;
+}
+@media (max-width: 479px) {
+  .rb_program1 .program_card .content p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
 }
 .rb_program1 .program_card:hover .thumb {
   border-radius: 12px;
@@ -32645,8 +32708,15 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.16px;
+}
+@media (max-width: 479px) {
+  .rb_notice_board1 .notice_card .content .profile {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
 }
 .rb_notice_board1 .notice_card .content .profile img {
   padding-right: 12px;
@@ -32660,9 +32730,11 @@ header {
   line-height: 40px;
   letter-spacing: -0.56px;
 }
-@media (max-width: 768px) {
+@media (max-width: 479px) {
   .rb_notice_board1 .notice_card .content h3 {
     font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.48px;
   }
 }
 .rb_notice_board1 .notice_card .content p {
@@ -32673,6 +32745,13 @@ header {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.16px;
+}
+@media (max-width: 479px) {
+  .rb_notice_board1 .notice_card .content p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
 }
 .rb_notice_board1 .notice_card:hover {
   border: 1px solid #FF1949;
@@ -32900,8 +32979,15 @@ header {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 177.778% */
+  line-height: 32px;
   letter-spacing: -0.18px;
+}
+@media (max-width: 479px) {
+  .rb_campus_life .campus_card p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+  }
 }
 @media (max-width: 1399px) {
   .rb_campus_life .campus_card {
@@ -33029,6 +33115,13 @@ header {
   font-weight: 500;
   line-height: 36px;
   letter-spacing: -0.48px;
+}
+@media (max-width: 479px) {
+  .rb_testimonial1 .testimonial_card .content h4 {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+  }
 }
 .rb_testimonial1 .testimonial_card .content p {
   color: #404A56;
