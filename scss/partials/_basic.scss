@@ -124,14 +124,12 @@
     .blog-btn-next,
     .blog-btn-prev{
         &:focus{
-            i{
-                color: $primary;
+            svg{
+                stroke: $primary;
             }
         }
-        i{
-            font-size: 32px;
-            font-weight: 600;
-            color: #636363;
+        svg{
+            stroke: #636363;
         }
     }
     .blog-fraction,

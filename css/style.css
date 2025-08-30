@@ -32015,27 +32015,25 @@ header {
     display: none;
   }
 }
-.slider-controller .tsm-btn-next:focus i,
-.slider-controller .tsm-btn-prev:focus i,
-.slider-controller .blog-btn-next:focus i,
-.slider-controller .blog-btn-prev:focus i,
-.blog-slider-controller .tsm-btn-next:focus i,
-.blog-slider-controller .tsm-btn-prev:focus i,
-.blog-slider-controller .blog-btn-next:focus i,
-.blog-slider-controller .blog-btn-prev:focus i {
-  color: #FF1949;
+.slider-controller .tsm-btn-next:focus svg,
+.slider-controller .tsm-btn-prev:focus svg,
+.slider-controller .blog-btn-next:focus svg,
+.slider-controller .blog-btn-prev:focus svg,
+.blog-slider-controller .tsm-btn-next:focus svg,
+.blog-slider-controller .tsm-btn-prev:focus svg,
+.blog-slider-controller .blog-btn-next:focus svg,
+.blog-slider-controller .blog-btn-prev:focus svg {
+  stroke: #FF1949;
 }
-.slider-controller .tsm-btn-next i,
-.slider-controller .tsm-btn-prev i,
-.slider-controller .blog-btn-next i,
-.slider-controller .blog-btn-prev i,
-.blog-slider-controller .tsm-btn-next i,
-.blog-slider-controller .tsm-btn-prev i,
-.blog-slider-controller .blog-btn-next i,
-.blog-slider-controller .blog-btn-prev i {
-  font-size: 32px;
-  font-weight: 600;
-  color: #636363;
+.slider-controller .tsm-btn-next svg,
+.slider-controller .tsm-btn-prev svg,
+.slider-controller .blog-btn-next svg,
+.slider-controller .blog-btn-prev svg,
+.blog-slider-controller .tsm-btn-next svg,
+.blog-slider-controller .tsm-btn-prev svg,
+.blog-slider-controller .blog-btn-next svg,
+.blog-slider-controller .blog-btn-prev svg {
+  stroke: #636363;
 }
 .slider-controller .blog-fraction,
 .slider-controller .fraction,
