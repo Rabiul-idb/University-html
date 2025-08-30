@@ -31729,7 +31729,7 @@ header {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
   letter-spacing: -0.28px;
   transition: all 0.3s;
 }
@@ -31751,13 +31751,6 @@ header {
 .btn_wrapper a.style_1 a:hover {
   background-color: #FF1949;
   color: #fff;
-}
-.btn_wrapper a.style_1 a:hover i {
-  transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
 }
 .btn_wrapper a.style_2 a {
   background-color: #fff;
@@ -32118,11 +32111,21 @@ header {
 
 .hero1 {
   position: relative;
-  padding: 325px 0 200px;
+  padding: 546px 0 164px;
+}
+@media (max-width: 1599px) {
+  .hero1 {
+    padding: 380px 0 115px;
+  }
+}
+@media (max-width: 991px) {
+  .hero1 {
+    padding: 270px 0 66px;
+  }
 }
 @media (max-width: 575px) {
   .hero1 {
-    padding: 110px 0 110px;
+    padding: 260px 0 52px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
@@ -32146,7 +32149,6 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 20px;
   background: linear-gradient(217deg, rgba(0, 33, 71, 0) 48.15%, #002147 73.02%);
   z-index: 1;
 }

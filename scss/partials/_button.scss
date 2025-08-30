@@ -12,7 +12,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 22px; /* 157.143% */
+        line-height: 22px; 
         letter-spacing: -0.28px;
         transition: all 0.3s;
         &:hover,
@@ -36,13 +36,6 @@
             &:hover {
                 background-color: $primary;
                 color: $white;
-                i {
-                    transform: rotate(0deg);
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    -ms-transform: rotate(0deg);
-                    -o-transform: rotate(0deg);
-                }
             }
         }
     }
@@ -60,7 +53,7 @@
         a {
             background-color: $white;
             color: $black2;
-            border: 1px solid #002147;
+            border: 1px solid $black2;
             &:hover {
                 background-color: $primary;
                 color: $white;
