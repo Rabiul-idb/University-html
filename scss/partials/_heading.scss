@@ -31,7 +31,7 @@
         border: 0.6px solid rgba(255, 255, 255, 0.20);
         color: $white;
     }
-    @include breakpoint (max-lg){
+    @include xxl{
         font-size: 14px;
         line-height: 22px; 
         letter-spacing: -0.14px;
@@ -54,16 +54,24 @@
         color: $white;
     }
 
-    @include breakpoint (max-lg){
+    @include xxl{
         font-size: 48px;
-        // line-height: 60px; 
+        line-height: 60px;
         letter-spacing: -0.96px;
     }
-    @include breakpoint (max-xsmall){
-        font-size: 28px;
-        // line-height: 52px;
-        letter-spacing: -0.8px;
+
+    @include lg{
+        font-size: 44px;
+        line-height: 52px;
     }
+    @include md{
+        font-size: 40px;
+    }
+    @include xs{
+        font-size: 34px;
+        line-height: 40px;
+    }
+   
     @include xxs{
         font-size: 28px;
         line-height: 40px;
@@ -79,6 +87,11 @@
     line-height: 32px; 
     letter-spacing: -0.16px;
     max-width: 560px;
+
+    @include xxl{
+        font-size: 16px;
+        line-height: 24px;
+    }
     @include breakpoint (max-xsmall){
         font-size: 14px;
         line-height: 22px; 
@@ -90,6 +103,9 @@
     }
 }
 .rb_heading_title{
+    @include md{
+        flex: 1;
+    }
 }
 
 .heading-btn-wrapper{
@@ -97,7 +113,41 @@
     gap: 12px;
     align-self: flex-end;
     margin-left: auto;
+    flex-shrink: 0;
+    @include xl{
+        flex-direction: column;
+    }
+
+    @include md{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: 0 0 100%;
+        margin-left: 12px;
+    }
+
+    @include sm{
+        flex: none;
+        margin-left: 0;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-top: 15px;
+    }
+
+    &.single-btn{
+        @include md{
+            justify-content: flex-start;
+            margin-left: 165px;
+        }
+
+        @include sm{
+            margin-left: 0;
+        }
+
+    }
+   
 }
+
 
 .rb_heading_area {
     display: flex;
@@ -112,10 +162,32 @@
         display: block;
         text-align: left;
     }
+
+    @include md{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    @include sm{
+        flex-direction: column;
+        row-gap: 2px;
+        margin-bottom: 30px;
+    }
+
+    &.for-blog{
+        @include md{
+            flex-direction: column;
+        }
+
+        .heading-btn-wrapper{
+            @include md{
+                flex: none;
+            }
+
+        }
+    }
 }
 // Heading Area End
-
-
 
 @media (min-width:1200px){
     .min_br{

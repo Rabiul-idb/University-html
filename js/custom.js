@@ -163,7 +163,7 @@
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1.75,
             spaceBetween: 20,
             centeredSlides: true,
           },
@@ -216,7 +216,7 @@
             spaceBetween: 20,
           },
           992: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           1200: {
             slidesPerView: 3,

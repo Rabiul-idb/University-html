@@ -55,10 +55,18 @@
                 line-height: 72px;
                 letter-spacing: -1.28px;
             }
+            @include lg{
+                font-size: 56px;
+                line-height: 64px;
+            }
             @include breakpoint (max-lg) {
                 font-size: 48px;
                 line-height: 56px; 
                 letter-spacing: -0.96px;
+            }
+            @include xs{
+                font-size: 40px;
+                line-height: 48px;
             }
             @include breakpoint (max-xxs) {
                 font-size: 36px;
@@ -94,7 +102,7 @@
                 align-items: self-start;
                 gap: 25px;
             }
-            @include xs{
+            @include sm{
                 gap: 12px;
                 margin-top: 7px;
             }
@@ -320,6 +328,12 @@
             font-weight: 400;
             line-height: 32px; /* 177.778% */
             letter-spacing: -0.18px;
+
+            @include lg{
+                max-width: 100%;
+            }
+
+            
         }
     }
     .about_thumb {
@@ -391,6 +405,7 @@
     // Horizontal buttons start
     .custom-pills {
         display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         gap: 2px;
         align-self: stretch;
@@ -407,7 +422,6 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        
         color: $white;
         text-align: center;
         font-family: $inter-font;
@@ -420,6 +434,15 @@
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        @include xxl{
+            padding: 15px 40px;
+        }
+        @include xl{
+            padding: 15px 28px;
+        }
+        @include lg{
+            padding: 15px 10px;
+        }
         @include breakpoint (max-xxs) {
             font-size: 14px;
             line-height: 22px; 
@@ -495,6 +518,16 @@
                 font-weight: 500;
                 line-height: 40px;
                 letter-spacing: -0.56px;
+
+                @include lg{
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+                @include md{
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+
                 @include breakpoint (max-xxs) {
                     font-size: 24px;
                     line-height: 36px; /* 150% */
@@ -858,6 +891,10 @@
             font-weight: 400;
             line-height: 32px; 
             letter-spacing: -0.18px;
+
+            @include lg{
+                max-width: 100%;
+            }
             @include breakpoint (max-xxs){
                 font-size: 16px;
                 line-height: 24px; 
@@ -997,6 +1034,11 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 32px; 
+
+                @include md{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
         .text_footer {
@@ -1027,6 +1069,10 @@
                 align-self: stretch;
                 border-radius: 12px;
                 background: #F7F7F7;
+
+                @include md{
+                    padding: 8px 10px ;
+                }
 
                 span{
                     color: $primary;

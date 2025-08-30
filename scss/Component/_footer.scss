@@ -36,8 +36,15 @@
     margin-bottom: 20px;
     text-transform: capitalize;
 
+    @include md{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
     @include sm{
         margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 32px;
     }
     @include xs{
         margin-bottom: 10px;

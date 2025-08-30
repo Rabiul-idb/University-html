@@ -31605,7 +31605,7 @@ header {
   border: 0.6px solid rgba(255, 255, 255, 0.2);
   color: #fff;
 }
-@media (max-width: 991px) {
+@media only screen and (max-width: 1599px) {
   .rb_subtitle {
     font-size: 14px;
     line-height: 22px;
@@ -31631,16 +31631,28 @@ header {
 .rb_title.style_1 {
   color: #fff;
 }
-@media (max-width: 991px) {
+@media only screen and (max-width: 1599px) {
   .rb_title {
     font-size: 48px;
+    line-height: 60px;
     letter-spacing: -0.96px;
   }
 }
-@media (max-width: 449px) {
+@media only screen and (max-width: 1199px) {
   .rb_title {
-    font-size: 28px;
-    letter-spacing: -0.8px;
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_title {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_title {
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
@@ -31660,6 +31672,12 @@ header {
   letter-spacing: -0.16px;
   max-width: 560px;
 }
+@media only screen and (max-width: 1599px) {
+  .rb_desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 449px) {
   .rb_desc {
     font-size: 14px;
@@ -31671,11 +31689,52 @@ header {
   max-width: 640px;
 }
 
+@media only screen and (max-width: 991px) {
+  .rb_heading_title {
+    flex: 1;
+  }
+}
+
 .heading-btn-wrapper {
   display: inline-flex;
   gap: 12px;
   align-self: flex-end;
   margin-left: auto;
+  flex-shrink: 0;
+}
+@media only screen and (max-width: 1399px) {
+  .heading-btn-wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .heading-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 100%;
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .heading-btn-wrapper {
+    flex: none;
+    margin-left: 0;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .heading-btn-wrapper.single-btn {
+    justify-content: flex-start;
+    margin-left: 165px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .heading-btn-wrapper.single-btn {
+    margin-left: 0;
+  }
 }
 
 .rb_heading_area {
@@ -31690,6 +31749,29 @@ header {
 .rb_heading_area.style-3 {
   display: block;
   text-align: left;
+}
+@media only screen and (max-width: 991px) {
+  .rb_heading_area {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_heading_area {
+    flex-direction: column;
+    row-gap: 2px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_heading_area.for-blog {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_heading_area.for-blog .heading-btn-wrapper {
+    flex: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -31993,7 +32075,7 @@ header {
   flex-direction: row;
   align-items: center;
 }
-@media only screen and (min-width: 0px) and (max-width: 575px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .nav-pills .nav-item {
     justify-content: center;
   }
@@ -32211,11 +32293,23 @@ header {
     letter-spacing: -1.28px;
   }
 }
+@media only screen and (max-width: 1199px) {
+  .hero1-content__title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
 @media (max-width: 991px) {
   .hero1-content__title {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -0.96px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .hero1-content__title {
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 @media (max-width: 479px) {
@@ -32260,7 +32354,7 @@ header {
     gap: 25px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 575px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero1-content-cta {
     gap: 12px;
     margin-top: 7px;
@@ -32505,6 +32599,11 @@ header {
   line-height: 32px; /* 177.778% */
   letter-spacing: -0.18px;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_about1 .about_card .card_desc {
+    max-width: 100%;
+  }
+}
 .rb_about1 .about_thumb.style_1 img, .rb_about1 .about_thumb.style_3 img {
   width: 348px;
   height: 244px;
@@ -32550,6 +32649,7 @@ header {
 }
 .rb_program1 .custom-pills {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 2px;
   align-self: stretch;
@@ -32580,6 +32680,21 @@ header {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+@media only screen and (max-width: 1599px) {
+  .rb_program1 .custom-pills .nav-link {
+    padding: 15px 40px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .rb_program1 .custom-pills .nav-link {
+    padding: 15px 28px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rb_program1 .custom-pills .nav-link {
+    padding: 15px 10px;
+  }
 }
 @media (max-width: 479px) {
   .rb_program1 .custom-pills .nav-link {
@@ -32656,6 +32771,18 @@ header {
   font-weight: 500;
   line-height: 40px;
   letter-spacing: -0.56px;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_program1 .program_card .content h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_program1 .program_card .content h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 @media (max-width: 479px) {
   .rb_program1 .program_card .content h3 {
@@ -33025,6 +33152,11 @@ header {
   line-height: 32px;
   letter-spacing: -0.18px;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_campus_life .campus_card p {
+    max-width: 100%;
+  }
+}
 @media (max-width: 479px) {
   .rb_campus_life .campus_card p {
     font-size: 16px;
@@ -33173,6 +33305,12 @@ header {
   font-weight: 400;
   line-height: 32px;
 }
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .testimonial_card .content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .rb_testimonial1 .testimonial_card .text_footer {
   width: 100%;
 }
@@ -33202,6 +33340,11 @@ header {
   align-self: stretch;
   border-radius: 12px;
   background: #F7F7F7;
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .testimonial_card .text_footer .button_area {
+    padding: 8px 10px;
+  }
 }
 .rb_testimonial1 .testimonial_card .text_footer .button_area span {
   color: #FF1949;
@@ -33467,7 +33610,7 @@ header {
 @media only screen and (max-width: 1599px) {
   .cta-content-wrapper .cta-content p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
@@ -33531,9 +33674,17 @@ header {
   margin-bottom: 20px;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 991px) {
+  .link-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .link-title {
     margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {

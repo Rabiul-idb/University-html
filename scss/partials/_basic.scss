@@ -206,7 +206,7 @@
     flex-direction: row;
     align-items: center;
 
-    @include xs{
+    @include sm{
         justify-content: center;
     }
   }
