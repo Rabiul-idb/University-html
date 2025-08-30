@@ -14,13 +14,13 @@
         font-weight: 500;
         line-height: 22px; 
         letter-spacing: -0.28px;
-        transition: all 0.3s;
+        transition: all 0.4s;
         &:hover,
         &.active {
             background-color: $primary;
             color: $white;
             border-color: $primary;
-        
+        }
         &.active:hover {
             background-color: $white;
             color: $black2;
@@ -28,17 +28,23 @@
         }
 
     }
-    &.style_1 {
-        a {
-            background-color: $black2;
+
+    &.style_1{
+        a{
+            background-color: $black2 ;
             color: $white;
-            @include transition(0.4s);
-            &:hover {
-                background-color: $primary;
-                color: $white;
+            transition: all 0.4s;
+
+            &:hover{
+                border-color: $black2;
+                color: $black2;
+                background-color: $white;
             }
         }
     }
+    
+        
+    
     &.style_2 {
         a {
             background-color: $white;
@@ -51,6 +57,8 @@
     }
     &.style_3 {
         a {
+            font-size: 16px;
+            line-height: 24px;
             background-color: $white;
             color: $black2;
             border: 1px solid $black2;
@@ -60,17 +68,31 @@
             }
         }
     }
+
+    
     &.style_4 {
         a {
-            background-color: $white;
-            color: $black2;
-            border-radius: 24px;
-            border: 1px solid #E5E9ED;
+            font-size: 16px;
+            line-height: 24px;
+            background-color: $primary;
+            color: $white;
+            border-color: $primary;
             &:hover {
-                background-color: $primary;
-                color: $white;
+                background-color: $white;
+                color: $black2;
+                border-color: $black2;
             }
         }
     }
-}
+    &.style_5 {
+        a {
+            background-color: $white;
+            color: $black2;
+            &:hover {
+                background-color: $black2;
+                color: $white;
+                border-color: $black2;
+            }
+        }
+    }
 }

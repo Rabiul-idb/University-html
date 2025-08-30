@@ -29,7 +29,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(217deg, rgba(0, 33, 71, 0.00) 48.15%, #002147 73.02%);
+           
             z-index: 1;
         }
     }    
@@ -384,6 +384,10 @@
 .rb_program1 {
     border-radius: 20px;
     background: $black2;
+
+    .nav-pills-container{
+        margin-bottom: 25px;
+    }
     // Horizontal buttons start
     .custom-pills {
         display: flex;
@@ -593,18 +597,26 @@
                 }
             }
             h3 {
-                color: $black2;
-                font-family: $geist-font;
                 font-size: 28px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 40px;
                 letter-spacing: -0.56px;
+
+                a{
+                    color: $black2;
+                    transition: all 0.4s;
+
+                    &:hover{
+                        color: $primary;
+                    }
+                }
                 @include breakpoint (max-xxs){
                     font-size: 24px;
                     line-height: 36px; 
                     letter-spacing: -0.48px;
                 }
+
             }
             p {
                 color: $text_color;
@@ -627,8 +639,13 @@
             @include transition(0.4s);
             .btn_wrapper.style_1 {
                 a {
+                    border-color: transparent;
                     background: $primary;
                     @include transition(0.4s);
+
+                    &:hover{
+                        color: $white;
+                    }
                 }
             }
         }
@@ -816,9 +833,7 @@
 
 
 .rb_campus_life {
-    .rb_heading_area {
-        max-width: 476px;
-    }
+    
     .campus_thumb {
         img {
             width: 100%;
@@ -869,7 +884,7 @@
         padding: 32px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 15px;
         flex: 1 0 0;
         border-radius: 20px;
         background: $white;
@@ -1012,6 +1027,12 @@
                 align-self: stretch;
                 border-radius: 12px;
                 background: #F7F7F7;
+
+                span{
+                    color: $primary;
+                    font-size: 20px;
+                    line-height: 32px;
+                }
             }
         }
 
@@ -1022,6 +1043,7 @@
         }
     }
 }
+
 
 .rb_blog1 {
     border-radius: 20px;
@@ -1069,20 +1091,27 @@
         }
         .content {
             h4 {
-                max-width: 330px;
-                color: $black2;
                 font-family: $geist-font;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 36px; 
                 letter-spacing: -0.48px;
+
+                a{
+                    color: $black2;
+                    transition: all 0.4s;
+
+                    &:hover{
+                        color: $primary;
+                    }
+                }
             }
             .meta {
                 color: $text_color;
                 font-size: 16px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: 24px; 
                 letter-spacing: -0.16px;
             }
@@ -1099,15 +1128,7 @@
             border-radius: 20px;
             border: 1px solid $primary;
             box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
-            @include transition(0.4s);
-            .btn_wrapper {
-                &.style_4 {
-                    a {
-                        background: $black2;
-                        color: $white;
-                    }
-                }
-            } 
+             
         }
     }
 }
