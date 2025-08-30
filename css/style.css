@@ -31661,6 +31661,14 @@ header {
     line-height: 40px;
   }
 }
+.rb_title .xxs-br {
+  display: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_title .xxs-br {
+    display: block;
+  }
+}
 
 .rb_desc {
   color: #404A56;
@@ -31864,6 +31872,12 @@ header {
   background-color: #FF1949;
   color: #fff;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .btn_wrapper.style_3 a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .btn_wrapper.style_4 a {
   font-size: 16px;
   line-height: 24px;
@@ -31875,6 +31889,12 @@ header {
   background-color: #fff;
   color: #002147;
   border-color: #002147;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .btn_wrapper.style_4 a {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 .btn_wrapper.style_5 a {
   background-color: #fff;
@@ -32111,18 +32131,40 @@ header {
 
 .rb_faq_section .accordion {
   width: 100%;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_faq_section .accordion {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .accordion {
+    margin-top: 20px;
+  }
 }
 .rb_faq_section .accordion .accordion-item {
   border-radius: 12px;
   background: #F7F7F7;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   overflow: hidden;
+  padding: 28px 30px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 1599px) {
   .rb_faq_section .accordion .accordion-item {
     margin-bottom: 8px;
+    padding: 20px 24px;
   }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .accordion .accordion-item {
+    padding: 13px 16px;
+    margin-bottom: 12px;
+  }
+}
+.rb_faq_section .accordion .accordion-item:last-child {
+  margin-bottom: 0;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header {
   border-radius: 12px;
@@ -32144,14 +32186,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 24px;
+  padding: 0;
   cursor: pointer;
   transition: background 0.3s ease;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .rb_faq_section .accordion .accordion-header {
-    padding: 4px 15px;
-  }
 }
 .rb_faq_section .accordion .accordion-header h4 {
   color: #002147;
@@ -32162,15 +32199,30 @@ header {
   line-height: 36px; /* 150% */
   letter-spacing: -0.48px;
 }
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1599px) {
   .rb_faq_section .accordion .accordion-header h4 {
-    font-size: 20px !important;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 @media (max-width: 449px) {
   .rb_faq_section .accordion .accordion-header h4 {
     font-size: 16px !important;
     line-height: 24px;
+  }
+}
+.rb_faq_section .accordion .accordion-header h4 span {
+  margin-right: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_faq_section .accordion .accordion-header h4 span {
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .accordion .accordion-header h4 span {
+    display: block;
+    margin-bottom: 5px;
   }
 }
 .rb_faq_section .accordion .accordion-header:hover {
@@ -32181,6 +32233,7 @@ header {
   height: 40px;
   line-height: 40px;
   text-align: center;
+  align-self: flex-start;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -32209,7 +32262,7 @@ header {
   transition: height 0.5s ease-out, padding 0.5s ease-out;
 }
 .rb_faq_section .accordion .accordion-content p {
-  padding: 21px 24px 40px 24px;
+  padding: 8px 110px 0 63px;
   margin: 0;
   color: #404A56;
   font-size: 18px;
@@ -32218,10 +32271,32 @@ header {
   line-height: 32px; /* 177.778% */
   letter-spacing: -0.18px;
 }
+@media only screen and (max-width: 1599px) {
+  .rb_faq_section .accordion .accordion-content p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 110px 0 54px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .rb_faq_section .accordion .accordion-content p {
+    padding: 8px 70px 0 54px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_faq_section .accordion .accordion-content p {
+    padding: 8px 30px 0 48px;
+  }
+}
 @media (max-width: 449px) {
   .rb_faq_section .accordion .accordion-content p {
     font-size: 14px !important;
     line-height: 22px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .accordion .accordion-content p {
+    padding: 5px 12px 0 0;
   }
 }
 
@@ -33205,6 +33280,12 @@ header {
   line-height: 40px;
   letter-spacing: -0.56px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_future1 .future_card .content h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
 .rb_future1 .future_card .content .content_box {
   display: flex;
   padding: 20px;
@@ -33223,6 +33304,12 @@ header {
   line-height: 32px; /* 177.778% */
   letter-spacing: -0.18px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_future1 .future_card .content .content_box .desc_one {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .rb_future1 .future_card .content .content_box .desc_two {
   max-width: 486px;
   color: #404A56;
@@ -33232,6 +33319,12 @@ header {
   font-weight: 400;
   line-height: 22px; /* 157.143% */
   letter-spacing: -0.14px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_future1 .future_card .content .content_box .desc_two {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 .rb_future1 .future_card .content .content_box .hr_line_one {
   border-bottom: 1px solid #E5E9ED;
@@ -33322,6 +33415,11 @@ header {
   font-weight: 500;
   line-height: 32px; /* 160% */
   letter-spacing: -0.2px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_testimonial1 .testimonial_card .text_footer h5 {
+    font-size: 18px;
+  }
 }
 .rb_testimonial1 .testimonial_card .text_footer h5 span {
   color: #404A56;
@@ -33435,26 +33533,29 @@ header {
   font-weight: 400;
   line-height: 32px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_blog1 .blog_card .content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .rb_blog1 .blog_card:hover {
   border-radius: 20px;
   border: 1px solid #FF1949;
   box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
 }
 
-.rb_faq_section .rb_heading_area {
-  margin-bottom: 30px;
-}
-@media (max-width: 1199px) {
-  .rb_faq_section .rb_heading_area {
-    margin-bottom: 0;
-  }
-}
 .rb_faq_section .faq_thumb {
   position: relative;
 }
 @media (max-width: 1199px) {
   .rb_faq_section .faq_thumb {
     display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .faq_thumb {
+    display: block;
   }
 }
 .rb_faq_section .faq_thumb .faq_icon {
@@ -33470,6 +33571,23 @@ header {
   border-radius: 168px;
   background: #FF1949;
   box-shadow: 0 12px 25px 0 rgba(0, 33, 71, 0.15);
+}
+@media only screen and (max-width: 1599px) {
+  .rb_faq_section .faq_thumb .faq_icon {
+    right: 80px;
+    top: 80px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .rb_faq_section .faq_thumb .faq_icon {
+    max-width: 80px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .faq_thumb .faq_icon {
+    top: 60px;
+    right: 30px;
+  }
 }
 
 .cta-sec {

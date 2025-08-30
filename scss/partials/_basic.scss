@@ -250,14 +250,34 @@
 .rb_faq_section {
     .accordion {
         width: 100%;
+        margin-top: 50px;
+
+        @include lg{
+            margin-top: 0;
+        }
+        @include xxs{
+            margin-top: 20px;
+        }
+
         .accordion-item {
             border-radius: 12px;
-            background: $bg_color;
+            background: $bg_color; 
             border: none;
-            margin-bottom: 30px;
+            margin-bottom: 12px;
             overflow: hidden; 
-            @include sm{
+            padding: 28px 30px;
+
+            @include xxl{
                 margin-bottom: 8px;
+                padding: 20px 24px;
+            }
+
+            @include xxs{
+                padding: 13px 16px;
+                margin-bottom: 12px;
+            }
+            &:last-child{
+                margin-bottom: 0;
             }
             &.active {
                 .accordion-header {
@@ -281,10 +301,8 @@
 
         .accordion-header {
             @include flex(row, space-between, center);
-            padding: 15px 24px;
-            @include sm{
-                padding: 4px 15px;
-            }
+            padding: 0;
+        
             cursor: pointer;
                 transition: background 0.3s ease;
             h4 {
@@ -295,12 +313,26 @@
                 font-weight: 500;
                 line-height: 36px; /* 150% */
                 letter-spacing: -0.48px;
-                @include breakpoint (max-xl){
-                    font-size: 20px !important;
+                @include xxl{
+                    font-size: 20px;
+                    line-height: 32px;
                 }
                 @include breakpoint (max-xsmall){
                     font-size: 16px !important;
                     line-height: 24px;
+                }
+
+                span{
+                    margin-right: 16px;
+
+                    @include sm{
+                        margin-right: 10px;
+                    }
+
+                    @include xxs{
+                        display: block;
+                        margin-bottom: 5px;
+                    }
                 }
             }
 
@@ -313,6 +345,7 @@
                 height: 40px;
                 line-height: 40px;
                 text-align: center;
+                align-self: flex-start;
                 @include border-radius(50%);
                 transition: transform 0.3s ease;
                 border-radius: 24px;
@@ -328,6 +361,10 @@
                     min-width: 28px;
                     min-height: 28px;
                 }
+
+                
+                    
+                
             }
         }
 
@@ -336,7 +373,7 @@
             overflow: hidden;
             transition: height 0.5s ease-out, padding 0.5s ease-out;
             p {
-                padding: 21px 24px 40px 24px;
+                padding: 8px 110px 0 63px;
                 margin: 0; 
                 color: #404A56;
                 font-size: 18px;
@@ -344,9 +381,25 @@
                 font-weight: 400;
                 line-height: 32px; /* 177.778% */
                 letter-spacing: -0.18px;
+
+                @include xxl{
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 8px 110px 0 54px;
+                }
+                @include xl{
+                    padding: 8px 70px 0 54px;
+                }
+                @include sm{
+                    padding: 8px 30px 0 48px;
+                }
+
                 @include breakpoint (max-xsmall){
                     font-size: 14px !important;
                     line-height: 22px;
+                }
+                @include xxs{
+                    padding: 5px 12px 0 0;
                 }
             }
         }

@@ -76,6 +76,14 @@
         font-size: 28px;
         line-height: 40px;
     }
+
+    .xxs-br{
+        display: none;
+
+        @include xxs{
+            display: block;
+        }
+    }
 }
 
 .rb_desc {

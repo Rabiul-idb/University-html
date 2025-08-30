@@ -68,6 +68,11 @@
                 background-color: $primary;
                 color: $white;
             }
+
+            @include xxs{
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
     }
 
@@ -83,6 +88,11 @@
                 background-color: $white;
                 color: $black2;
                 border-color: $black2;
+            }
+
+            @include xxs{
+                font-size: 14px;
+                line-height: 22px;
             }
         }
     }
