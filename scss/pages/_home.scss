@@ -1029,6 +1029,15 @@
                 .hr_line {
                     border-bottom: 1px solid #E5E9ED;
                 }
+                &.style_1 {
+                    gap: 20px;
+                    @include breakpoint (max-xl){
+                        gap: 15px;
+                    }
+                }
+                &.style_2 {
+                    gap: 15px;
+                }
             }
         }
     }

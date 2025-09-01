@@ -19,6 +19,7 @@
         @include breakpoint (max-xxs){
             border-radius: 12px;
             padding: 32px 24px;
+            gap: 0;
         }
         p {
             max-width: 1204px;
@@ -55,7 +56,7 @@
             height: 320px;
             padding: 24px;
         }
-        .content {
+        .rb_content {
             h4 {
                 color: #0D2C50;
                 font-family: $geist-font;
