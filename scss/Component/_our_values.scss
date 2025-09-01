@@ -2,6 +2,24 @@
     border-radius: 20px 20px 0 0;
     padding: 132px 0px;
     background: $black2;
+    @include sm{
+        padding: 40px 0px;
+    }
+    .row{
+        &.style_1{
+            .col-lg-3{
+                @include nesthub{
+                    width: 50%;
+                }
+                @include md{
+                    width: 50%;
+                }
+                @include sm{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 .mb_our_value_card{
     border-radius: 12px;
@@ -10,6 +28,17 @@
     @include flex(column, space-between, flex-start);
     background: #0d2c50;
     height: 440px;
+    margin-bottom: 20px;
+    @include xl{
+        height: 384px;
+    }
+    @include nesthub{
+        border-radius: 12px;
+        padding: 32px;
+        height: 384px;
+
+
+    }
     h4{
         font-weight: 500;
         font-size: 24px;

@@ -29302,6 +29302,18 @@ header {
   border-radius: 20px 20px 0 0;
   padding: 132px 0px;
   background: #002147; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_our_values_area {
+      padding: 40px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .mb_our_values_area .row.style_1 .col-lg-3 {
+      width: 50%; } }
+  @media only screen and (max-width: 991px) {
+    .mb_our_values_area .row.style_1 .col-lg-3 {
+      width: 50%; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_our_values_area .row.style_1 .col-lg-3 {
+      width: 100%; } }
 
 .mb_our_value_card {
   border-radius: 12px;
@@ -29312,7 +29324,16 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   background: #0d2c50;
-  height: 440px; }
+  height: 440px;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 1399px) {
+    .mb_our_value_card {
+      height: 384px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .mb_our_value_card {
+      border-radius: 12px;
+      padding: 32px;
+      height: 384px; } }
   .mb_our_value_card h4 {
     font-weight: 500;
     font-size: 24px;
