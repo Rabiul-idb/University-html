@@ -31927,19 +31927,6 @@ header {
   }
 }
 
-.rb_list ul li {
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: rgba(37, 37, 37, 0.9);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-
 .slider_arrow_icon {
   display: flex;
   justify-content: center;
@@ -33859,6 +33846,78 @@ header {
     line-height: 22px;
     letter-spacing: -0.28px;
   }
+}
+
+.rb_what_learn .rb_card .thumb {
+  width: 100%;
+}
+.rb_what_learn .rb_card .item {
+  display: flex;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 60px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 1px solid rgba(22, 60, 61, 0.14);
+  background: #F5F5F5;
+  transition: all 0.4s ease;
+}
+@media (max-width: 479px) {
+  .rb_what_learn .rb_card .item {
+    padding: 20px;
+    gap: 40px;
+  }
+}
+@media (max-width: 374px) {
+  .rb_what_learn .rb_card .item {
+    gap: 34px;
+  }
+}
+.rb_what_learn .rb_card .item .title {
+  color: #002147;
+  font-family: Geist;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.56px;
+  transition: all 0.4s ease;
+}
+@media (max-width: 479px) {
+  .rb_what_learn .rb_card .item .title {
+    font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.48px;
+  }
+}
+.rb_what_learn .rb_card .item .rb_list ul {
+  list-style-type: disc;
+}
+.rb_what_learn .rb_card .item .rb_list ul li {
+  margin-bottom: 5px;
+  color: #404A56;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.16px;
+}
+@media (max-width: 479px) {
+  .rb_what_learn .rb_card .item .rb_list ul li {
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: -0.28px;
+  }
+}
+.rb_what_learn .rb_card .item:hover {
+  background: #FFF;
+  box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+  transition: all 0.4s ease;
+}
+.rb_what_learn .rb_card .item:hover .title {
+  color: #FF1949;
+  transition: all 0.4s ease;
 }
 
 .ae-footer {
