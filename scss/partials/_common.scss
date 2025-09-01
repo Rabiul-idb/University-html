@@ -40,3 +40,27 @@ img {
     max-width: 100%;
     height: auto;
 }
+@include sm{
+    .mb_sm_none{
+        display: none;
+    }
+}
+@include md{
+    .mb_md_none{
+        display: none;
+    }
+}
+@include nesthub{
+    .mb_nest_none{
+        display: none;
+    }
+}
+.mb_our_achievements_area{
+    .row{
+        &.style_01{
+            @include sm{
+                margin-top: 5px !important;
+            }
+        }
+    }
+}

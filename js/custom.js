@@ -299,7 +299,23 @@
         $(".back_top").on("click", function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
         });
+        
+        function ourHistory(){
+            const timelineTitles = document.querySelectorAll('.timeline-title');
+            const sliderItems = document.querySelectorAll('.slider-item');
 
+            timelineTitles.forEach(title => {
+                title.addEventListener('click', function () {
+                    timelineTitles.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    const year = this.getAttribute('data-year');
+                    sliderItems.forEach(item => item.classList.remove('active'));
+                    document.querySelector(`.slider-item[data-year="${year}"]`).classList.add('active');
+                });
+            });
+        }
+        ourHistory()
+        
         //  Magnific Popup Configuration
         $('.playBtn').magnificPopup({
             type: 'iframe',

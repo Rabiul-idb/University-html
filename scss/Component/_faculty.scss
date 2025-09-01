@@ -1,0 +1,111 @@
+.faculty_bg_area{
+    background-color: $black2;
+}
+.mb_faculty_area{
+    padding: 132px 0px;
+    border-radius: 20px 20px 0 0;
+    background-color: $bg_color;
+    @include nesthubmax{
+        padding: 90px 0px;
+    }
+    @include nesthub{
+        padding: 60px 0px;
+    }
+    @include md{
+        padding: 58px 0px;
+    }
+    .mb_faculty_card_wrapper{
+        .row{
+            &.style_1{
+                @include nesthub{
+                    .col-lg-4{
+                    width: 50%;
+                }
+                }
+                @include md{
+                    .col-lg-4{
+                    width: 50%;
+                    margin-bottom: 14px;
+
+                    
+                }
+                }
+                @include sm{
+                    .col-lg-4{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.mb_faculty_card{
+    border: 1px solid #e5e9ed;
+    border-radius: 20px;
+    padding: 24px;
+    @include md{
+        padding: 16px;
+    }
+    width: 100%;
+    box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+    background: $white;
+    .mb_faculty_img{
+        border-radius: 12px;
+        width: 100%;
+        height: 380px;
+
+        @include lg{
+            width: 355px;
+            height: 364px;
+        }
+        @include nesthubmax{
+            width: 100%;
+            // height: 250px;
+            img{
+                object-fit: contain;
+            }
+        }
+        @include nesthub{
+            width: 100%;
+            height: 365px;
+        }
+        @include md{
+            width: 100%;
+            height: 320px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-radius(12px);
+        }
+    }
+    h4{
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: -0.02em;
+        color: $black2;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 6px;
+        letter-spacing: -0.01em;
+        color: $text_color;
+    }
+    .mb_social_area{
+        margin-top: 20px;
+        border-radius: 12px;
+        padding: 14px 20px;
+        width: 100%;
+        background-color: $bg_color;
+        @include flex(row, space-between, center);
+        h5{
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            color: $black2;
+        }
+    }
+}

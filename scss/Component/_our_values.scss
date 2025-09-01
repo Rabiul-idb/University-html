@@ -1,0 +1,26 @@
+.mb_our_values_area{
+    border-radius: 20px 20px 0 0;
+    padding: 132px 0px;
+    background: $black2;
+}
+.mb_our_value_card{
+    border-radius: 12px;
+    padding: 36px;
+    width: 100%;
+    @include flex(column, space-between, flex-start);
+    background: #0d2c50;
+    height: 440px;
+    h4{
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: -0.02em;
+        color: #f7f7f7;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: #f7f7f7;
+        margin-top: 15px;
+    }
+}

@@ -49,7 +49,9 @@
     font-style: normal;
     font-weight: 500;
     letter-spacing: -1.12px;
-    
+    span{
+        color: $primary;
+    }
     &.style_1 {
         color: $white;
     }

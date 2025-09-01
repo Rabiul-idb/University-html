@@ -1,0 +1,71 @@
+.mb_hero_card_area{
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 12px 12px 0 rgba(28, 28, 28, 0.24);
+    background: $white;
+    padding: 48px 56px;
+    @include border-radius(12px);
+    @include md{
+        padding:23px 31px 31px 31px;
+    }
+    @include sm{
+        display: none;
+    }
+    .mb_hero_card{
+        h4{
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            color: $black2;
+        }
+        .mb_hero_card_item{
+            ul{
+                margin-top: 21px;
+                @include flex(column, flex-start, flex-start);
+                gap: 11px;
+                li{
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: -0.01em;
+                    color: $text_color;
+                }
+            }
+        }
+    }
+    .mb_hero_about_us{
+        background-color: #f7f7f7;
+        max-width: 292px;
+        padding: 36px 40px;
+        @include border-radius(8px);
+
+
+    }
+    .mb_btn_wrapper{
+        @include flex(column, center, center);
+        gap: 8px;
+        a{
+            border: 1px solid #e8e7ec;
+            border-radius: 100px;
+            padding: 10px;
+            min-width: 212px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            color: $text_color;
+            @include transition(0.4s);
+            background-color: $white;
+            &.active{
+                background-color: $primary;
+                color: $white;
+            }
+            span{
+                margin-right: 12px;
+            }
+            &:hover{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
