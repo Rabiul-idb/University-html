@@ -22,8 +22,8 @@
             }
 
             .title {
-                color: #002147;
-                font-family: Geist;
+                color: $black2;
+                font-family: $geist-font;
                 font-size: 28px;
                 font-style: normal;
                 font-weight: 500;
@@ -42,7 +42,6 @@
                     li {
                         margin-bottom: 5px;
                         color: #404A56;
-                        font-family: Inter;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -62,7 +61,7 @@
                 @include transition(0.4s);
 
                 .title {
-                    color: #FF1949;
+                    color: $primary;
                     @include transition(0.4s);
                 }
             }
