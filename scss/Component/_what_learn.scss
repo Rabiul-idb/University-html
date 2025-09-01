@@ -1,0 +1,70 @@
+.rb_what_learn {
+    .rb_card {
+        .thumb {
+            width: 100%;
+        }
+        .item {
+           display: flex;
+            padding: 24px;
+            align-items: flex-start;
+            gap: 60px;
+            align-self: stretch;
+            border-radius: 16px;
+            border: 1px solid rgba(22, 60, 61, 0.14);
+            background: #F5F5F5; 
+            @include transition(0.4s);
+            @include breakpoint (max-xxs){
+                padding: 20px;
+                gap: 40px;
+            }
+            @include breakpoint (max-xxsmall){
+                gap: 34px;
+            }
+
+            .title {
+                color: $black2;
+                font-family: $geist-font;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: -0.56px;
+                @include transition(0.4s);
+                @include breakpoint (max-xxs){
+                    font-size: 24px;
+                    line-height: 36px; /* 150% */
+                    letter-spacing: -0.48px;
+                }
+            }
+            .rb_list {
+                ul {
+                    list-style-type: disc;
+                    li {
+                        margin-bottom: 5px;
+                        color: #404A56;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; /* 162.5% */
+                        letter-spacing: -0.16px;
+                        @include breakpoint (max-xxs){
+                            font-size: 14px;
+                            line-height: 22px; /* 157.143% */
+                            letter-spacing: -0.28px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                background: #FFF;
+                box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+                @include transition(0.4s);
+
+                .title {
+                    color: $primary;
+                    @include transition(0.4s);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.rb_why_choose_us {
+    border-radius: 20px;
+    background: $bg_color;
+    .rb_why_choose_box {
+        display: flex;
+        flex-direction: column;
+        padding: 68px 48px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid #E5E9ED;
+        background: $white;
+        box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.05);
+        @include breakpoint (max-xxxl){
+            padding: 48px;
+        }
+        @include breakpoint (max-xxs){
+            border-radius: 12px;
+            padding: 32px 24px;
+        }
+        p {
+            max-width: 1204px;
+            color: $black2;
+            text-align: center;
+            font-family: $geist-font;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 150% */
+            letter-spacing: -0.48px;
+            @include breakpoint (max-xxs){
+                font-size: 20px;
+                line-height: 32px; /* 160% */
+                letter-spacing: -0.4px;
+            }
+            span {
+                color: $primary;
+            }
+        }
+    }
+    .wcu_card {
+        display: flex;
+        height: 384px;
+        padding: 32px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1 0 0;
+        border-radius: 12px;
+        border: 1px solid #E5E9ED;
+        background: $white;
+        @include breakpoint (max-xxs){
+            height: 320px;
+            padding: 24px;
+        }
+        .content {
+            h4 {
+                color: #0D2C50;
+                font-family: $geist-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 36px; /* 150% */
+                letter-spacing: -0.48px;
+                @include breakpoint (max-xxs){
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 32px; 
+                    letter-spacing: -0.4px;
+                }
+            }
+            p {
+                color: $text_color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+                letter-spacing: -0.16px;
+                @include breakpoint (max-xxs){
+                    font-size: 14px;
+                    line-height: 22px; 
+                    letter-spacing: -0.28px;
+                }
+            }
+        }
+    }
+}
