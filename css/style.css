@@ -32257,6 +32257,9 @@ header {
   overflow: hidden;
   padding: 28px 30px;
 }
+.rb_faq_section .accordion .accordion-item.style_1 {
+  background: #fff;
+}
 @media only screen and (max-width: 1599px) {
   .rb_faq_section .accordion .accordion-item {
     margin-bottom: 8px;
@@ -32275,6 +32278,9 @@ header {
 .rb_faq_section .accordion .accordion-item.active .accordion-header {
   border-radius: 12px;
   background: #F7F7F7;
+}
+.rb_faq_section .accordion .accordion-item.active .accordion-header.style_1 {
+  background: #fff;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header h4 {
   color: #002147;
@@ -32516,6 +32522,9 @@ header {
 .hero1-content__title.style_2 {
   max-width: 747px;
 }
+.hero1-content__title.style_3 {
+  max-width: 763px;
+}
 .hero1-content__desc {
   max-width: 410px;
   color: #fff;
@@ -32530,6 +32539,9 @@ header {
 }
 .hero1-content__desc.style_02 {
   max-width: 484px;
+}
+.hero1-content__desc.style_03 {
+  max-width: 379px;
 }
 @media (max-width: 1599px) {
   .hero1-content__desc {
@@ -32947,6 +32959,9 @@ header {
   border-radius: 20px;
   background: #002147;
 }
+.rb_program1.style_1 {
+  background: #F7F7F7;
+}
 .rb_program1 .nav-pills-container {
   margin-bottom: 25px;
 }
@@ -32958,6 +32973,10 @@ header {
   align-self: stretch;
   border-radius: 28px;
   background: #1A3759;
+}
+.rb_program1 .custom-pills.style_1 {
+  border: 1px solid #E5E9ED;
+  background: #FFF;
 }
 @media (max-width: 767px) {
   .rb_program1 .custom-pills {
@@ -32983,6 +33002,9 @@ header {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+.rb_program1 .custom-pills .nav-link.style_1 {
+  color: #002147;
 }
 @media only screen and (max-width: 1599px) {
   .rb_program1 .custom-pills .nav-link {
@@ -33030,6 +33052,10 @@ header {
   flex-shrink: 0;
   border-radius: 16px;
   background: #F5F5F5;
+}
+.rb_program1 .program_card.style_1 {
+  border: 1px solid #E5E9ED;
+  background: #FFF;
 }
 .rb_program1 .program_card .thumb {
   position: relative;
@@ -33802,6 +33828,10 @@ header {
   box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
 }
 
+.rb_faq_section.style_1 {
+  border-radius: 20px;
+  background: #F7F7F7;
+}
 .rb_faq_section .faq_thumb {
   position: relative;
 }

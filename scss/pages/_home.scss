@@ -89,6 +89,9 @@
             &.style_2 {
                 max-width: 747px;
             }
+            &.style_3 {
+                max-width: 763px;
+            }
         } 
         &__desc {
             max-width: 410px;
@@ -97,6 +100,9 @@
             }
             &.style_02{
                 max-width: 484px;
+            }
+            &.style_03{
+                max-width: 379px;
             }
             color: $white;
             font-size: 18px;
@@ -505,6 +511,9 @@
 .rb_program1 {
     border-radius: 20px;
     background: $black2;
+    &.style_1 {
+        background: #F7F7F7;
+    }
 
     .nav-pills-container{
         margin-bottom: 25px;
@@ -518,6 +527,10 @@
         align-self: stretch;
         border-radius: 28px;
         background: #1A3759;
+        &.style_1 {
+            border: 1px solid #E5E9ED;
+            background: #FFF;
+        }
         @include breakpoint (max-md){
             flex-direction: column;
         }
@@ -541,6 +554,9 @@
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        &.style_1 {
+            color: $black2;
+        }
         @include xxl{
             padding: 15px 40px;
         }
@@ -581,6 +597,10 @@
         flex-shrink: 0;
         border-radius: 16px;
         background: #F5F5F5;
+        &.style_1 {
+            border: 1px solid #E5E9ED;
+            background: #FFF;
+        }
         .thumb {
             position: relative;
             width: 100%;
@@ -1344,7 +1364,10 @@
 }
 
 .rb_faq_section {
-    
+    &.style_1 {
+        border-radius: 20px;
+        background: $bg_color;
+    }
     .faq_thumb {
         position: relative;
         @include breakpoint (max-xl){
