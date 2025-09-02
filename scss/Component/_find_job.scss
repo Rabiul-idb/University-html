@@ -1,0 +1,98 @@
+.mb_find_job_area{
+    background-color: $bg_color;
+    @include md{
+        padding: 64px 0px 64px 0px !important;
+    }
+    @include sm{
+        padding: 48px 0px 48px 0px !important;
+    }
+}
+.mb_find_job_card_wrapper{
+    margin-top: 47px;
+    @include sm{
+        margin-top: 26px;
+    }
+}
+.mb_find_job_card{
+    border: 1px solid #e5e9ed;
+    border-radius: 16px;
+    padding: 44px 36px;
+    width: 100%;
+    // height: 296px;
+    @include transition(0.4s);
+    @include nesthub{
+        padding: 40px 20px 40px 20px;
+    }
+    @include md{
+        padding: 40px 32px;
+    }
+    @include sm{
+        padding: 24px 20px;
+    }
+    background: $white;
+    &:hover{
+        border-color: $primary;
+        box-shadow: 20px 35px 48px 0 rgba(0, 33, 71, 0.15);
+    }
+    .mb_job_subtitle{
+        span{
+            border: 1px solid #e5e9ed;
+            border-radius: 8px;
+            padding: 5px 12px;
+            background-color: $bg_color;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: $text_color;
+        }
+    }
+    h4{
+        margin-top: 16px;
+        a{
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            color: $black2;
+            @include nesthub{
+                font-size: 24px;
+                line-height: 36px;
+            }
+            @include sm{
+                font-size: 24px;
+                line-height: 36px; 
+            }
+        }
+    }
+    .mb_job_location{
+        @include flex(row, flex-start, center);
+        flex-wrap: wrap;
+        gap: 40px;
+        @media (min-width:1024px) and (max-width:1280px){
+            gap: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include sm{
+            gap: 6px;
+        }
+        
+        margin-top: 16px;
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.01em;
+            color: $text_color;
+            span{
+                font-weight: 500;
+                color: $black2;
+            }
+            @include sm{
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}

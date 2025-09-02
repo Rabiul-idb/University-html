@@ -107,5 +107,16 @@
             }
         }
     }
+    &.style_5 {
+        a {
+            background-color: $black2;
+            color: $white;
+            &:hover {
+                background-color: $primary;
+                color: $white;
+                border-color: $primary;
+            }
+        }
+    }
 }
 
