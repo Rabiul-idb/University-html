@@ -41,6 +41,21 @@
         line-height: 20px;
         letter-spacing: -0.12px;
     }
+    &.style_2 {
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        color: $white;
+        background: $black2;
+    }
+    @include xxl{
+        font-size: 14px;
+        line-height: 22px; 
+        letter-spacing: -0.14px;
+    }
+    @include breakpoint (max-xsmall){
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: -0.12px;
+    }
 }
 .rb_title {
     color: $black2;
