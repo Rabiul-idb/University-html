@@ -1,0 +1,128 @@
+.rb_fees_funding {
+    background-image: url("../images/other/fees_and_fund.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+
+    @include xxl {
+        min-height: 750px;
+    }
+    @include lg {
+        min-height: 650px;
+    }
+    @include md {
+        min-height: 512px;
+    }
+    @include sm {
+        min-height: 472px;
+    }
+    .rb_content {
+        padding-top: 152px;
+    
+        @include xxl { 
+            padding-top: 142px;
+        }
+        @include xl { 
+            padding-top: 142px;
+        }
+        @include lg { 
+            padding-top: 112px;
+        }
+        @include md { 
+            padding-top: 70px;
+        }
+        @include sm { 
+            padding-top: 40px;
+        }
+        @include xxs { 
+            padding-top: 50px;
+        }
+    
+        .rb_title {
+            color: $white;
+            font-family: $geist-font;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 80px; 
+            letter-spacing: -1.44px;
+
+            @include xxl {
+                font-size: 64px;
+                line-height: 1.2;
+            }
+            @include lg {
+                font-size: 54px;
+            }
+            @include md {
+                font-size: 40px;
+                line-height: 52px;                
+            }
+            @include xxs {
+                font-size: 28px;
+                line-height: 40px; 
+                letter-spacing: -0.56px;
+            }
+        }
+        .rb_text_box {
+            max-width: 432px;
+            display: flex;
+            padding: 4px 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-self: stretch;
+            border-radius: 16px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%), rgba(255, 255, 255, 0.20);
+            box-shadow: 0 20px 35px 0 #002147;
+            @include md {
+                max-width: 304px;
+            }
+            @include xxs {
+                max-width: 229px;
+            }
+            p {
+                max-width: 347px;
+                display: flex;
+                padding: 16px 24px;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                border-bottom: 1px solid rgba(229, 233, 237, 0.10);
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px; 
+                letter-spacing: -0.36px;
+    
+                @include xxl {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                @include md {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                @include xxs {
+                    padding: 10px 16px;
+                }
+            }
+        }
+        .rb_btns{
+            margin-top: 32px;
+            .btn_wrapper {
+                a {
+                    min-width: 432px;
+                    @include md {
+                        min-width: 304px;
+                    }
+                    @include xxs {
+                        min-width: 229px;
+                    }
+                }
+            }
+        }
+    }
+}
