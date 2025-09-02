@@ -1,0 +1,99 @@
+.mb_achievement_area{
+    .row{
+        &.style_01{
+            gap: 25px;
+            @include md{
+                gap: 15px;
+                margin-top: 23px !important;
+            }
+            @include sm{
+                gap: 7px;
+                margin-top: 5px !important;
+            }
+        }
+    }
+    .mb_sub_title{
+        display: inline-block;
+    }
+    .mb_best_item{
+        width: 143px;
+        height: 100px;
+         @media (max-width:1440px){
+              width: 140px;
+              height: 98px;
+            }
+            @include md{
+                width: 110px;
+                height: 76px;
+            }
+            @include sm{
+                width: 94px;
+                height: 72px;
+            }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .mb_achievement_content{
+        @include md{
+            margin-top: 28px !important;
+        }
+        @include sm{
+            margin-top: 12px !important;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 80px;
+            letter-spacing: -0.02em;
+            text-transform: capitalize;
+            text-align: center;
+            color: $black2;
+            span{
+                color: rgba(0, 33, 71, 0.5);
+
+            }
+             @media (max-width:1440px){
+                font-size: 64px;
+                line-height: 72px;
+            }
+            @include md{
+                font-size: 40px;
+                line-height: 52px;
+
+            }
+            @include sm{
+                font-size: 36px;
+                line-height: 48px;
+            }
+        }
+        .mb_achieve_img{
+            @include md{
+                margin-top: 38px !important;
+            }
+            @include sm{
+                margin-top: 20px !important;
+            }
+            width: 100%;
+            height: 700px;
+            @include border-radius(16px);
+            @media (max-width:1440px){
+                height: 600px;
+            }
+            @include md{
+                height: 360px;
+            }
+            @include sm{
+                height: 200px;
+            }
+            img{
+                width: 100%;
+                @include border-radius(16px);
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

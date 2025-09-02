@@ -26335,6 +26335,48 @@ img {
   .mb_our_achievements_area .row.style_01 {
     margin-top: 5px !important; } }
 
+.order_style {
+  display: flex;
+  flex-direction: row; }
+  @media only screen and (max-width: 991px) {
+    .order_style .col-lg-3:nth-child(1) {
+      order: -1 !important; }
+    .order_style .col-lg-3:nth-child(2) {
+      order: 0 !important; }
+    .order_style .col-lg-3:nth-child(3) {
+      order: 3 !important; }
+    .order_style .col-lg-3:nth-child(4) {
+      order: 4; }
+    .order_style .col-lg-3:nth-child(5) {
+      order: 1; }
+    .order_style .col-lg-3:nth-child(6) {
+      order: 2; }
+    .order_style .col-lg-3:nth-child(7) {
+      order: 5; }
+    .order_style .col-lg-3:nth-child(8) {
+      order: 6; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .order_style .col-lg-3:nth-child(1) {
+      order: -1 !important; }
+    .order_style .col-lg-3:nth-child(2) {
+      order: 2 !important; }
+    .order_style .col-lg-3:nth-child(3) {
+      order: 3 !important; }
+    .order_style .col-lg-3:nth-child(4) {
+      order: 6; }
+    .order_style .col-lg-3:nth-child(5) {
+      order: 0; }
+    .order_style .col-lg-3:nth-child(6) {
+      order: 1; }
+    .order_style .col-lg-3:nth-child(7) {
+      order: 4; }
+    .order_style .col-lg-3:nth-child(8) {
+      order: 5; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mb_our_achievements_area .row .col-lg-3 {
+    width: 50% !important; } }
+
 /*------------------------------------
       3.4 Mobile menu
 ----------------------------------*/
@@ -27682,6 +27724,8 @@ header {
       font-weight: 400;
       line-height: 32px;
       letter-spacing: -0.18px; }
+      .hero1-content__desc.style_01 {
+        max-width: 445px !important; }
       @media (max-width: 1599px) {
         .hero1-content__desc {
           font-size: 16px;
@@ -27854,6 +27898,10 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .about_card.style_01 .card_text {
         font-size: 15px; } }
+    @media only screen and (max-width: 1399px) {
+      .about_card.style_01 .card_numb {
+        font-size: 48px !important;
+        line-height: 60px; } }
   @media (max-width: 1399px) {
     .about_card {
       gap: 68px; } }
@@ -28249,6 +28297,12 @@ header {
     font-family: "Geist", sans-serif;
     /* Slider container – important: no flex here */
     /* Slides */ }
+    .mb_branding_area .mb_branding_wrapper.style_01 {
+      background: #fff; }
+      .mb_branding_area .mb_branding_wrapper.style_01 .mb_brand h4 {
+        color: #002147 !important; }
+      .mb_branding_area .mb_branding_wrapper.style_01 .mb_brand::after {
+        background-color: #002147 !important; }
     @media only screen and (max-width: 991px) {
       .mb_branding_area .mb_branding_wrapper {
         padding: 20px 30px 20px 40px; } }
@@ -28391,6 +28445,8 @@ header {
 .rb_future1 {
   border-radius: 20px;
   background: #002147; }
+  .rb_future1.style_01 {
+    background: #fefefe; }
   .rb_future1 .future_card {
     display: flex;
     padding: 32px;
@@ -28401,6 +28457,8 @@ header {
     border-radius: 20px;
     background: #fff;
     box-shadow: 0 20px 35px 0 #002147; }
+    .rb_future1 .future_card.style_01 {
+      background: #F7F7F7; }
     .rb_future1 .future_card .content {
       width: 100%; }
       .rb_future1 .future_card .content h3 {
@@ -28423,6 +28481,8 @@ header {
         align-self: stretch;
         border-radius: 16px;
         background: #F7F7F7; }
+        .rb_future1 .future_card .content .content_box.style_01 {
+          background: #fff; }
         .rb_future1 .future_card .content .content_box .desc_one {
           color: #002147;
           font-family: "Inter", sans-serif;
@@ -29065,9 +29125,11 @@ header {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
-    color: #002147; }
+    color: #002147;
+    line-height: 32px;
+    white-space: nowrap; }
   .mb_hero_card_area .mb_hero_card .mb_hero_card_item ul {
-    margin-top: 21px;
+    margin-top: 17px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -29087,6 +29149,20 @@ header {
     -webkit-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px; }
+    .mb_hero_card_area .mb_hero_about_us h4 {
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: #002147;
+      line-height: 32px;
+      white-space: nowrap; }
+    .mb_hero_card_area .mb_hero_about_us p {
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: #404A56;
+      line-height: 22px;
+      margin-top: 14px; }
   .mb_hero_card_area .mb_btn_wrapper {
     display: flex;
     flex-direction: column;
@@ -29105,9 +29181,6 @@ header {
       color: #404A56;
       transition: all 0.4s ease;
       background-color: #fff; }
-      .mb_hero_card_area .mb_btn_wrapper a.active {
-        background-color: #FF1949;
-        color: #fff; }
       .mb_hero_card_area .mb_btn_wrapper a span {
         margin-right: 12px; }
       .mb_hero_card_area .mb_btn_wrapper a:hover {
@@ -29136,7 +29209,7 @@ header {
         padding-left: 0px;
         border: none;
         margin-top: 14px; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
       .mb_our_history_area .mb_timeline {
         flex-direction: column;
         gap: 20px; } }
@@ -29145,13 +29218,16 @@ header {
       font-size: 48px;
       letter-spacing: -0.04em;
       color: rgba(255, 255, 255, 0.2);
+      line-height: 68px;
       cursor: pointer;
       transition: color 0.3s ease; }
       @media only screen and (max-width: 991px) {
         .mb_our_history_area .mb_timeline .timeline-title {
-          font-size: 40px; } }
+          font-size: 40px;
+          line-height: 52px; } }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .mb_our_history_area .mb_timeline .timeline-title {
+          line-height: 40px;
           font-size: 28px; } }
       .mb_our_history_area .mb_timeline .timeline-title.active {
         color: #fff;
@@ -29243,7 +29319,8 @@ header {
   .mb_faculty_card .mb_faculty_img {
     border-radius: 12px;
     width: 100%;
-    height: 380px; }
+    height: 380px;
+    overflow: hidden; }
     @media only screen and (max-width: 1199px) {
       .mb_faculty_card .mb_faculty_img {
         width: 355px;
@@ -29265,23 +29342,36 @@ header {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.4s ease;
       border-radius: 12px;
       -moz-border-radius: 12px;
       -webkit-border-radius: 12px;
       -ms-border-radius: 12px;
       -o-border-radius: 12px; }
+    .mb_faculty_card .mb_faculty_img:hover img {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05); }
   .mb_faculty_card h4 {
-    margin-top: 24px;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: -0.02em;
-    color: #002147; }
+    margin-top: 19px; }
+    .mb_faculty_card h4 a {
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+      color: #002147;
+      line-height: 36px;
+      transition: all 0.4s ease; }
+      .mb_faculty_card h4 a:hover {
+        color: #FF1949; }
   .mb_faculty_card p {
     font-weight: 400;
     font-size: 14px;
-    margin-top: 6px;
+    margin-top: 4px;
     letter-spacing: -0.01em;
-    color: #404A56; }
+    color: #404A56;
+    line-height: 22px; }
   .mb_faculty_card .mb_social_area {
     margin-top: 20px;
     border-radius: 12px;
@@ -29296,12 +29386,16 @@ header {
       font-weight: 400;
       font-size: 18px;
       letter-spacing: -0.02em;
+      line-height: 28px;
       color: #002147; }
 
 .mb_our_values_area {
   border-radius: 20px 20px 0 0;
-  padding: 132px 0px;
+  padding: 118px 0px;
   background: #002147; }
+  @media only screen and (max-width: 991px) {
+    .mb_our_values_area {
+      padding: 58px 0px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .mb_our_values_area {
       padding: 40px 0px; } }
@@ -29315,6 +29409,9 @@ header {
     .mb_our_values_area .row.style_1 .col-lg-3 {
       width: 100%; } }
 
+.mb_career_area {
+  background-color: #F7F7F7; }
+
 .mb_our_value_card {
   border-radius: 12px;
   padding: 36px;
@@ -29326,6 +29423,13 @@ header {
   background: #0d2c50;
   height: 440px;
   margin-bottom: 20px; }
+  .mb_our_value_card.style_01 {
+    background-color: #fff; }
+    .mb_our_value_card.style_01 h4 {
+      color: #0d2c50 !important; }
+    .mb_our_value_card.style_01 p {
+      color: #0d2c50 !important;
+      font-size: 16px !important; }
   @media only screen and (max-width: 1399px) {
     .mb_our_value_card {
       height: 384px; } }
@@ -29338,12 +29442,127 @@ header {
     font-weight: 500;
     font-size: 24px;
     letter-spacing: -0.02em;
-    color: #f7f7f7; }
+    color: #f7f7f7;
+    line-height: 36px; }
   .mb_our_value_card p {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.01em;
     color: #f7f7f7;
-    margin-top: 15px; }
+    margin-top: 9px;
+    line-height: 22px; }
+
+.mb_logo_slider {
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 36px 0px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05); }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_logo_slider {
+      padding: 20px 0px; } }
+  .mb_logo_slider .mb_logo img {
+    opacity: 0.2;
+    cursor: pointer;
+    transition: all 0.4s ease; }
+    .mb_logo_slider .mb_logo img:hover {
+      opacity: 1; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_logo_slider .mb_logo img {
+        width: 95px;
+        height: 20px; } }
+
+.mb_achievement_area .row.style_01 {
+  gap: 25px; }
+  @media only screen and (max-width: 991px) {
+    .mb_achievement_area .row.style_01 {
+      gap: 15px;
+      margin-top: 23px !important; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_achievement_area .row.style_01 {
+      gap: 7px;
+      margin-top: 5px !important; } }
+.mb_achievement_area .mb_sub_title {
+  display: inline-block; }
+.mb_achievement_area .mb_best_item {
+  width: 143px;
+  height: 100px; }
+  @media (max-width: 1440px) {
+    .mb_achievement_area .mb_best_item {
+      width: 140px;
+      height: 98px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_achievement_area .mb_best_item {
+      width: 110px;
+      height: 76px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_achievement_area .mb_best_item {
+      width: 94px;
+      height: 72px; } }
+  .mb_achievement_area .mb_best_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+@media only screen and (max-width: 991px) {
+  .mb_achievement_area .mb_achievement_content {
+    margin-top: 28px !important; } }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_achievement_area .mb_achievement_content {
+    margin-top: 12px !important; } }
+.mb_achievement_area .mb_achievement_content h2 {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #002147; }
+  .mb_achievement_area .mb_achievement_content h2 span {
+    color: rgba(0, 33, 71, 0.5); }
+  @media (max-width: 1440px) {
+    .mb_achievement_area .mb_achievement_content h2 {
+      font-size: 64px;
+      line-height: 72px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_achievement_area .mb_achievement_content h2 {
+      font-size: 40px;
+      line-height: 52px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_achievement_area .mb_achievement_content h2 {
+      font-size: 36px;
+      line-height: 48px; } }
+.mb_achievement_area .mb_achievement_content .mb_achieve_img {
+  width: 100%;
+  height: 700px;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px; }
+  @media only screen and (max-width: 991px) {
+    .mb_achievement_area .mb_achievement_content .mb_achieve_img {
+      margin-top: 38px !important; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_achievement_area .mb_achievement_content .mb_achieve_img {
+      margin-top: 20px !important; } }
+  @media (max-width: 1440px) {
+    .mb_achievement_area .mb_achievement_content .mb_achieve_img {
+      height: 600px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_achievement_area .mb_achievement_content .mb_achieve_img {
+      height: 360px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_achievement_area .mb_achievement_content .mb_achieve_img {
+      height: 200px; } }
+  .mb_achievement_area .mb_achievement_content .mb_achieve_img img {
+    width: 100%;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    height: 100%;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

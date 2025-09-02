@@ -248,6 +248,25 @@
                 },
             ]
         });
+        $('.mb_logo_slider').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 3000,
+            dots: false,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 768, 
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
+        });
 
         // Gsap RegisterPlugin
         gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
