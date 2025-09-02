@@ -12,12 +12,15 @@
             border-radius: 16px;
             border: 1px solid rgba(22, 60, 61, 0.14);
             @include transition(0.4s);
+            @include breakpoint (max-sm){
+                flex-direction: column;
+            }
             @include breakpoint (max-xxs){
                 padding: 20px;
-                gap: 40px;
+                gap: 10px;
             }
             @include breakpoint (max-xxsmall){
-                gap: 34px;
+                gap: 10px;
             }
             .rb_btn {
                 display: flex;
@@ -90,6 +93,9 @@
                         opacity: 1;
                         visibility: visible;
                         @include transition(0.4s);
+                        @include sm {
+                            max-height: 90px;
+                        }
                     }
                 }
 

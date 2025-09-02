@@ -35241,15 +35241,20 @@ header {
   border: 1px solid rgba(22, 60, 61, 0.14);
   transition: all 0.4s ease;
 }
+@media (max-width: 575px) {
+  .rb_process .rb_card .rb_item {
+    flex-direction: column;
+  }
+}
 @media (max-width: 479px) {
   .rb_process .rb_card .rb_item {
     padding: 20px;
-    gap: 40px;
+    gap: 10px;
   }
 }
 @media (max-width: 374px) {
   .rb_process .rb_card .rb_item {
-    gap: 34px;
+    gap: 10px;
   }
 }
 .rb_process .rb_card .rb_item .rb_btn {
@@ -35325,6 +35330,11 @@ header {
   opacity: 1;
   visibility: visible;
   transition: all 0.4s ease;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_process .rb_card .rb_item:hover .rb_content .rb_desc {
+    max-height: 90px;
+  }
 }
 
 .mb_find_job_area {
