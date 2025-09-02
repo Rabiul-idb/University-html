@@ -28515,6 +28515,13 @@ header {
           padding-top: 10px; }
         .rb_future1 .future_card .content .content_box .hr_line {
           border-bottom: 1px solid #E5E9ED; }
+        .rb_future1 .future_card .content .content_box.style_1 {
+          gap: 20px; }
+          @media (max-width: 1199px) {
+            .rb_future1 .future_card .content .content_box.style_1 {
+              gap: 15px; } }
+        .rb_future1 .future_card .content .content_box.style_2 {
+          gap: 15px; }
 
 .rb_testimonial1 {
   border-radius: 20px;
@@ -28847,7 +28854,8 @@ header {
     @media (max-width: 479px) {
       .rb_why_choose_us .rb_why_choose_box {
         border-radius: 12px;
-        padding: 32px 24px; } }
+        padding: 32px 24px;
+        gap: 0; } }
     .rb_why_choose_us .rb_why_choose_box p {
       max-width: 1204px;
       color: #002147;
@@ -28882,7 +28890,7 @@ header {
       .rb_why_choose_us .wcu_card {
         height: 320px;
         padding: 24px; } }
-    .rb_why_choose_us .wcu_card .content h4 {
+    .rb_why_choose_us .wcu_card .rb_content h4 {
       color: #0D2C50;
       font-family: "Geist", sans-serif;
       font-size: 24px;
@@ -28892,12 +28900,12 @@ header {
       /* 150% */
       letter-spacing: -0.48px; }
       @media (max-width: 479px) {
-        .rb_why_choose_us .wcu_card .content h4 {
+        .rb_why_choose_us .wcu_card .rb_content h4 {
           font-size: 20px;
           font-weight: 500;
           line-height: 32px;
           letter-spacing: -0.4px; } }
-    .rb_why_choose_us .wcu_card .content p {
+    .rb_why_choose_us .wcu_card .rb_content p {
       color: #404A56;
       font-size: 16px;
       font-style: normal;
@@ -28905,7 +28913,7 @@ header {
       line-height: 26px;
       letter-spacing: -0.16px; }
       @media (max-width: 479px) {
-        .rb_why_choose_us .wcu_card .content p {
+        .rb_why_choose_us .wcu_card .rb_content p {
           font-size: 14px;
           line-height: 22px;
           letter-spacing: -0.28px; } }
