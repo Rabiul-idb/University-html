@@ -86,12 +86,18 @@
             &.style_1 {
                 max-width: 683px;
             }
+            &.style_2 {
+                max-width: 747px;
+            }
         } 
         &__desc {
             max-width: 410px;
             &.style_01{
-        max-width: 445px !important;
-    }
+                max-width: 445px !important;
+            }
+            &.style_02{
+                max-width: 484px;
+            }
             color: $white;
             font-size: 18px;
             font-style: normal;

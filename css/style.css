@@ -31718,6 +31718,25 @@ header {
     letter-spacing: -0.12px;
   }
 }
+.rb_subtitle.style_2 {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  background: #002147;
+}
+@media only screen and (max-width: 1599px) {
+  .rb_subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+  }
+}
+@media (max-width: 449px) {
+  .rb_subtitle {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.12px;
+  }
+}
 
 .rb_title {
   color: #002147;
@@ -32494,6 +32513,9 @@ header {
 .hero1-content__title.style_1 {
   max-width: 683px;
 }
+.hero1-content__title.style_2 {
+  max-width: 747px;
+}
 .hero1-content__desc {
   max-width: 410px;
   color: #fff;
@@ -32505,6 +32527,9 @@ header {
 }
 .hero1-content__desc.style_01 {
   max-width: 445px !important;
+}
+.hero1-content__desc.style_02 {
+  max-width: 484px;
 }
 @media (max-width: 1599px) {
   .hero1-content__desc {
