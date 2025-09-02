@@ -247,6 +247,9 @@
             margin-bottom: 12px;
             overflow: hidden; 
             padding: 28px 30px;
+            &.style_1 {
+                background: $white;
+            }
 
             @include xxl{
                 margin-bottom: 8px;
@@ -264,6 +267,9 @@
                 .accordion-header {
                     border-radius: 12px;
                     background: $bg_color;
+                    &.style_1 {
+                        background: $white;
+                    }
                     h4 {
                         color: $black2;
                     }                    
