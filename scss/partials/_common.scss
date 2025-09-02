@@ -64,3 +64,77 @@ img {
         }
     }
 }
+
+
+.order_style{
+    display: flex;
+    flex-direction: row;
+    @include md{
+        .col-lg-3{
+            
+            &:nth-child(1){
+                order: -1 !important;
+            }
+            &:nth-child(2){
+                order: 0 !important;
+            }
+            &:nth-child(3){
+                order: 3 !important;
+            }
+            &:nth-child(4){
+                order: 4;
+            }
+            &:nth-child(5){
+                order: 1;
+            }
+            &:nth-child(6){
+                order: 2;
+            }
+            &:nth-child(7){
+                order: 5;
+            }
+            &:nth-child(8){
+                order: 6;
+            }
+        }
+    }
+    @include sm{
+        .col-lg-3{
+            
+            &:nth-child(1){
+                order: -1 !important;
+            }
+            &:nth-child(2){
+                order: 2 !important;
+            }
+            &:nth-child(3){
+                order: 3 !important;
+            }
+            &:nth-child(4){
+                order: 6;
+            }
+            &:nth-child(5){
+                order: 0;
+            }
+            &:nth-child(6){
+                order: 1;
+            }
+            &:nth-child(7){
+                order: 4;
+            }
+            &:nth-child(8){
+                order: 5;
+            }
+        }
+    }
+}
+
+.mb_our_achievements_area{
+    .row{
+        .col-lg-3{
+            @media (min-width: 576px) and (max-width:767px){
+                width: 50% !important;
+            }
+        }
+    }
+}

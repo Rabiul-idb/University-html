@@ -86,6 +86,9 @@
         } 
         &__desc {
             max-width: 410px;
+            &.style_01{
+        max-width: 445px !important;
+    }
             color: $white;
             font-size: 18px;
             font-style: normal;
@@ -289,6 +292,13 @@
             .card_text{
                 @include nesthub{
                     font-size: 15px;
+                }
+            }
+            @include xl{
+                .card_numb{
+                    font-size: 48px !important;
+                    line-height: 60px;
+                    
                 }
             }
         }
@@ -777,6 +787,18 @@
     background: $black2;
     color: $white;
     font-family: $geist-font;
+    &.style_01{
+        background: $white;
+        .mb_brand{
+            h4{
+                color: $black2 !important;
+            }
+            &::after{
+                background-color: $black2 !important;
+            }
+
+        }
+    }
 
     @include md{
         padding: 20px 30px 20px 40px;
@@ -956,6 +978,9 @@
 .rb_future1 {
     border-radius: 20px;
     background: $black2;
+    &.style_01{
+        background: #fefefe;
+    }
     .future_card {
         display: flex;
         padding: 32px;
@@ -965,6 +990,9 @@
         flex: 1 0 0;
         border-radius: 20px;
         background: $white;
+        &.style_01{
+            background: $bg_color;
+        }
         box-shadow: 0 20px 35px 0 $black2;
 
         .content {
@@ -990,7 +1018,10 @@
                 gap: 16px;
                 align-self: stretch;
                 border-radius: 16px;
-                background: #F7F7F7;
+                background: $bg_color;
+                &.style_01{
+                    background: $white;
+                }
                 .desc_one {
                     color: $black2;
                     font-family: $inter-font;
