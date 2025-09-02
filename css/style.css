@@ -26327,7 +26327,7 @@ img {
     display: none; } }
 @media only screen and (max-width: 991px) {
   .mb_md_none {
-    display: none; } }
+    display: none !important; } }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .mb_nest_none {
     display: none; } }
@@ -29419,6 +29419,23 @@ header {
 
 .mb_career_area {
   background-color: #F7F7F7; }
+  .mb_career_area .row.style_1 {
+    margin-top: 37px; }
+    @media only screen and (max-width: 991px) {
+      .mb_career_area .row.style_1 {
+        margin-top: 34px; } }
+    @media only screen and (max-width: 991px) {
+      .mb_career_area .row.style_1 {
+        margin-top: 27px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .mb_career_area .row.style_1 .col-lg-3 {
+        width: 50%; } }
+    @media only screen and (max-width: 991px) {
+      .mb_career_area .row.style_1 .col-lg-3 {
+        width: 50%; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_career_area .row.style_1 .col-lg-3 {
+        width: 100%; } }
 
 .mb_our_value_card {
   border-radius: 12px;
@@ -29432,7 +29449,11 @@ header {
   height: 440px;
   margin-bottom: 20px; }
   .mb_our_value_card.style_01 {
-    background-color: #fff; }
+    background-color: #fff;
+    border: 1px solid #e5e9ed;
+    border-radius: 12px;
+    padding: 32px;
+    height: 384px; }
     .mb_our_value_card.style_01 h4 {
       color: #0d2c50 !important; }
     .mb_our_value_card.style_01 p {
@@ -29461,14 +29482,33 @@ header {
     line-height: 22px; }
 
 .mb_logo_slider {
-  margin-top: 30px;
+  margin-top: 27px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 36px 0px;
+  padding: 34px 0px;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.05); }
+  .mb_logo_slider .slick-track {
+    padding-left: 40px; }
+    @media (max-width: 1440px) {
+      .mb_logo_slider .slick-track {
+        padding-left: 25px; } }
+    @media (max-width: 1390px) {
+      .mb_logo_slider .slick-track {
+        padding-left: 10px !important; } }
+    @media only screen and (max-width: 991px) {
+      .mb_logo_slider .slick-track {
+        padding-left: 30px !important; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_logo_slider .slick-track {
+        padding-left: 10px !important; } }
+  @media only screen and (max-width: 991px) {
+    .mb_logo_slider {
+      padding: 29px 0px;
+      margin-top: 17px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .mb_logo_slider {
+      margin-top: 13px;
       padding: 20px 0px; } }
   .mb_logo_slider .mb_logo img {
     opacity: 0.2;
@@ -29572,5 +29612,98 @@ header {
     -o-border-radius: 16px;
     height: 100%;
     object-fit: cover; }
+
+.mb_job_success_area .mb_job_success_image {
+  max-width: 690px;
+  width: 100%;
+  height: 626px;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px; }
+  @media only screen and (max-width: 991px) {
+    .mb_job_success_area .mb_job_success_image {
+      width: 100%;
+      height: 500px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_job_success_area .mb_job_success_image {
+      width: 100%;
+      height: 300px; } }
+  .mb_job_success_area .mb_job_success_image img {
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+.mb_job_success_area .mb_job_success_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 15px;
+  width: 100%; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_job_success_area .mb_job_success_content {
+      justify-content: flex-start;
+      padding-left: 0px;
+      margin-top: 16px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_job_success_area .mb_job_success_content {
+      justify-content: flex-start;
+      padding-left: 0px;
+      margin-top: 28px; } }
+  .mb_job_success_area .mb_job_success_content .mb_description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #404A56; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_job_success_area .mb_job_success_content .mb_graduate_employed_wrapper {
+      margin-top: 10px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_job_success_area .mb_job_success_content .mb_graduate_employed_wrapper {
+      margin-top: 10px; } }
+  .mb_job_success_area .mb_job_success_content .mb_graduate_card {
+    width: 100%;
+    padding: 24px 0px;
+    border-bottom: 1px solid #ccd3da; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_job_success_area .mb_job_success_content .mb_graduate_card {
+        padding: 16px 0px; } }
+    .mb_job_success_area .mb_job_success_content .mb_graduate_card h2 {
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 68px;
+      letter-spacing: -0.02em;
+      color: #002147; }
+      @media only screen and (max-width: 1199px) {
+        .mb_job_success_area .mb_job_success_content .mb_graduate_card h2 {
+          font-size: 48px;
+          line-height: 60px; } }
+      @media only screen and (max-width: 991px) {
+        .mb_job_success_area .mb_job_success_content .mb_graduate_card h2 {
+          font-size: 40px;
+          line-height: 52px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_job_success_area .mb_job_success_content .mb_graduate_card h2 {
+          font-size: 28px;
+          line-height: 40px; } }
+    .mb_job_success_area .mb_job_success_content .mb_graduate_card p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      margin-top: 5px;
+      color: #002147; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_job_success_area .mb_job_success_content .mb_graduate_card p {
+          font-size: 14px;
+          line-height: 22px;
+          padding-right: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

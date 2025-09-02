@@ -26,6 +26,28 @@
 }
 .mb_career_area{
     background-color: $bg_color;
+    .row{
+        &.style_1{
+            margin-top: 37px;
+            @include md{
+                margin-top: 34px;
+            }
+            @include md{
+                margin-top: 27px;
+            }
+            .col-lg-3{
+                @include nesthub{
+                    width: 50%;
+                }
+                @include md{
+                    width: 50%;
+                }
+                @include sm{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 .mb_our_value_card{
     border-radius: 12px;
@@ -37,6 +59,10 @@
     margin-bottom: 20px;
     &.style_01{
         background-color: $white;
+        border: 1px solid #e5e9ed;
+        border-radius: 12px;
+        padding: 32px;
+        height: 384px;
         h4{
             color: #0d2c50 !important;
         }
@@ -74,13 +100,36 @@
 }
 
 .mb_logo_slider{
-    margin-top: 30px;
+    margin-top: 27px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 36px 0px;
+    padding: 34px 0px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
+    .slick-track{
+        padding-left: 40px;
+        @media (max-width: 1440px){
+            padding-left: 25px;
+
+        }
+        @media (max-width: 1390px){
+            padding-left: 10px !important;
+
+        }
+        @include md{
+            padding-left: 30px !important;
+        }
+        @include sm{
+            padding-left: 10px !important;
+        }
+
+    }
+    @include md{
+        padding: 29px 0px;
+        margin-top: 17px;
+    }
     @include sm{
+        margin-top: 13px;
         padding: 20px 0px;
     }
     .mb_logo{

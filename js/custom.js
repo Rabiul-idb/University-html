@@ -265,6 +265,20 @@
                         slidesToScroll: 1,
                     }
                 },
+                {
+                    breakpoint: 998, 
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1100, 
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                }
             ]
         });
 
