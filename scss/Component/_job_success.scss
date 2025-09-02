@@ -1,0 +1,102 @@
+.mb_job_success_area{
+    .mb_job_success_image{
+        max-width: 690px;
+        width: 100%;
+        height: 626px;
+        @include border-radius(16px);
+        // @include nesthub{
+        //     width: 100%;
+        //     height: 500px;
+        // }
+        @include md{
+            width: 100%;
+            height: 500px;
+        }
+        @include sm{
+            width: 100%;
+            height: 300px;
+        }
+        img{
+            @include border-radius(16px);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .mb_job_success_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-left: 15px;
+        @include sm{
+            justify-content: flex-start;
+            padding-left: 0px;
+            margin-top:16px;
+        }
+        @include md{
+            justify-content: flex-start;
+            padding-left: 0px;
+            margin-top: 28px;
+        }
+        width: 100%;
+        .mb_description{
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+                color: $text_color;
+            }
+        }
+        .mb_graduate_employed_wrapper{
+            @include sm{
+                margin-top: 10px;
+            }
+            @include md{
+                margin-top: 10px;
+            }
+        }
+        .mb_graduate_card{
+            width: 100%;
+            padding: 24px 0px;
+            @include sm{
+                padding: 16px 0px;
+            }
+            border-bottom: 1px solid #ccd3da;
+            h2{
+                font-weight: 500;
+                font-size: 56px;
+                line-height: 68px;
+                letter-spacing: -0.02em;
+                color: $black2;
+                @include lg{
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+                @include md{
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                @include sm{
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+            }
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+                margin-top: 5px;
+                color: $black2;
+                @include sm{
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding-right: 100px;
+                }
+            }
+            
+        }
+    }
+}

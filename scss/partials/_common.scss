@@ -47,7 +47,7 @@ img {
 }
 @include md{
     .mb_md_none{
-        display: none;
+        display: none !important;
     }
 }
 @include nesthub{
