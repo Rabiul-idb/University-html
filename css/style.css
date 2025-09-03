@@ -32255,11 +32255,6 @@ header {
     margin-top: 0;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_faq_section .accordion {
-    margin-top: 20px;
-  }
-}
 .rb_faq_section .accordion .accordion-item {
   border-radius: 12px;
   background: #F7F7F7;
@@ -34162,9 +34157,20 @@ header {
     display: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) {
+@media only screen and (max-width: 991px) {
   .rb_faq_section .faq_thumb {
     display: block;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .faq_thumb {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_faq_section .faq_thumb img {
+    width: 100%;
   }
 }
 .rb_faq_section .faq_thumb .faq_icon {
@@ -34192,10 +34198,24 @@ header {
     max-width: 80px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .rb_faq_section .faq_thumb .faq_icon {
+    top: 120px;
+    right: 60px;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_faq_section .faq_thumb .faq_icon {
+    top: 60px;
+    right: 30px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_faq_section .faq_thumb .faq_icon {
     top: 60px;
     right: 30px;
+    max-width: 80px;
   }
 }
 
@@ -36225,4 +36245,6 @@ header {
   border: 0;
   border-radius: 20px;
   display: block;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

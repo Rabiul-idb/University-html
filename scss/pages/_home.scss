@@ -1500,10 +1500,19 @@
     .faq_thumb {
         position: relative;
         @include breakpoint (max-xl){
-            display: none;
+           display: none;
+        }
+        @include md{
+            display: block;
+            margin-bottom: 36px;
         }
         @include xxs{
-            display: block;
+            margin-bottom: 20px;
+        }
+        img{
+            @include md{
+                width: 100%;
+            }
         }
         .faq_icon {
             display: flex;
@@ -1526,9 +1535,19 @@
             @include xl{
                 max-width: 80px;
             }
+            @include md{
+                top: 120px;
+                right: 60px;
+                max-width: 100%;
+            }
+            @include xs{
+                top: 60px;
+                right: 30px;
+            }
             @include xxs{
                 top: 60px;
                 right: 30px;
+                max-width: 80px;
             }
         }
     }
