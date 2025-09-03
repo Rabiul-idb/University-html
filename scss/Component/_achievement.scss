@@ -59,8 +59,17 @@
                 font-size: 64px;
                 line-height: 72px;
             }
-            @include md{
+            @include nesthubmax{
                 font-size: 40px;
+                line-height: 52px;
+            }
+            @include nesthub{
+                font-size: 52px;
+                line-height: 64px;
+            }
+            
+            @include md{
+                font-size: 39px;
                 line-height: 52px;
 
             }

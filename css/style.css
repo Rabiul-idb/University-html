@@ -27350,7 +27350,9 @@ header {
     border-color: #002147; }
 .btn_wrapper.style_5 a {
   background-color: #002147;
-  color: #fff; }
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px; }
   .btn_wrapper.style_5 a:hover {
     background-color: #FF1949;
     color: #fff;
@@ -27975,11 +27977,12 @@ header {
         margin-bottom: 13px !important; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .about_card.style_01 {
-        margin-bottom: 13px !important; } }
+        margin-bottom: 13px !important;
+        justify-content: space-between; } }
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .about_card.style_01 .card_text {
         font-size: 15px; } }
-    @media only screen and (max-width: 1399px) {
+    @media (min-width: 1280px) and (max-width: 1440px) {
       .about_card.style_01 .card_numb {
         font-size: 48px !important;
         line-height: 60px; } }
@@ -28052,7 +28055,8 @@ header {
   height: 244px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .about_thumb.style_01 {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px;
+      max-width: 100%; } }
   .about_thumb.style_01 img {
     width: 100%;
     height: 100%;
@@ -28549,7 +28553,8 @@ header {
     background: #fff;
     box-shadow: 0 20px 35px 0 #002147; }
     .rb_future1 .future_card.style_01 {
-      background: #F7F7F7; }
+      background: #F7F7F7;
+      box-shadow: 35px 35px 65px 0 rgba(0, 33, 71, 0.15) !important; }
     .rb_future1 .future_card .content {
       width: 100%; }
       .rb_future1 .future_card .content h3 {
@@ -29432,12 +29437,16 @@ header {
         gap: 20px; } }
     .mb_our_history_area .mb_timeline .timeline-title {
       font-weight: 500;
-      font-size: 48px;
+      font-size: 56px;
       letter-spacing: -0.04em;
       color: rgba(255, 255, 255, 0.2);
       line-height: 68px;
       cursor: pointer;
       transition: color 0.3s ease; }
+      @media (min-width: 1280px) and (max-width: 1440px) {
+        .mb_our_history_area .mb_timeline .timeline-title {
+          font-size: 48px !important;
+          line-height: 60px; } }
       @media only screen and (max-width: 991px) {
         .mb_our_history_area .mb_timeline .timeline-title {
           font-size: 40px;
@@ -29781,9 +29790,17 @@ header {
     .mb_achievement_area .mb_achievement_content h2 {
       font-size: 64px;
       line-height: 72px; } }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .mb_achievement_area .mb_achievement_content h2 {
       font-size: 40px;
+      line-height: 52px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .mb_achievement_area .mb_achievement_content h2 {
+      font-size: 52px;
+      line-height: 64px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_achievement_area .mb_achievement_content h2 {
+      font-size: 39px;
       line-height: 52px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .mb_achievement_area .mb_achievement_content h2 {
@@ -29980,7 +29997,7 @@ header {
       line-height: 68px;
       letter-spacing: -0.02em;
       color: #002147; }
-      @media only screen and (max-width: 1199px) {
+      @media (min-width: 10px) and (max-width: 1440px) {
         .mb_job_success_area .mb_job_success_content .mb_graduate_card h2 {
           font-size: 48px;
           line-height: 60px; } }
