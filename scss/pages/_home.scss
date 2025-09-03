@@ -357,13 +357,14 @@
             }
             @include sm {
                 margin-bottom: 13px !important;
+                justify-content: space-between;
             }
             .card_text{
                 @include nesthub{
                     font-size: 15px;
                 }
             }
-            @include xl{
+            @media (min-width: 1280px) and (max-width: 1440px){
                 .card_numb{
                     font-size: 48px !important;
                     line-height: 60px;
@@ -446,6 +447,7 @@
             height: 244px;
             @include sm{
                 margin-bottom: 10px;
+                max-width: 100%;
             }
             img{
                 width: 100%;
@@ -1063,6 +1065,7 @@
     background: $black2;
     &.style_01{
         background: #fefefe;
+       
     }
     .future_card {
         display: flex;
@@ -1073,10 +1076,11 @@
         flex: 1 0 0;
         border-radius: 20px;
         background: $white;
+        box-shadow: 0 20px 35px 0 $black2;
         &.style_01{
             background: $bg_color;
+             box-shadow: 35px 35px 65px 0 rgba(0, 33, 71, 0.15) !important;
         }
-        box-shadow: 0 20px 35px 0 $black2;
 
         .content {
             width: 100%;

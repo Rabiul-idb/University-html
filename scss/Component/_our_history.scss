@@ -30,12 +30,16 @@
       .timeline-title {
         
         font-weight: 500;
-        font-size: 48px;
+        font-size: 56px;
         letter-spacing: -0.04em;
         color: rgba(255, 255, 255, 0.2);
         line-height: 68px;
         cursor: pointer;
         transition: color 0.3s ease;
+        @media (min-width: 1280px) and (max-width: 1440px){
+          font-size: 48px !important;
+          line-height: 60px;
+        }
         @include md{
             font-size: 40px;
             line-height: 52px;
