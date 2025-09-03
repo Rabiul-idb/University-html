@@ -35811,6 +35811,9 @@ header {
   box-shadow: 35px 35px 65px 0 rgba(0, 33, 71, 0.15);
   background: #fff;
 }
+.rb_student_feedback .feedback_card .rb_thumb {
+  flex: none;
+}
 @media only screen and (max-width: 1599px) {
   .rb_student_feedback .feedback_card {
     padding: 24px;
@@ -35818,16 +35821,27 @@ header {
 }
 @media only screen and (max-width: 1199px) {
   .rb_student_feedback .feedback_card {
+    align-items: start;
+    height: auto;
+  }
+  .rb_student_feedback .feedback_card .rb_thumb {
+    flex: none;
+    max-width: 29%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_student_feedback .feedback_card {
     flex-direction: column-reverse;
     align-items: start;
     height: auto;
   }
+  .rb_student_feedback .feedback_card .rb_thumb {
+    width: 100%;
+    max-width: none;
+  }
   .rb_student_feedback .feedback_card .rb_thumb img {
     width: 100%;
   }
-}
-.rb_student_feedback .feedback_card .rb_thumb {
-  flex: none;
 }
 .rb_student_feedback .feedback_card .rb_content h4 {
   color: #002147;

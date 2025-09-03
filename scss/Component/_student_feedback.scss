@@ -21,21 +21,31 @@
         border: 1px solid #E5E9ED;
         box-shadow: 35px 35px 65px 0 rgba(0, 33, 71, 0.15);
         background: $white;
+        .rb_thumb {
+            flex: none;
+        }
         @include xxl {
             padding: 24px;
         }
         @include lg {
+            align-items: start;
+            height: auto;
+            .rb_thumb {
+                flex: none;
+                max-width: 29%;
+            }
+        }
+        @include md {
             flex-direction: column-reverse;
             align-items: start;
             height: auto;
             .rb_thumb {
+                width: 100%;
+                max-width: none;
                 img {
                     width: 100%;
                 }
             }
-        }
-        .rb_thumb {
-            flex: none;
         }
 
         .rb_content {
