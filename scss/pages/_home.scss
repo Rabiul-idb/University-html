@@ -703,6 +703,120 @@
     }
 }
 
+.rb_program2 {
+    border-radius: 20px;
+    background: $black2;
+
+    .program_card {
+       display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 1px solid #E5E9ED;
+        background: #F5F5F5;
+        box-shadow: 0 20px 35px 0 #002147;
+        .rb_icon {
+            display: flex;
+            width: 68px;
+            height: 68px;
+            padding: 11px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 34px;
+            background: #002147;
+        }
+        h4 {
+            color: #002147;
+            font-family: $geist-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px; /* 142.857% */
+            letter-spacing: -0.56px;
+            @include md {
+                font-size: 24px;
+                line-height: 32px; 
+                letter-spacing: -0.48px;
+            }
+        }
+        p {
+            color: #404A56;
+            font-family: $inter-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 157.143% */
+            letter-spacing: -0.14px;
+        }
+        .hr_line {
+            border-bottom: 1px solid rgba(0, 35, 83, 0.20);
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        h3 {
+            color: #002147;
+            font-family: Geist;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 60px; 
+            letter-spacing: -0.96px;
+            @include md {
+                font-size: 40px;
+                line-height: 52px; 
+                letter-spacing: -0.8px;
+            }
+            @include xxs {
+                font-size: 28px;
+                line-height: 40px; 
+                letter-spacing: -0.56px;
+            }
+        }
+        .rb_list {
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                li {
+                    color: #404A56;
+                    font-family: $inter-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    letter-spacing: -0.16px;
+                    @include xxs {
+                        font-size: 14px;
+                        line-height: 22px; 
+                        letter-spacing: -0.28px;
+                    }
+                    &:not(:last-child) {
+                        padding-bottom: 18px;
+                    }
+                    span {
+                        color: #002147;
+                        font-family: $inter-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px; 
+                        letter-spacing: -0.16px;
+                        @include xxs {
+                            font-size: 14px;
+                            line-height: 22px; 
+                            letter-spacing: -0.28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .rb_notice_board1 {
     background: #F7F7F7;
     .notice_card {
