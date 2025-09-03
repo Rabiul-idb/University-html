@@ -500,6 +500,11 @@
                     font-size: 24px;
                     display: inline-block;
                 }
+                @include md {
+                    &::before {
+                        font-size: 22px;
+                    }
+                }
                 @include breakpoint (max-xsmall) {
                     width: 28px;
                     height: 28px;
@@ -508,7 +513,7 @@
                     min-width: 28px;
                     min-height: 28px;
                     &::before {
-                        font-size: 22px;
+                        font-size: 20px;
                     }
                 }              
                 

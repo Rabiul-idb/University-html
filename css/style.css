@@ -32539,6 +32539,11 @@ header {
   font-size: 24px;
   display: inline-block;
 }
+@media only screen and (max-width: 991px) {
+  .rb_faq_section_2 .accordion .accordion-header .icon::before {
+    font-size: 22px;
+  }
+}
 @media (max-width: 449px) {
   .rb_faq_section_2 .accordion .accordion-header .icon {
     width: 28px;
@@ -32549,7 +32554,7 @@ header {
     min-height: 28px;
   }
   .rb_faq_section_2 .accordion .accordion-header .icon::before {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .rb_faq_section_2 .accordion .accordion-content {
