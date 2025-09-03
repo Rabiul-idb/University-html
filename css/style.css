@@ -27237,6 +27237,14 @@ header {
     display: block;
     text-align: left; }
   @media only screen and (max-width: 991px) {
+    .rb_heading_area.mb_style_1 .rb_heading_title {
+      flex: none; }
+    .rb_heading_area.mb_style_1 .heading-btn-wrapper {
+      flex: none;
+      margin-left: 0 !important; }
+    .rb_heading_area.mb_style_1 .single-btn {
+      margin-left: 0 !important; } }
+  @media only screen and (max-width: 991px) {
     .rb_heading_area {
       flex-wrap: wrap;
       row-gap: 20px; } }
@@ -27822,7 +27830,8 @@ header {
     inset: 0;
     z-index: 5;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .hero1-background-image {
         min-height: 612px; } }
@@ -27850,6 +27859,8 @@ header {
       line-height: 80px;
       /* 111.111% */
       letter-spacing: -1.44px; }
+      .hero1-content__title.style_01 {
+        max-width: 100% !important; }
       @media (max-width: 1599px) {
         .hero1-content__title {
           font-size: 64px;
@@ -28012,6 +28023,97 @@ header {
           padding: 10px 16px;
           font-size: 14px;
           line-height: 22px; } }
+  .hero1 .mb_event_box {
+    border-radius: 12px;
+    padding: 24px 28px;
+    width: 340px;
+    height: 284px;
+    box-shadow: 0 20px 35px 0 #002147;
+    position: relative;
+    z-index: 9;
+    padding: 24px 28px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, rgba(255, 255, 255, 0.075) 0%, rgba(255, 255, 255, 0.026) 100%); }
+    .hero1 .mb_event_box .mb_event_date {
+      box-shadow: 0 20px 35px 0 #002147;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      -moz-border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+      padding: 20px;
+      width: 100%; }
+      .hero1 .mb_event_box .mb_event_date h4 {
+        gap: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+        color: #fff; }
+        .hero1 .mb_event_box .mb_event_date h4 span {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: -0.01em; }
+        @media only screen and (max-width: 991px) {
+          .hero1 .mb_event_box .mb_event_date h4 {
+            font-size: 48px;
+            line-height: 56px; }
+            .hero1 .mb_event_box .mb_event_date h4 span {
+              font-size: 20px;
+              line-height: 32px; } }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .hero1 .mb_event_box .mb_event_date h4 {
+            flex-direction: column;
+            font-size: 36px;
+            line-height: 48px; }
+            .hero1 .mb_event_box .mb_event_date h4 span {
+              font-size: 18px;
+              line-height: 28px; } }
+    .hero1 .mb_event_box p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-top: 28px; }
+      @media only screen and (max-width: 991px) {
+        .hero1 .mb_event_box p {
+          font-size: 14px;
+          line-height: 22px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .hero1 .mb_event_box p {
+          font-size: 12px;
+          line-height: 20px; } }
+    @media only screen and (max-width: 991px) {
+      .hero1 .mb_event_box {
+        padding: 20px 24px;
+        width: 301px;
+        border-radius: 12px;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        height: 252px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .hero1 .mb_event_box {
+        border-radius: 12px;
+        padding: 16px 20px;
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 154px;
+        gap: 24px;
+        box-shadow: 0 20px 35px 0 #002147;
+        background-image: rgba(255, 255, 255, 0.2), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%); }
+        .hero1 .mb_event_box p {
+          margin-top: 0; } }
 
 .rb_service1 .service_card {
   display: flex;
@@ -30238,5 +30340,227 @@ header {
           font-size: 14px;
           line-height: 22px;
           padding-right: 100px; } }
+
+.mb_event_details_area {
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+  .mb_event_details_area .mb_event_highlight_card {
+    border: 1px solid #e5e9ed;
+    max-width: 916px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 36px 50px 36px 36px;
+    width: 100%;
+    background-color: #fff; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_event_details_area .mb_event_highlight_card {
+        padding: 24px; } }
+    .mb_event_details_area .mb_event_highlight_card h4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.01em;
+      color: #0d2c50; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_event_highlight_card h4 {
+          font-size: 20px;
+          line-height: 32px; } }
+    .mb_event_details_area .mb_event_highlight_card ul {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_event_highlight_card ul {
+          margin-top: 12px; } }
+      .mb_event_details_area .mb_event_highlight_card ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        line-height: 24px;
+        font-weight: 400;
+        color: #404A56; }
+        .mb_event_details_area .mb_event_highlight_card ul li span {
+          font-weight: 500;
+          color: #002147; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .mb_event_details_area .mb_event_highlight_card ul li {
+            font-size: 14px; }
+            .mb_event_details_area .mb_event_highlight_card ul li span {
+              font-weight: 400; } }
+  .mb_event_details_area .mb_should_attend {
+    background-color: #fff;
+    max-width: 916px;
+    padding: 36px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border: 1px solid #e5e9ed; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_event_details_area .mb_should_attend {
+        padding: 24px; } }
+    .mb_event_details_area .mb_should_attend .mb_section_title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.01em;
+      color: #0d2c50; }
+      .mb_event_details_area .mb_should_attend .mb_section_title.style_1 {
+        margin-top: 32px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_should_attend .mb_section_title {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 32px; } }
+    .mb_event_details_area .mb_should_attend .mb_section_text {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #404A56; }
+      .mb_event_details_area .mb_should_attend .mb_section_text.style_1 {
+        margin-top: 15px; }
+      .mb_event_details_area .mb_should_attend .mb_section_text.style_2 {
+        margin-top: -8px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_should_attend .mb_section_text {
+          margin-top: 12px;
+          font-size: 14px;
+          line-height: 22px; }
+          .mb_event_details_area .mb_should_attend .mb_section_text.style_2 {
+            margin-top: 0px; } }
+  .mb_event_details_area .mb_quote {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-top: 16px;
+    color: #002147; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_event_details_area .mb_quote {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 8px; } }
+  .mb_event_details_area .mb_image_grid {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap; }
+    .mb_event_details_area .mb_image_grid .mb_image {
+      width: calc(50% - 8px);
+      border-radius: 12px;
+      height: 334px; }
+      @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        .mb_event_details_area .mb_image_grid .mb_image {
+          height: 245px; } }
+      @media only screen and (max-width: 991px) {
+        .mb_event_details_area .mb_image_grid .mb_image {
+          height: 300px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_image_grid .mb_image {
+          width: 100%; } }
+    .mb_event_details_area .mb_image_grid .mb_images {
+      width: 100%;
+      height: 333px; }
+      @media only screen and (max-width: 991px) {
+        .mb_event_details_area .mb_image_grid .mb_images {
+          height: 300px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_image_grid .mb_images {
+          height: 210px; } }
+    .mb_event_details_area .mb_image_grid img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      object-fit: cover; }
+  .mb_event_details_area .mb_support_list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #404A56; }
+    .mb_event_details_area .mb_support_list li {
+      margin-bottom: 0.5rem; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_support_list li {
+          margin-bottom: 0px; } }
+  .mb_event_details_area .mb_event_details_sidebar {
+    border: 1px solid #e5e9ed;
+    border-radius: 12px;
+    padding: 24px 28px;
+    max-width: 492px;
+    width: 100%;
+    background-color: #fff; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_event_details_area .mb_event_details_sidebar {
+        padding: 16px; } }
+    @media only screen and (max-width: 991px) {
+      .mb_event_details_area .mb_event_details_sidebar {
+        max-width: 100%; } }
+    .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card {
+      background-color: #F7F7F7;
+      border-radius: 16px;
+      -moz-border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+      padding: 24px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card {
+          padding: 14px; } }
+      .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card .mb_organizer {
+        margin-top: 22px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card .mb_organizer {
+            margin-top: 16px; } }
+      .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card h5 {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: #0d2c50;
+        line-height: 32px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card h5 {
+            font-size: 18px;
+            font-weight: 500px;
+            line-height: 28px; } }
+      .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: #404A56; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .mb_event_details_area .mb_event_details_sidebar .mb_event_siderbar_card p {
+            font-size: 14px;
+            line-height: 22px; } }
+    .mb_event_details_area .mb_event_details_sidebar .btn_wrapper {
+      margin-top: 24px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_event_details_sidebar .btn_wrapper {
+          margin-top: 16px; } }
+      .mb_event_details_area .mb_event_details_sidebar .btn_wrapper a {
+        width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -150,6 +150,7 @@
         justify-content: center;
         flex: 0 0 100%;
         margin-left: 12px;
+       
     }
 
     @include sm{
@@ -187,6 +188,20 @@
     &.style-3{
         display: block;
         text-align: left;
+    }
+    &.mb_style_1{
+        @include md{
+            .rb_heading_title{
+                flex: none;
+            }
+            .heading-btn-wrapper{
+                flex: none;
+                margin-left: 0 !important;
+            }
+            .single-btn{
+                margin-left: 0 !important;
+            }
+        }
     }
 
     @include md{
