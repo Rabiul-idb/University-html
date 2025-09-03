@@ -686,6 +686,7 @@
             }
         }
         &:hover {
+            box-shadow: 0 20px 35px 0 rgba(0, 33, 71, 0.25);
             .thumb {
                 border-radius: 12px;
                 box-shadow: 0 15px 25px 0 rgba(0, 33, 71, 0.50);
@@ -728,6 +729,10 @@
             gap: 10px;
             border-radius: 34px;
             background: #002147;
+            @include xxs {
+                width: 60px;
+                height: 60px;
+            }
         }
         h4 {
             color: #002147;
