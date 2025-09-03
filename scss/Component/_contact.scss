@@ -10,6 +10,13 @@
         flex: 1 0 0;
         border-top: 1px solid rgba(0, 33, 71, 0.24);
         border-right: 1px solid rgba(0, 33, 71, 0.24);
+        @include md {
+            padding: 24px;
+            gap: 100px;
+        }
+        @include sm {
+            border-right: none;
+        }
         .rb_content {
             .rb_icon {
                 margin-bottom: 15px;
@@ -45,6 +52,7 @@
             text-decoration-thickness: auto;
             text-underline-offset: auto;
             text-underline-position: from-font;
+            overflow-wrap: anywhere;
             &:hover {
                 color: $primary;
             }
