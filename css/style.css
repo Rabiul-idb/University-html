@@ -31674,7 +31674,7 @@ header {
   display: block;
 }
 
-.rb_subtitle {
+.sec-subtitle {
   display: inline-flex;
   padding: 5px 12px;
   align-items: center;
@@ -31693,52 +31693,52 @@ header {
   align-self: flex-start;
   margin-bottom: 8px;
 }
-.rb_subtitle .subtitle-dot {
+.sec-subtitle .subtitle-dot {
   display: inline-block;
   height: 6px;
   width: 6px;
   border-radius: 50%;
   background-color: #FF1949;
 }
-.rb_subtitle.style_1 {
+.sec-subtitle.style_1 {
   border: 0.6px solid rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 @media only screen and (max-width: 1599px) {
-  .rb_subtitle {
+  .sec-subtitle {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.14px;
   }
 }
 @media (max-width: 449px) {
-  .rb_subtitle {
+  .sec-subtitle {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: -0.12px;
   }
 }
-.rb_subtitle.style_2 {
+.sec-subtitle.style_2 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   background: #002147;
 }
 @media only screen and (max-width: 1599px) {
-  .rb_subtitle {
+  .sec-subtitle {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.14px;
   }
 }
 @media (max-width: 449px) {
-  .rb_subtitle {
+  .sec-subtitle {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: -0.12px;
   }
 }
 
-.rb_title {
+.sec-title {
   color: #002147;
   font-family: "Geist", sans-serif;
   font-size: 56px;
@@ -31746,47 +31746,47 @@ header {
   font-weight: 500;
   letter-spacing: -1.12px;
 }
-.rb_title span {
+.sec-title span {
   color: #FF1949;
 }
-.rb_title.style_1 {
+.sec-title.style_1 {
   color: #fff;
 }
 @media only screen and (max-width: 1599px) {
-  .rb_title {
+  .sec-title {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: -0.96px;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .rb_title {
+  .sec-title {
     font-size: 44px;
     line-height: 52px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .rb_title {
+  .sec-title {
     font-size: 40px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .rb_title {
+  .sec-title {
     font-size: 34px;
     line-height: 40px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_title {
+  .sec-title {
     font-size: 28px;
     line-height: 40px;
   }
 }
-.rb_title .xxs-br {
+.sec-title .xxs-br {
   display: none;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_title .xxs-br {
+  .sec-title .xxs-br {
     display: block;
   }
 }
@@ -31819,7 +31819,7 @@ header {
 }
 
 @media only screen and (max-width: 991px) {
-  .rb_heading_title {
+  .sec-title-wrapper {
     flex: 1;
   }
 }
@@ -31866,39 +31866,39 @@ header {
   }
 }
 
-.rb_heading_area {
+.sec-header-area {
   display: flex;
   gap: 40px;
   margin-bottom: 45px;
 }
-.rb_heading_area.style-2 {
+.sec-header-area.style-2 {
   display: block;
   text-align: center;
 }
-.rb_heading_area.style-3 {
+.sec-header-area.style-3 {
   display: block;
   text-align: left;
 }
 @media only screen and (max-width: 991px) {
-  .rb_heading_area {
+  .sec-header-area {
     flex-wrap: wrap;
     row-gap: 20px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .rb_heading_area {
+  .sec-header-area {
     flex-direction: column;
     row-gap: 2px;
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .rb_heading_area.for-blog {
+  .sec-header-area.for-blog {
     flex-direction: column;
   }
 }
 @media only screen and (max-width: 991px) {
-  .rb_heading_area.for-blog .heading-btn-wrapper {
+  .sec-header-area.for-blog .heading-btn-wrapper {
     flex: none;
   }
 }
@@ -34612,7 +34612,7 @@ header {
     padding-top: 50px;
   }
 }
-.rb_fees_funding .rb_content .rb_title {
+.rb_fees_funding .rb_content .sec-title {
   color: #fff;
   font-family: "Geist", sans-serif;
   font-size: 72px;
@@ -34622,24 +34622,24 @@ header {
   letter-spacing: -1.44px;
 }
 @media only screen and (max-width: 1599px) {
-  .rb_fees_funding .rb_content .rb_title {
+  .rb_fees_funding .rb_content .sec-title {
     font-size: 64px;
     line-height: 1.2;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .rb_fees_funding .rb_content .rb_title {
+  .rb_fees_funding .rb_content .sec-title {
     font-size: 54px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .rb_fees_funding .rb_content .rb_title {
+  .rb_fees_funding .rb_content .sec-title {
     font-size: 40px;
     line-height: 52px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_fees_funding .rb_content .rb_title {
+  .rb_fees_funding .rb_content .sec-title {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.56px;
@@ -35628,7 +35628,7 @@ header {
     letter-spacing: -0.32px;
   }
 }
-.rb_process .rb_card .rb_item .rb_content .rb_title {
+.rb_process .rb_card .rb_item .rb_content .sec-title {
   color: #002147;
   font-family: "Geist", sans-serif;
   font-size: 28px;
@@ -35638,7 +35638,7 @@ header {
   letter-spacing: -0.56px;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_process .rb_card .rb_item .rb_content .rb_title {
+  .rb_process .rb_card .rb_item .rb_content .sec-title {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.48px;

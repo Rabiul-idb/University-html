@@ -1,5 +1,5 @@
 // Heading Area Start
-.rb_subtitle {
+.sec-subtitle {
     display: inline-flex;
     padding: 5px 12px;
     align-items: center;
@@ -57,7 +57,7 @@
         letter-spacing: -0.12px;
     }
 }
-.rb_title {
+.sec-title {
     color: $black2;
     font-family: $geist-font;
     font-size: 56px;
@@ -128,7 +128,7 @@
         max-width: 640px;
     }
 }
-.rb_heading_title{
+.sec-title-wrapper{
     @include md{
         flex: 1;
     }
@@ -175,7 +175,7 @@
 }
 
 
-.rb_heading_area {
+.sec-header-area {
     display: flex;
     gap: 40px;
     margin-bottom: 45px;
