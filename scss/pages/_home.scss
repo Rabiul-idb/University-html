@@ -918,6 +918,9 @@
 
 .rb_notice_board1 {
     background: #F7F7F7;
+    &.mb_style_1{
+        background-color: $white;
+    }
     .notice_card {
         display: flex;
         padding: 20px 20px 24px 20px;
