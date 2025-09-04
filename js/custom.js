@@ -225,6 +225,53 @@
         },
         
       })
+      const mb_relate_slider = new Swiper('.mb_relate_slider_container', {
+        loop: true,
+        speed: 1500,
+        slidesPerView: 2,
+        spaceBetween: 24,
+        autoplay: true,
+        navigation: {
+          prevEl: '.blog-btn-prev',
+          nextEl: '.blog-btn-next',
+        },
+        pagination: {
+          el: ".blog-fraction",
+          type: "fraction",
+          renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' of ' +
+                    '<span class="' + totalClass + '"></span>';
+            }
+        },
+
+        breakpoints: {
+          350: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 2,
+          }
+         
+        },
+        
+      })
 
      
         $('.mb_image_slider').slick({
@@ -407,6 +454,19 @@
             });
         }
 
+        function uploadFile(){
+                const fileInput = $('#application_file');
+                const fileNameSpan = $('#file_name');
+
+                fileInput.on('change', function () {
+                    if (this.files && this.files.length > 0) {
+                        fileNameSpan.text(this.files[0].name);
+                    } else {
+                        fileNameSpan.text('No File Chosen');
+                    }
+                });
+        }
+        uploadFile()
 
 
     });

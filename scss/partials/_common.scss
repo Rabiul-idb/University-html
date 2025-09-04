@@ -138,3 +138,8 @@ img {
         }
     }
 }
+
+.mb_whats_happening{
+    background-color: $bg_color;
+    @include border-radius(20px);
+}

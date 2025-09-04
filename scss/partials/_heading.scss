@@ -150,6 +150,7 @@
         justify-content: center;
         flex: 0 0 100%;
         margin-left: 12px;
+       
     }
 
     @include sm{
@@ -171,6 +172,22 @@
         }
 
     }
+    &.mb_style_001{
+        @include nesthubmax{
+            margin-left: 100px;
+            @include flex(row, center, center);
+            
+        }
+        @include nesthub{
+            margin-left: 0px;
+            @include flex(row, center, center);
+            
+        }
+        @include md{
+            margin-left: 0px;
+            
+        }
+    }
    
 }
 
@@ -187,6 +204,21 @@
     &.style-3{
         display: block;
         text-align: left;
+    }
+    &.mb_style_1{
+        @include md{
+            .sec-title{
+                flex: none;
+            }
+            .heading-btn-wrapper{
+                flex: none;
+                margin-left: 0 !important;
+                margin-bottom: 10px;
+            }
+            .single-btn{
+                margin-left: 0 !important;
+            }
+        }
     }
 
     @include md{
@@ -208,6 +240,7 @@
         .heading-btn-wrapper{
             @include md{
                 flex: none;
+
             }
 
         }
@@ -252,3 +285,90 @@
 
 
 
+.mb_search_area{
+    width: 470px;
+    height: 56px;
+    position: relative;
+    @include nesthubmax{
+        width: 322px;
+    }
+    @include nesthub{
+        width: 285px;
+    }
+    @include md{
+        width: 50%;
+    }
+    @include sm{
+        height: 46px;
+    }
+    input{
+        border: 1px solid #e5e9ed;
+        padding: 16px 50px 16px 24px;
+        @include border-radius(24px);
+        width: 100%;
+        height: 56px;
+        background-color: $white;
+        outline: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: $black2;
+        @include sm{
+            padding: 12px 14px;
+            font-size: 14px;
+            height: 46px;
+            line-height: 22px;
+        }
+}
+    button{
+        position: absolute;
+        top: 50%;
+        @include transformY(-50%);
+        right: 24px;
+        background-color: transparent;
+        font-size: 20px;
+        color: $black2;
+        border: none;
+        @include sm{
+            right: 20px;
+            font-size: 14px;
+            
+        }
+
+    }
+}
+.mb_select_area{
+    @include md{
+        width: 50%;
+    }
+    .nice-select{
+        border: 1px solid #e5e9ed;
+        border-radius: 28px;
+        padding: 0px 50px 0px 24px;
+        height: 56px;
+        background-color: $white;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 56px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: $black2;
+        &::after{
+            width: 8px;
+            height: 8px;
+            border-color: $black2;
+            right: 28px;
+        }
+        @include md{
+            width: 100%;
+        }
+        @include sm{
+        height: 46px;
+        font-size: 14px;
+        line-height: 46px;
+        padding: 0px 30px 0px 24px;
+    }
+
+    }
+}
