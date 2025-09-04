@@ -32959,11 +32959,6 @@ header {
   background-size: cover;
   background-position: center;
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .hero1-background-image {
-    min-height: 612px;
-  }
-}
 .hero1-background-image::before {
   content: "";
   position: absolute;
