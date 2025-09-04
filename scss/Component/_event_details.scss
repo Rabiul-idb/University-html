@@ -1,6 +1,23 @@
 .mb_event_details_area{
     background-color: $bg_color;
     @include border-radius(20px);
+
+    @include md{
+        .col-lg-8{
+            order: 1;
+            margin-top: 25px;
+            @include sm{
+                margin-top: 12px;
+            }
+        }
+        .col-lg-9{
+            order: 1;
+            margin-top: 25px;
+            @include sm{
+                margin-top: 12px;
+            }
+        }
+    }
     .mb_event_highlight_card{
         border: 1px solid #e5e9ed;
         max-width: 916px;

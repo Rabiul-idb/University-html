@@ -43,12 +43,12 @@
     border: 1px solid #e5e9ed;
     border-radius: 20px;
     padding: 24px;
+    width: 100%;
+    background: $white;
+    @include transition(0.4s);
     @include md{
         padding: 16px;
     }
-    width: 100%;
-    box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
-    background: $white;
     .mb_faculty_img{
         border-radius: 12px;
         width: 100%;
@@ -127,5 +127,8 @@
             line-height: 28px;
             color: $black2;
         }
+    }
+    &:hover{
+        box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
     }
 }
