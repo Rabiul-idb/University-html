@@ -469,8 +469,14 @@
         uploadFile()
 
 
-    });
+        // Process Section
+        $('.rb_process_js').on('click', function () {
+            $('.rb_process_js').removeClass('active'); 
+            $(this).addClass('active'); 
+        });
 
+
+    });  
    
 })(jQuery);
 

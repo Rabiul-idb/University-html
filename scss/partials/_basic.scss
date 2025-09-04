@@ -573,27 +573,27 @@
         input[type="password"],
         textarea {
             width: 100%;
-            padding: 12px 20px;
-            height: 46px;
-            border-radius: 6px;
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            padding: 14px 20px;
+            height: 54px;
+            border-radius: 8px;
+            border: 1px solid rgba(13, 44, 80, 0.10);
+            background: $white;
 
             color: $text_color;
             font-family: Inter;
-            font-size: 15px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 26px; 
             &::placeholder{
                 color: $text_color;
-                opacity: 0.7;
             }
             &:focus {
                 outline: none;
             }
         }
         textarea {
-            height: 122px;
+            height: 166px;
             resize: vertical;
         }
         input[type="date"] {
@@ -615,17 +615,19 @@
         .nice-select,
         select {
             width: 100%;
-            padding: 12px 20px;
-            height: 46px;
-            border-radius: 6px;
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            padding: 14px 20px;
+            height: 54px;
+            border-radius: 8px;
+            border: 1px solid rgba(13, 44, 80, 0.10);
+            background: #FFF;
+            backdrop-filter: blur(5px);
 
             color: $text_color;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
-            font-weight: 500;
-            line-height: normal;
+            font-weight: 400;
+            line-height: 26px; 
 
             /* Remove default arrow styles for consistency */
             appearance: none;
@@ -639,8 +641,9 @@
             cursor: pointer;
         }
         .nice-select:after {
-            width: 7px;
-            height: 7px;
+            width: 9px;
+            height: 9px;
+            right: 20px;
         }
         select:focus {
             outline: none;

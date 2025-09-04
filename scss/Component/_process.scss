@@ -78,7 +78,7 @@
                 }
             }
 
-            &:hover {
+            &.active {
                 border: 1px solid #E5E9ED;
                 background: $white;
                 box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
