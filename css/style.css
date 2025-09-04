@@ -27262,11 +27262,12 @@ header {
     display: block;
     text-align: left; }
   @media only screen and (max-width: 991px) {
-    .sec-header-area.mb_style_1 .rb_heading_title {
+    .sec-header-area.mb_style_1 .sec-title {
       flex: none; }
     .sec-header-area.mb_style_1 .heading-btn-wrapper {
       flex: none;
-      margin-left: 0 !important; }
+      margin-left: 0 !important;
+      margin-bottom: 10px; }
     .sec-header-area.mb_style_1 .single-btn {
       margin-left: 0 !important; } }
   @media only screen and (max-width: 991px) {

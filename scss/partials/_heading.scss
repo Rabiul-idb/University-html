@@ -207,13 +207,13 @@
     }
     &.mb_style_1{
         @include md{
-            .rb_heading_title{
+            .sec-title{
                 flex: none;
             }
             .heading-btn-wrapper{
                 flex: none;
                 margin-left: 0 !important;
-
+                margin-bottom: 10px;
             }
             .single-btn{
                 margin-left: 0 !important;
