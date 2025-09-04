@@ -32587,6 +32587,183 @@ header {
   }
 }
 
+.common_input {
+  position: relative;
+}
+.common_input .form-group label {
+  display: block;
+  color: #404A56;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 13px;
+}
+.common_input .form-group input[type=text],
+.common_input .form-group input[type=number],
+.common_input .form-group input[type=tel],
+.common_input .form-group input[type=date],
+.common_input .form-group input[type=time],
+.common_input .form-group input[type=email],
+.common_input .form-group input[type=password],
+.common_input .form-group textarea {
+  width: 100%;
+  padding: 12px 20px;
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  color: #404A56;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.common_input .form-group input[type=text]::placeholder,
+.common_input .form-group input[type=number]::placeholder,
+.common_input .form-group input[type=tel]::placeholder,
+.common_input .form-group input[type=date]::placeholder,
+.common_input .form-group input[type=time]::placeholder,
+.common_input .form-group input[type=email]::placeholder,
+.common_input .form-group input[type=password]::placeholder,
+.common_input .form-group textarea::placeholder {
+  color: #404A56;
+  opacity: 0.7;
+}
+.common_input .form-group input[type=text]:focus,
+.common_input .form-group input[type=number]:focus,
+.common_input .form-group input[type=tel]:focus,
+.common_input .form-group input[type=date]:focus,
+.common_input .form-group input[type=time]:focus,
+.common_input .form-group input[type=email]:focus,
+.common_input .form-group input[type=password]:focus,
+.common_input .form-group textarea:focus {
+  outline: none;
+}
+.common_input .form-group textarea {
+  height: 122px;
+  resize: vertical;
+}
+.common_input .form-group input[type=date] {
+  cursor: pointer;
+}
+.common_input .form-group input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+.common_input .form-group input[type=date]::-webkit-inner-spin-button, .common_input .form-group input[type=date]::-webkit-clear-button {
+  display: none;
+}
+.common_input .form-group input[type=date]:focus {
+  outline: none;
+}
+.common_input .form-group .nice-select,
+.common_input .form-group select {
+  width: 100%;
+  padding: 12px 20px;
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  color: #404A56;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* Remove default arrow styles for consistency */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px 8px;
+  cursor: pointer;
+}
+.common_input .form-group .nice-select:after {
+  width: 7px;
+  height: 7px;
+}
+.common_input .form-group select:focus {
+  outline: none;
+}
+.common_input .form-group .gender-options {
+  display: flex;
+  gap: 20px;
+  padding: 14px 30px;
+  height: 54px;
+  border-radius: 5px;
+  background: var(--100, #EBF3ED);
+  align-items: center;
+}
+.common_input .form-group .gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--800, #626262);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.common_input .form-group .gender-options input[type=radio] {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--900, #1F1F1F);
+  background: transparent;
+  cursor: pointer;
+}
+.common_input .form-group .password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.common_input .form-group .password-input-container.style_1 input::placeholder {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: black;
+}
+.common_input .form-group .toggle-password {
+  position: absolute;
+  right: 15px;
+  color: #626262;
+  font-size: 18px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.common_input .checkbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.common_input .checkbox-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #404A56;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.common_input .checkbox-left input[type=checkbox] {
+  border-radius: 2px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
 .hero1 {
   position: relative;
   padding: 546px 0 164px;
@@ -36160,6 +36337,158 @@ header {
 .rb_contact_us .contact_card .rb_link:hover {
   color: #FF1949;
 }
+.rb_contact_us .rb_form_card {
+  display: flex;
+  height: 784px;
+  padding: 24px 48px 24px 24px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 35px 35px 65px 0 rgba(0, 33, 71, 0.15);
+}
+.rb_contact_us .rb_form_card .rb_thumb {
+  flex: none;
+}
+@media only screen and (max-width: 1599px) {
+  .rb_contact_us .rb_form_card {
+    padding: 24px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rb_contact_us .rb_form_card {
+    align-items: start;
+    height: auto;
+  }
+  .rb_contact_us .rb_form_card .rb_thumb {
+    flex: none;
+    max-width: 29%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_contact_us .rb_form_card {
+    flex-direction: column-reverse;
+    align-items: start;
+    height: auto;
+  }
+  .rb_contact_us .rb_form_card .rb_thumb {
+    width: 100%;
+    max-width: none;
+  }
+  .rb_contact_us .rb_form_card .rb_thumb img {
+    width: 100%;
+  }
+}
+.rb_contact_us .rb_form_card .rb_content h4 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+}
+@media (max-width: 479px) {
+  .rb_contact_us .rb_form_card .rb_content h4 {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+  }
+}
+.rb_contact_us .rb_form_card .rb_content p {
+  padding-right: 12px;
+  color: #404A56;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_contact_us .rb_form_card .rb_content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.rb_contact_us .rb_form_card .text_footer {
+  width: 100%;
+  margin-top: 80px;
+}
+@media only screen and (max-width: 1399px) {
+  .rb_contact_us .rb_form_card .text_footer {
+    margin-top: 40px;
+  }
+}
+.rb_contact_us .rb_form_card .text_footer h5 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_contact_us .rb_form_card .text_footer h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.rb_contact_us .rb_form_card .text_footer h5 span {
+  color: #404A56;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  padding-left: 7px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_contact_us .rb_form_card .text_footer h5 span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+  }
+}
+.rb_contact_us .rb_form_card .button_area {
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #E5E9ED;
+  background: #F5F5F5;
+}
+.rb_contact_us .rb_form_card .button_area h5 {
+  color: #002147;
+  font-family: "Geist", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_contact_us .rb_form_card .button_area h5 {
+    padding: 8px 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_contact_us .rb_form_card .button_area h5 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+  }
+}
+.rb_contact_us .rb_form_card .button_area h5 span {
+  color: #FF1949;
+}
+.rb_contact_us .rb_form_card:hover {
+  box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+  transition: all 0.4s ease;
+}
 
 .rb_visit_us {
   border-radius: 20px;
@@ -36245,6 +36574,4 @@ header {
   border: 0;
   border-radius: 20px;
   display: block;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
