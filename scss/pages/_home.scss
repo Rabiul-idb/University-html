@@ -47,6 +47,9 @@
                 padding-top: 0px !important;
             }
         }
+        &.style_001{
+            padding-left: 30px;
+        }
         @include xxs{
             padding-top: 180px;
         }

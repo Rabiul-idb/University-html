@@ -27956,6 +27956,8 @@ header {
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .hero1-content.style_1 {
         padding-top: 0px !important; } }
+    .hero1-content.style_001 {
+      padding-left: 30px; }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .hero1-content {
         padding-top: 180px; } }
@@ -30774,6 +30776,481 @@ header {
       overflow-wrap: anywhere; }
       .rb_contact_us .contact_card .rb_link:hover {
         color: #FF1949; }
+
+.mb_first_applicant {
+  background-color: #F7F7F7; }
+  .mb_first_applicant h2 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.02em;
+    color: #002147; }
+    @media (max-width: 1440px) {
+      .mb_first_applicant h2 {
+        font-size: 48px;
+        line-height: 60px; } }
+    @media only screen and (max-width: 991px) {
+      .mb_first_applicant h2 {
+        font-size: 40px;
+        line-height: 52px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant h2 {
+        font-size: 28px;
+        line-height: 40px; } }
+  .mb_first_applicant .mb_applicant_image {
+    width: 100%;
+    height: 700px; }
+    @media (max-width: 1440px) {
+      .mb_first_applicant .mb_applicant_image {
+        height: 560px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant .mb_applicant_image {
+        height: 300px; } }
+    .mb_first_applicant .mb_applicant_image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      -moz-border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px; }
+  .mb_first_applicant h4 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #002147; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant h4 {
+        font-size: 24px;
+        line-height: 36px; } }
+  .mb_first_applicant p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    color: #404A56; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant p {
+        font-size: 14px;
+        line-height: 22px; } }
+  .mb_first_applicant .mb_requirement_deadline {
+    border: 1px solid #e5e9ed;
+    border-radius: 16px;
+    padding: 48px;
+    width: 100%;
+    background-color: #fff; }
+    @media (max-width: 1440px) {
+      .mb_first_applicant .mb_requirement_deadline {
+        padding: 36px; } }
+    @media only screen and (max-width: 991px) {
+      .mb_first_applicant .mb_requirement_deadline {
+        padding: 24px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant .mb_requirement_deadline {
+        padding: 16px; } }
+  .mb_first_applicant .mb_require_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 110px;
+    flex-wrap: wrap;
+    margin-top: 24px; }
+    @media only screen and (max-width: 991px) {
+      .mb_first_applicant .mb_require_list {
+        gap: 13px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant .mb_require_list {
+        margin-top: 16px; } }
+    .mb_first_applicant .mb_require_list ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 13px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_first_applicant .mb_require_list ul {
+          gap: 8px; } }
+      .mb_first_applicant .mb_require_list ul li {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+        color: #404A56;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px; }
+        .mb_first_applicant .mb_require_list ul li p {
+          width: calc(100% - 40px); }
+        .mb_first_applicant .mb_require_list ul li span {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          text-align: center;
+          line-height: 28px;
+          display: block;
+          border: 1px solid rgba(0, 33, 71, 0.2);
+          background-color: #F7F7F7; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .mb_first_applicant .mb_require_list ul li {
+            font-size: 14px;
+            line-height: 22px; }
+            .mb_first_applicant .mb_require_list ul li span {
+              width: 24px;
+              height: 24px;
+              line-height: 24px; } }
+  .mb_first_applicant .mb_application_deadline {
+    margin-top: 24px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant .mb_application_deadline .col-sm-4 {
+        width: calc(33.33% - 5px); } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_first_applicant .mb_application_deadline {
+        margin-top: 16px; } }
+    .mb_first_applicant .mb_application_deadline .row {
+      padding: 14px 28px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_first_applicant .mb_application_deadline .row {
+          padding: 16px; } }
+      .mb_first_applicant .mb_application_deadline .row.style_1 {
+        background-color: #002147;
+        border-radius: 12px 12px 0 0; }
+      .mb_first_applicant .mb_application_deadline .row.style_2 {
+        border: 1px solid rgba(0, 33, 71, 0.2);
+        border-top: none; }
+      .mb_first_applicant .mb_application_deadline .row.style_3 {
+        border-radius: 0px 0px 12px 12px;
+        -moz-border-radius: 0px 0px 12px 12px;
+        -webkit-border-radius: 0px 0px 12px 12px;
+        -ms-border-radius: 0px 0px 12px 12px;
+        -o-border-radius: 0px 0px 12px 12px; }
+    .mb_first_applicant .mb_application_deadline h4 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #fff; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_first_applicant .mb_application_deadline h4 {
+          font-size: 14px;
+          line-height: 22px; } }
+    .mb_first_applicant .mb_application_deadline p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.01em;
+      color: #002147; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_first_applicant .mb_application_deadline p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px; } }
+
+.application_details_area {
+  background-color: #F7F7F7; }
+  .application_details_area .form_container {
+    border: 1px solid #e5e9ed;
+    border-radius: 12px;
+    padding: 36px;
+    background-color: #fff; }
+    @media only screen and (max-width: 991px) {
+      .application_details_area .form_container {
+        padding: 24px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_container {
+        padding: 16px; } }
+  .application_details_area .application_form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .application_form {
+        gap: 6px; } }
+  .application_details_area .form_heading {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    color: #002147;
+    margin-bottom: 32px; }
+    @media only screen and (max-width: 991px) {
+      .application_details_area .form_heading {
+        font-size: 40px;
+        line-height: 52px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_heading {
+        font-size: 28px;
+        line-height: 48px;
+        margin-bottom: 20px; } }
+  .application_details_area h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #0d2c50;
+    margin-bottom: 16px; }
+  .application_details_area .form_field_group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_field_group {
+        flex-direction: column; } }
+  .application_details_area .form_field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .application_details_area .form_field--full-width {
+      flex: none;
+      width: 100%; }
+  .application_details_area .form_label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #002147;
+    margin-bottom: 8px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_label {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 6px; } }
+  .application_details_area .form_input {
+    border: 1px solid rgba(13, 44, 80, 0.1);
+    border-radius: 8px;
+    padding: 0px 20px;
+    height: 52px;
+    line-height: 52px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    outline: none;
+    color: #002147;
+    background-color: #F7F7F7; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_input {
+        padding: 0px 14px;
+        height: 44px;
+        line-height: 44px; } }
+    .application_details_area .form_input::placeholder {
+      color: #333; }
+  .application_details_area .form_select {
+    border: 1px solid rgba(13, 44, 80, 0.1);
+    border-radius: 8px;
+    padding: 0px 20px;
+    width: 100%;
+    background-color: #F7F7F7;
+    height: 52px;
+    line-height: 52px; }
+  .application_details_area .nice-select::after {
+    width: 8px;
+    height: 8px;
+    right: 24px; }
+  .application_details_area .nice-select .list {
+    width: 100%; }
+  .application_details_area .form_checkbox_label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_checkbox_label {
+        align-items: flex-start; } }
+    .application_details_area .form_checkbox_label label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: #333; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .application_details_area .form_checkbox_label label {
+          font-size: 12px;
+          line-height: 20px; } }
+    .application_details_area .form_checkbox_label input {
+      border: 1px solid rgba(13, 44, 80, 0.1);
+      border-radius: 4px;
+      width: 24px;
+      backdrop-filter: blur(10px);
+      background: #fff;
+      height: 24px;
+      cursor: pointer; }
+  .application_details_area .form_agreement_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    color: #333;
+    margin-bottom: 16px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .form_agreement_text {
+        font-size: 14px;
+        line-height: 22px; } }
+  .application_details_area .file_input_hidden {
+    display: none; }
+  .application_details_area .choose_file_btn {
+    padding: 5px 15px;
+    background-color: #FF1949;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #fff; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .choose_file_btn {
+        padding: 5px 12px;
+        font-size: 12px;
+        line-height: 22px; } }
+  .application_details_area .file_input_container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid rgba(13, 44, 80, 0.1);
+    border-radius: 8px;
+    padding: 10px 20px;
+    height: 52px;
+    backdrop-filter: blur(10px);
+    background: #F7F7F7; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .application_details_area .file_input_container {
+        padding: 7px 14px; } }
+    .application_details_area .file_input_container .file_name {
+      padding: 10px;
+      color: #999;
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: #333; }
+  .application_details_area .btn_wrapper a {
+    width: 100%; }
+  @media only screen and (max-width: 991px) {
+    .application_details_area .mb_application_sidebar {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap; } }
+  @media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 767px) {
+    .application_details_area .mb_application_sidebar {
+      flex-direction: column; } }
+
+  .application_details_area .mb_application_sidebar .mb_american_studies {
+    width: 100%; }
+    .application_details_area .mb_application_sidebar .mb_american_studies .mb_title {
+      border-radius: 12px 12px 0 0;
+      padding: 14px 20px;
+      background-color: #002147;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      color: #fff; }
+    .application_details_area .mb_application_sidebar .mb_american_studies ul {
+      border-radius: 12px;
+      background-color: #fff; }
+      .application_details_area .mb_application_sidebar .mb_american_studies ul li {
+        border: 1px solid rgba(0, 33, 71, 0.2);
+        padding: 14px 20px;
+        width: 100%; }
+        .application_details_area .mb_application_sidebar .mb_american_studies ul li a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: -0.02em;
+          color: #002147;
+          transition: all 0.4s ease; }
+          .application_details_area .mb_application_sidebar .mb_american_studies ul li a:hover {
+            color: #FF1949; }
+        .application_details_area .mb_application_sidebar .mb_american_studies ul li span {
+          margin-left: 10px; }
+        .application_details_area .mb_application_sidebar .mb_american_studies ul li:last-child {
+          border-radius: 0px 0px 12px 12px;
+          -moz-border-radius: 0px 0px 12px 12px;
+          -webkit-border-radius: 0px 0px 12px 12px;
+          -ms-border-radius: 0px 0px 12px 12px;
+          -o-border-radius: 0px 0px 12px 12px; }
+  .application_details_area .mb_department_contact {
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 12px;
+    padding: 28px;
+    background-color: #002147; }
+    @media only screen and (max-width: 991px) {
+      .application_details_area .mb_department_contact {
+        margin-top: 0px; } }
+  @media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 767px) {
+    .application_details_area .mb_department_contact {
+      margin-top: 16px; } }
+
+    .application_details_area .mb_department_contact h4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.01em;
+      color: #fff; }
+    .application_details_area .mb_department_contact p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.01em;
+      color: #fff; }
+    .application_details_area .mb_department_contact .mb_contact_us {
+      margin-top: 48px; }
+      .application_details_area .mb_department_contact .mb_contact_us h5 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #fff;
+        margin-bottom: 16px; }
+      .application_details_area .mb_department_contact .mb_contact_us a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #fff;
+        display: block;
+        margin-bottom: 10px;
+        transition: all 0.4s ease; }
+        .application_details_area .mb_department_contact .mb_contact_us a:hover {
+          color: #FF1949; }
+    .application_details_area .mb_department_contact .mb_social_media {
+      margin-top: 38px; }
+      .application_details_area .mb_department_contact .mb_social_media h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #fff; }
+      .application_details_area .mb_department_contact .mb_social_media .social-icons {
+        margin-top: 16px; }
+        .application_details_area .mb_department_contact .mb_social_media .social-icons a:hover {
+          border: 1px solid transparent; }
 
 .rb_visit_us {
   border-radius: 20px;

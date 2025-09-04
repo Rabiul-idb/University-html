@@ -454,6 +454,19 @@
             });
         }
 
+        function uploadFile(){
+                const fileInput = $('#application_file');
+                const fileNameSpan = $('#file_name');
+
+                fileInput.on('change', function () {
+                    if (this.files && this.files.length > 0) {
+                        fileNameSpan.text(this.files[0].name);
+                    } else {
+                        fileNameSpan.text('No File Chosen');
+                    }
+                });
+        }
+        uploadFile()
 
 
     });
