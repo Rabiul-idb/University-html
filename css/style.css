@@ -26377,6 +26377,14 @@ img {
   .mb_our_achievements_area .row .col-lg-3 {
     width: 50% !important; } }
 
+.mb_whats_happening {
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+
 /*------------------------------------
       3.4 Mobile menu
 ----------------------------------*/
@@ -27081,7 +27089,7 @@ header {
 .show {
   display: block; }
 
-.rb_subtitle {
+.sec-subtitle {
   display: inline-flex;
   padding: 5px 12px;
   align-items: center;
@@ -27099,75 +27107,75 @@ header {
   flex-shrink: 0;
   align-self: flex-start;
   margin-bottom: 8px; }
-  .rb_subtitle .subtitle-dot {
+  .sec-subtitle .subtitle-dot {
     display: inline-block;
     height: 6px;
     width: 6px;
     border-radius: 50%;
     background-color: #FF1949; }
-  .rb_subtitle.style_1 {
+  .sec-subtitle.style_1 {
     border: 0.6px solid rgba(255, 255, 255, 0.2);
     color: #fff; }
   @media only screen and (max-width: 1599px) {
-    .rb_subtitle {
+    .sec-subtitle {
       font-size: 14px;
       line-height: 22px;
       letter-spacing: -0.14px; } }
   @media (max-width: 449px) {
-    .rb_subtitle {
+    .sec-subtitle {
       font-size: 12px;
       line-height: 20px;
       letter-spacing: -0.12px; } }
-  .rb_subtitle.style_2 {
+  .sec-subtitle.style_2 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     background: #002147; }
   @media only screen and (max-width: 1599px) {
-    .rb_subtitle {
+    .sec-subtitle {
       font-size: 14px;
       line-height: 22px;
       letter-spacing: -0.14px; } }
   @media (max-width: 449px) {
-    .rb_subtitle {
+    .sec-subtitle {
       font-size: 12px;
       line-height: 20px;
       letter-spacing: -0.12px; } }
 
-.rb_title {
+.sec-title {
   color: #002147;
   font-family: "Geist", sans-serif;
   font-size: 56px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -1.12px; }
-  .rb_title span {
+  .sec-title span {
     color: #FF1949; }
-  .rb_title.style_1 {
+  .sec-title.style_1 {
     color: #fff; }
   @media only screen and (max-width: 1599px) {
-    .rb_title {
+    .sec-title {
       font-size: 48px;
       line-height: 60px;
       letter-spacing: -0.96px; } }
   @media only screen and (max-width: 1199px) {
-    .rb_title {
+    .sec-title {
       font-size: 44px;
       line-height: 52px; } }
   @media only screen and (max-width: 991px) {
-    .rb_title {
+    .sec-title {
       font-size: 40px; } }
   @media only screen and (min-width: 0px) and (max-width: 575px) {
-    .rb_title {
+    .sec-title {
       font-size: 34px;
       line-height: 40px; } }
   @media only screen and (min-width: 0px) and (max-width: 479px) {
-    .rb_title {
+    .sec-title {
       font-size: 28px;
       line-height: 40px; } }
-  .rb_title .xxs-br {
+  .sec-title .xxs-br {
     display: none; }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
-      .rb_title .xxs-br {
+      .sec-title .xxs-br {
         display: block; } }
 
 .rb_desc {
@@ -27192,7 +27200,7 @@ header {
     max-width: 640px; }
 
 @media only screen and (max-width: 991px) {
-  .rb_heading_title {
+  .sec-title-wrapper {
     flex: 1; } }
 
 .heading-btn-wrapper {
@@ -27225,39 +27233,56 @@ header {
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .heading-btn-wrapper.single-btn {
       margin-left: 0; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .heading-btn-wrapper.mb_style_001 {
+      margin-left: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .heading-btn-wrapper.mb_style_001 {
+      margin-left: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (max-width: 991px) {
+    .heading-btn-wrapper.mb_style_001 {
+      margin-left: 0px; } }
 
-.rb_heading_area {
+.sec-header-area {
   display: flex;
   gap: 40px;
   margin-bottom: 45px; }
-  .rb_heading_area.style-2 {
+  .sec-header-area.style-2 {
     display: block;
     text-align: center; }
-  .rb_heading_area.style-3 {
+  .sec-header-area.style-3 {
     display: block;
     text-align: left; }
   @media only screen and (max-width: 991px) {
-    .rb_heading_area.mb_style_1 .rb_heading_title {
+    .sec-header-area.mb_style_1 .rb_heading_title {
       flex: none; }
-    .rb_heading_area.mb_style_1 .heading-btn-wrapper {
+    .sec-header-area.mb_style_1 .heading-btn-wrapper {
       flex: none;
       margin-left: 0 !important; }
-    .rb_heading_area.mb_style_1 .single-btn {
+    .sec-header-area.mb_style_1 .single-btn {
       margin-left: 0 !important; } }
   @media only screen and (max-width: 991px) {
-    .rb_heading_area {
+    .sec-header-area {
       flex-wrap: wrap;
       row-gap: 20px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .rb_heading_area {
+    .sec-header-area {
       flex-direction: column;
       row-gap: 2px;
       margin-bottom: 30px; } }
   @media only screen and (max-width: 991px) {
-    .rb_heading_area.for-blog {
+    .sec-header-area.for-blog {
       flex-direction: column; } }
   @media only screen and (max-width: 991px) {
-    .rb_heading_area.for-blog .heading-btn-wrapper {
+    .sec-header-area.for-blog .heading-btn-wrapper {
       flex: none; } }
 
 @media (min-width: 1200px) {
@@ -27284,6 +27309,93 @@ header {
 
   .sm-none {
     display: none; } }
+.mb_search_area {
+  width: 470px;
+  height: 56px;
+  position: relative; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .mb_search_area {
+      width: 322px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .mb_search_area {
+      width: 285px; } }
+  @media only screen and (max-width: 991px) {
+    .mb_search_area {
+      width: 50%; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_search_area {
+      height: 46px; } }
+  .mb_search_area input {
+    border: 1px solid #e5e9ed;
+    padding: 16px 50px 16px 24px;
+    border-radius: 24px;
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #002147; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_search_area input {
+        padding: 12px 14px;
+        font-size: 14px;
+        height: 46px;
+        line-height: 22px; } }
+  .mb_search_area button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    right: 24px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #002147;
+    border: none; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_search_area button {
+        right: 20px;
+        font-size: 14px; } }
+
+@media only screen and (max-width: 991px) {
+  .mb_select_area {
+    width: 50%; } }
+.mb_select_area .nice-select {
+  border: 1px solid #e5e9ed;
+  border-radius: 28px;
+  padding: 0px 50px 0px 24px;
+  height: 56px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 56px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #002147; }
+  .mb_select_area .nice-select::after {
+    width: 8px;
+    height: 8px;
+    border-color: #002147;
+    right: 28px; }
+  @media only screen and (max-width: 991px) {
+    .mb_select_area .nice-select {
+      width: 100%; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_select_area .nice-select {
+      height: 46px;
+      font-size: 14px;
+      line-height: 46px;
+      padding: 0px 30px 0px 24px; } }
+
 .btn_wrapper a {
   display: inline-flex;
   padding: 8px 20px;
@@ -27548,9 +27660,6 @@ header {
   @media only screen and (max-width: 1199px) {
     .rb_faq_section .accordion {
       margin-top: 0; } }
-  @media only screen and (min-width: 0px) and (max-width: 479px) {
-    .rb_faq_section .accordion {
-      margin-top: 20px; } }
   .rb_faq_section .accordion .accordion-item {
     border-radius: 12px;
     background: #F7F7F7;
@@ -27890,6 +27999,8 @@ header {
         max-width: 747px; }
       .hero1-content__title.style_3 {
         max-width: 763px; }
+      .hero1-content__title.style_4 {
+        max-width: 806px; }
     .hero1-content__desc {
       max-width: 410px;
       color: #fff;
@@ -28469,15 +28580,123 @@ header {
           font-size: 14px;
           line-height: 22px;
           letter-spacing: -0.14px; } }
-    .rb_program1 .program_card:hover .thumb {
-      border-radius: 12px;
-      box-shadow: 0 15px 25px 0 rgba(0, 33, 71, 0.5);
-      transition: all 0.4s ease; }
-    .rb_program1 .program_card:hover .btn_wrapper.style_3 a {
-      background: #FF1949;
-      border: 1px solid #FF1949;
-      color: #fff;
-      transition: all 0.4s ease; }
+    .rb_program1 .program_card:hover {
+      box-shadow: 0 20px 35px 0 rgba(0, 33, 71, 0.25); }
+      .rb_program1 .program_card:hover .thumb {
+        border-radius: 12px;
+        box-shadow: 0 15px 25px 0 rgba(0, 33, 71, 0.5);
+        transition: all 0.4s ease; }
+      .rb_program1 .program_card:hover .btn_wrapper.style_3 a {
+        background: #FF1949;
+        border: 1px solid #FF1949;
+        color: #fff;
+        transition: all 0.4s ease; }
+
+.rb_program2 {
+  border-radius: 20px;
+  background: #002147; }
+  .rb_program2 .program_card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #E5E9ED;
+    background: #F5F5F5;
+    box-shadow: 0 20px 35px 0 #002147; }
+    .rb_program2 .program_card .rb_icon {
+      display: flex;
+      width: 68px;
+      height: 68px;
+      padding: 11px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 34px;
+      background: #002147; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .rb_program2 .program_card .rb_icon {
+          width: 60px;
+          height: 60px; } }
+    .rb_program2 .program_card h4 {
+      color: #002147;
+      font-family: "Geist", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+      /* 142.857% */
+      letter-spacing: -0.56px; }
+      @media only screen and (max-width: 991px) {
+        .rb_program2 .program_card h4 {
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: -0.48px; } }
+    .rb_program2 .program_card p {
+      color: #404A56;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      /* 157.143% */
+      letter-spacing: -0.14px; }
+    .rb_program2 .program_card .hr_line {
+      border-bottom: 1px solid rgba(0, 35, 83, 0.2);
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 8px; }
+    .rb_program2 .program_card h3 {
+      color: #002147;
+      font-family: Geist;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: -0.96px; }
+      @media only screen and (max-width: 991px) {
+        .rb_program2 .program_card h3 {
+          font-size: 40px;
+          line-height: 52px;
+          letter-spacing: -0.8px; } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .rb_program2 .program_card h3 {
+          font-size: 28px;
+          line-height: 40px;
+          letter-spacing: -0.56px; } }
+    .rb_program2 .program_card .rb_list ul {
+      list-style-type: disc;
+      padding-left: 20px; }
+      .rb_program2 .program_card .rb_list ul li {
+        color: #404A56;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.16px; }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .rb_program2 .program_card .rb_list ul li {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.28px; } }
+        .rb_program2 .program_card .rb_list ul li:not(:last-child) {
+          padding-bottom: 18px; }
+        .rb_program2 .program_card .rb_list ul li span {
+          color: #002147;
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: -0.16px; }
+          @media only screen and (min-width: 0px) and (max-width: 479px) {
+            .rb_program2 .program_card .rb_list ul li span {
+              font-size: 14px;
+              line-height: 22px;
+              letter-spacing: -0.28px; } }
 
 .rb_notice_board1 {
   background: #F7F7F7; }
@@ -29027,9 +29246,16 @@ header {
   @media (max-width: 1199px) {
     .rb_faq_section .faq_thumb {
       display: none; } }
+  @media only screen and (max-width: 991px) {
+    .rb_faq_section .faq_thumb {
+      display: block;
+      margin-bottom: 36px; } }
   @media only screen and (min-width: 0px) and (max-width: 479px) {
     .rb_faq_section .faq_thumb {
-      display: block; } }
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 991px) {
+    .rb_faq_section .faq_thumb img {
+      width: 100%; } }
   .rb_faq_section .faq_thumb .faq_icon {
     display: flex;
     transform: rotate(15deg);
@@ -29050,10 +29276,20 @@ header {
     @media only screen and (max-width: 1399px) {
       .rb_faq_section .faq_thumb .faq_icon {
         max-width: 80px; } }
-    @media only screen and (min-width: 0px) and (max-width: 479px) {
+    @media only screen and (max-width: 991px) {
+      .rb_faq_section .faq_thumb .faq_icon {
+        top: 120px;
+        right: 60px;
+        max-width: 100%; } }
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
       .rb_faq_section .faq_thumb .faq_icon {
         top: 60px;
         right: 30px; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_faq_section .faq_thumb .faq_icon {
+        top: 60px;
+        right: 30px;
+        max-width: 80px; } }
 
 .cta-sec {
   background-image: url("../images/other/cta.png");
@@ -29346,7 +29582,7 @@ header {
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .rb_fees_funding .rb_content {
         padding-top: 50px; } }
-    .rb_fees_funding .rb_content .rb_title {
+    .rb_fees_funding .rb_content .sec-title {
       color: #fff;
       font-family: "Geist", sans-serif;
       font-size: 72px;
@@ -29355,18 +29591,18 @@ header {
       line-height: 80px;
       letter-spacing: -1.44px; }
       @media only screen and (max-width: 1599px) {
-        .rb_fees_funding .rb_content .rb_title {
+        .rb_fees_funding .rb_content .sec-title {
           font-size: 64px;
           line-height: 1.2; } }
       @media only screen and (max-width: 1199px) {
-        .rb_fees_funding .rb_content .rb_title {
+        .rb_fees_funding .rb_content .sec-title {
           font-size: 54px; } }
       @media only screen and (max-width: 991px) {
-        .rb_fees_funding .rb_content .rb_title {
+        .rb_fees_funding .rb_content .sec-title {
           font-size: 40px;
           line-height: 52px; } }
       @media only screen and (min-width: 0px) and (max-width: 479px) {
-        .rb_fees_funding .rb_content .rb_title {
+        .rb_fees_funding .rb_content .sec-title {
           font-size: 28px;
           line-height: 40px;
           letter-spacing: -0.56px; } }
@@ -30112,7 +30348,7 @@ header {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.32px; } }
-  .rb_process .rb_card .rb_item .rb_content .rb_title {
+  .rb_process .rb_card .rb_item .rb_content .sec-title {
     color: #002147;
     font-family: "Geist", sans-serif;
     font-size: 28px;
@@ -30121,7 +30357,7 @@ header {
     line-height: 40px;
     letter-spacing: -0.56px; }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
-      .rb_process .rb_card .rb_item .rb_content .rb_title {
+      .rb_process .rb_card .rb_item .rb_content .sec-title {
         font-size: 24px;
         line-height: 36px;
         letter-spacing: -0.48px; } }
@@ -30248,6 +30484,134 @@ header {
           font-size: 14px;
           line-height: 22px; } }
 
+.rb_student_feedback {
+  border-radius: 20px;
+  background: #F7F7F7; }
+  .rb_student_feedback .testimonial-slider-wrapper {
+    padding-bottom: 60px; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_student_feedback .testimonial-slider-wrapper {
+        padding-bottom: 0; } }
+  .rb_student_feedback .feedback_card {
+    display: flex;
+    height: 600px;
+    padding: 24px 48px 24px 24px;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid #E5E9ED;
+    box-shadow: 35px 35px 65px 0 rgba(0, 33, 71, 0.15);
+    background: #fff; }
+    .rb_student_feedback .feedback_card .rb_thumb {
+      flex: none; }
+    @media only screen and (max-width: 1599px) {
+      .rb_student_feedback .feedback_card {
+        padding: 24px; } }
+    @media only screen and (max-width: 1199px) {
+      .rb_student_feedback .feedback_card {
+        align-items: start;
+        height: auto; }
+        .rb_student_feedback .feedback_card .rb_thumb {
+          flex: none;
+          max-width: 29%; } }
+    @media only screen and (max-width: 991px) {
+      .rb_student_feedback .feedback_card {
+        flex-direction: column-reverse;
+        align-items: start;
+        height: auto; }
+        .rb_student_feedback .feedback_card .rb_thumb {
+          width: 100%;
+          max-width: none; }
+          .rb_student_feedback .feedback_card .rb_thumb img {
+            width: 100%; } }
+    .rb_student_feedback .feedback_card .rb_content h4 {
+      color: #002147;
+      font-family: "Geist", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px;
+      letter-spacing: -0.48px; }
+      @media (max-width: 479px) {
+        .rb_student_feedback .feedback_card .rb_content h4 {
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: -0.4px; } }
+    .rb_student_feedback .feedback_card .rb_content p {
+      padding-right: 12px;
+      color: #404A56;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .rb_student_feedback .feedback_card .rb_content p {
+          font-size: 16px;
+          line-height: 24px; } }
+    .rb_student_feedback .feedback_card .text_footer {
+      width: 100%;
+      margin-top: 80px; }
+      @media only screen and (max-width: 1399px) {
+        .rb_student_feedback .feedback_card .text_footer {
+          margin-top: 40px; } }
+      .rb_student_feedback .feedback_card .text_footer h5 {
+        color: #002147;
+        font-family: "Geist", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.2px; }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .rb_student_feedback .feedback_card .text_footer h5 {
+            font-size: 16px;
+            line-height: 24px; } }
+        .rb_student_feedback .feedback_card .text_footer h5 span {
+          color: #404A56;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: -0.16px;
+          padding-left: 7px; }
+          @media only screen and (min-width: 0px) and (max-width: 479px) {
+            .rb_student_feedback .feedback_card .text_footer h5 span {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 22px;
+              letter-spacing: -0.28px; } }
+    .rb_student_feedback .feedback_card .button_area {
+      display: flex;
+      padding: 12px 20px;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid #E5E9ED;
+      background: #F5F5F5; }
+      .rb_student_feedback .feedback_card .button_area h5 {
+        color: #002147;
+        font-family: "Geist", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.2px; }
+        @media only screen and (max-width: 991px) {
+          .rb_student_feedback .feedback_card .button_area h5 {
+            padding: 8px 10px; } }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .rb_student_feedback .feedback_card .button_area h5 {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.32px; } }
+        .rb_student_feedback .feedback_card .button_area h5 span {
+          color: #FF1949; }
+    .rb_student_feedback .feedback_card:hover {
+      box-shadow: 35px 35px 35px 0 rgba(0, 33, 71, 0.15);
+      transition: all 0.4s ease; }
+
 .mb_job_success_area .mb_job_success_image {
   max-width: 690px;
   width: 100%;
@@ -30341,6 +30705,130 @@ header {
           line-height: 22px;
           padding-right: 100px; } }
 
+.rb_contact_us {
+  border-radius: 20px;
+  background: #F7F7F7; }
+  .rb_contact_us .contact_card {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 216px;
+    flex: 1 0 0;
+    border-top: 1px solid rgba(0, 33, 71, 0.24);
+    border-right: 1px solid rgba(0, 33, 71, 0.24); }
+    @media only screen and (max-width: 991px) {
+      .rb_contact_us .contact_card {
+        padding: 24px;
+        gap: 100px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .rb_contact_us .contact_card {
+        border-right: none; } }
+    .rb_contact_us .contact_card .rb_content .rb_icon {
+      margin-bottom: 15px; }
+    .rb_contact_us .contact_card .rb_content h4 {
+      color: #002147;
+      font-family: "Geist", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+      /* 142.857% */
+      letter-spacing: -0.56px; }
+      @media only screen and (max-width: 1599px) {
+        .rb_contact_us .contact_card .rb_content h4 {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px;
+          /* 150% */
+          letter-spacing: -0.72px;
+          text-transform: capitalize; } }
+    .rb_contact_us .contact_card .rb_link {
+      color: #404A56;
+      font-family: "Inter", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      /* 133.333% */
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+      overflow-wrap: anywhere; }
+      .rb_contact_us .contact_card .rb_link:hover {
+        color: #FF1949; }
+
+.rb_visit_us {
+  border-radius: 20px;
+  background: #FFF; }
+  .rb_visit_us .visit_card {
+    display: flex;
+    height: 384px;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid #E5E9ED;
+    background: #F7F7F7; }
+    @media (max-width: 479px) {
+      .rb_visit_us .visit_card {
+        height: 320px;
+        padding: 24px; } }
+    .rb_visit_us .visit_card .rb_content h4 {
+      color: #0D2C50;
+      font-family: "Geist", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+      /* 150% */
+      letter-spacing: -0.48px; }
+      @media (max-width: 479px) {
+        .rb_visit_us .visit_card .rb_content h4 {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 32px;
+          letter-spacing: -0.4px; } }
+
+.rb_map {
+  border-radius: 20px;
+  background: #F7F7F7; }
+  .rb_map .map_container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #E5E9ED;
+    box-shadow: 0 24px 50px 0 rgba(0, 33, 71, 0.15);
+    height: 698px;
+    flex-shrink: 0; }
+    @media only screen and (max-width: 1599px) {
+      .rb_map .map_container {
+        height: 600px; } }
+    @media only screen and (max-width: 1399px) {
+      .rb_map .map_container {
+        height: 500px; } }
+    @media only screen and (max-width: 1199px) {
+      .rb_map .map_container {
+        height: 400px; } }
+    @media only screen and (max-width: 991px) {
+      .rb_map .map_container {
+        height: 350px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .rb_map .map_container {
+        height: 300px; } }
+    .rb_map .map_container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 20px;
+      display: block; }
+
 .mb_event_details_area {
   background-color: #F7F7F7;
   border-radius: 20px;
@@ -30408,6 +30896,8 @@ header {
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
     border: 1px solid #e5e9ed; }
+    .mb_event_details_area .mb_should_attend.mb_style_1 {
+      max-width: 100%; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .mb_event_details_area .mb_should_attend {
         padding: 24px; } }
@@ -30456,6 +30946,8 @@ header {
         font-size: 14px;
         line-height: 22px;
         margin-top: 8px; } }
+    .mb_event_details_area .mb_quote.style_1 {
+      line-height: 26px; }
   .mb_event_details_area .mb_image_grid {
     display: flex;
     gap: 16px;
@@ -30492,6 +30984,33 @@ header {
       -ms-border-radius: 12px;
       -o-border-radius: 12px;
       object-fit: cover; }
+  .mb_event_details_area .mb_image_blog {
+    width: 100%;
+    height: 354px; }
+    @media (max-width: 1440px) {
+      .mb_event_details_area .mb_image_blog {
+        height: 432px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      .mb_event_details_area .mb_image_blog {
+        height: 100%; } }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .mb_event_details_area .mb_image_blog {
+        height: 100%; } }
+    @media only screen and (max-width: 991px) {
+      .mb_event_details_area .mb_image_blog {
+        height: 546px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_event_details_area .mb_image_blog {
+        height: 300px; } }
+    .mb_event_details_area .mb_image_blog img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px; }
   .mb_event_details_area .mb_support_list {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -30509,7 +31028,7 @@ header {
     border: 1px solid #e5e9ed;
     border-radius: 12px;
     padding: 24px 28px;
-    max-width: 492px;
+    max-width: 340px;
     width: 100%;
     background-color: #fff; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -30562,5 +31081,27 @@ header {
           margin-top: 16px; } }
       .mb_event_details_area .mb_event_details_sidebar .btn_wrapper a {
         width: 100%; }
+    .mb_event_details_area .mb_event_details_sidebar.mb_style_1 .mb_event_siderbar_card {
+      padding: 0px;
+      background-color: #fff; }
+  .mb_event_details_area .mb_blockquote_card {
+    border: 1px solid #e5e9ed;
+    border-radius: 16px;
+    padding: 36px;
+    width: 100%;
+    background-color: #fff; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_event_details_area .mb_blockquote_card {
+        padding: 24px; } }
+    .mb_event_details_area .mb_blockquote_card h4 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.02em;
+      color: #002147; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_event_details_area .mb_blockquote_card h4 {
+          font-size: 20px;
+          line-height: 32px; } }
 
 /*# sourceMappingURL=style.css.map */

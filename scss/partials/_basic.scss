@@ -236,10 +236,6 @@
         @include lg{
             margin-top: 0;
         }
-        @include xxs{
-            margin-top: 20px;
-        }
-
         .accordion-item {
             border-radius: 12px;
             background: $bg_color; 

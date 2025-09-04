@@ -56,6 +56,9 @@
 .mb_should_attend {
     background-color: $white;
     max-width: 916px;
+    &.mb_style_1{
+        max-width: 100%;
+    }
     padding: 36px;
     @include border-radius(12px);
     border: 1px solid #e5e9ed;
@@ -117,6 +120,9 @@
         line-height: 22px;
         margin-top: 8px;
     }
+    &.style_1{
+        line-height: 26px;
+    }
 }
 
 .mb_image_grid {
@@ -166,6 +172,32 @@
     //     }
     // }
 }
+.mb_image_blog{
+    width: 100%;
+    height: 354px;
+    @media (max-width: 1440px){
+        height: 432px;
+    }
+    @include nesthubmax{
+        height: 100%;
+    }
+    @include nesthub{
+        height: 100%;
+    }
+    @include md{
+        height: 546px;
+    }
+    @include sm{
+        height: 300px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include border-radius(12px);
+    }
+    
+}
 
 .mb_support_list {
     list-style-type: disc;
@@ -188,7 +220,8 @@
     border: 1px solid #e5e9ed;
     border-radius: 12px;
     padding: 24px 28px;
-    max-width: 492px;
+    // max-width: 492px;
+    max-width: 340px;
     width: 100%;
     background-color: $white;
     @include sm{
@@ -242,6 +275,33 @@
         }
         a{
             width: 100%;
+        }
+    }
+    &.mb_style_1{
+        .mb_event_siderbar_card{
+            padding: 0px;
+            background-color: $white;
+        }
+    }
+}
+.mb_blockquote_card{
+    border: 1px solid #e5e9ed;
+    border-radius: 16px;
+    padding: 36px;
+    width: 100%;
+    background-color: $white;
+    @include sm{
+        padding: 24px;
+    }
+    h4{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: $black2;
+        @include sm{
+            font-size: 20px;
+            line-height: 32px;
         }
     }
 }
