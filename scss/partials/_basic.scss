@@ -591,10 +591,16 @@
             &:focus {
                 outline: none;
             }
+            @include xxs {
+                height: 46px;
+            }
         }
         textarea {
             height: 166px;
             resize: vertical;
+            @include xxs {
+                height: 134px;
+            }
         }
         input[type="date"] {
             cursor: pointer;
@@ -620,7 +626,6 @@
             border-radius: 8px;
             border: 1px solid rgba(13, 44, 80, 0.10);
             background: #FFF;
-            backdrop-filter: blur(5px);
 
             color: $text_color;
             font-family: Inter;
@@ -628,17 +633,10 @@
             font-style: normal;
             font-weight: 400;
             line-height: 26px; 
-
-            /* Remove default arrow styles for consistency */
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            /* Add custom arrow */
-            // background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 15px center;
-            background-size: 12px 8px;
-            cursor: pointer;
+            @include xxs {
+                height: 46px;
+                padding: 9px 20px;
+            }
         }
         .nice-select:after {
             width: 9px;
@@ -648,95 +646,47 @@
         select:focus {
             outline: none;
         }
-
-
-        .gender-options {
-            display: flex;
-            gap: 20px;
-            padding: 14px 30px;
-            height: 54px;
-            border-radius: 5px;
-            background: var(--100, #EBF3ED);
-            align-items: center;
-            // @include breakpoint (max-xsmall){
-            //     padding: 14px 15px;
-            // }
-            label {
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                margin: 0;
-                color: var(--800, #626262);
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 26px; 
-            }
-    
-            input[type="radio"] {
-                display: flex;
-                width: 20px;
-                height: 20px;
-                flex-direction: column;
-                align-items: flex-start;
-                flex-shrink: 0;
-                border-radius: 50%; 
-                border: 1px solid var(--900, #1F1F1F);
-                background: transparent;
-                cursor: pointer;
-            }
-        }
-
-
-        .password-input-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            &.style_1{
-                input{
-                    &::placeholder{
-                        font-size: 50px;
-                        letter-spacing: 5px;
-                        color: black;
-                    }
-
-                }
-            }
-        }
-        .toggle-password {
-            position: absolute;
-            right: 15px;
-            color: #626262;
-            font-size: 18px;
-            transition: color 0.3s;
-            cursor: pointer;
-        }
     }
-    .checkbox-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .checkbox-left {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: $text_color;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px; 
-        opacity: 0.7;
-    }
-
-    .checkbox-left input[type="checkbox"] {
-        border-radius: 2px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
-        width: 15px;
-        height: 15px;
-        cursor: pointer;
-    }
-
 }
+
+// icon use into input field
+.input_icon_wrap {
+  position: relative;
+  .input_icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .input_textarea_icon {
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    transform: translateY(-10%);
+    pointer-events: none;
+    @include xxs {
+        top: 12%;
+    }
+  }
+  .input_select_icon {
+    position: absolute;
+    left: 20px;
+    transform: translateY(50%);
+    pointer-events: none;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea
+  {
+    padding-left: 50px !important;
+  }
+  .nice-select,
+  select {
+    padding-left: 50px !important;
+  }
+}
+
+    
