@@ -2,8 +2,7 @@
     "use strict";
     var windowOn = $(window);
     $(document).ready(function () {
-        windowOn.on('load', function () {
-        });
+      
         
          // Preloader
         $(window).on("load", function () {
@@ -13,7 +12,7 @@
             preloader.style.visibility = "hidden";
             setTimeout(() => {
                 preloader.style.display = "none";
-            }, 600);
+            }, 500);
         });
 
         //>> Mobile Menu Js Start <<//
@@ -97,181 +96,181 @@
         Faq();
 
         // brand slider
-    let $slider = $('.mb_branding_slider_ltr');
+        let $slider = $('.mb_branding_slider_ltr');
 
-        $slider.slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 12000,
-        cssEase: 'linear',
-        variableWidth: true,
-        slidesToShow: 1,
-        pauseOnHover: false,
-        pauseOnFocus: false,
+            $slider.slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 12000,
+            cssEase: 'linear',
+            variableWidth: true,
+            slidesToShow: 1,
+            pauseOnHover: false,
+            pauseOnFocus: false,
    
-    });
+        });
 
-    // instant pause
-    $slider.on('mouseenter', function () {
-        $slider.slick('slickSetOption', 'speed', 0, true);
-        $slider.slick('slickPause');
-    });
+        // instant pause
+        $slider.on('mouseenter', function () {
+            $slider.slick('slickSetOption', 'speed', 0, true);
+            $slider.slick('slickPause');
+        });
 
-    // instant resume
-    $slider.on('mouseleave', function () {
-        $slider.slick('slickSetOption', 'speed', 8000, true);
-        $slider.slick('slickPlay');
-    });
+        // instant resume
+        $slider.on('mouseleave', function () {
+            $slider.slick('slickSetOption', 'speed', 8000, true);
+            $slider.slick('slickPlay');
+        });
 
-    // Ends brand slider
+        // Ends brand slider
 
-    //  Testimonial Slider // ###########
-      const testimonial_slider = new Swiper('.testimonial-slider-wrapper', {
-        loop: true,
-        speed: 1500,
-        slidesPerView: 3,
-        spaceBetween: 24,
-        autoplay: true,
-        navigation: {
-          prevEl: '.tsm-btn-prev',
-          nextEl: '.tsm-btn-next',
-        },
-        pagination: {
-          el: ".fraction",
-          type: "fraction",
-          renderFraction: function (currentClass, totalClass) {
-                return '<span class="' + currentClass + '"></span>' +
-                    ' of ' +
-                    '<span class="' + totalClass + '"></span>';
-            }
-        },
-
-        breakpoints: {
-          350: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          576: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 1.75,
-            spaceBetween: 20,
-            centeredSlides: true,
-          },
-          992: {
-            slidesPerView: 2,
-          },
-          1200: {
+        //  Testimonial Slider // ###########
+        const testimonial_slider = new Swiper('.testimonial-slider-wrapper', {
+            loop: true,
+            speed: 1500,
             slidesPerView: 3,
-          }
-         
-        },
-        
-      })
-    //  Blog Slider // ###########
-      const blog_slider = new Swiper('.blog-slider-container', {
-        loop: true,
-        speed: 1500,
-        slidesPerView: 3,
-        spaceBetween: 24,
-        autoplay: true,
-        navigation: {
-          prevEl: '.blog-btn-prev',
-          nextEl: '.blog-btn-next',
-        },
-        pagination: {
-          el: ".blog-fraction",
-          type: "fraction",
-          renderFraction: function (currentClass, totalClass) {
-                return '<span class="' + currentClass + '"></span>' +
-                    ' of ' +
-                    '<span class="' + totalClass + '"></span>';
-            }
-        },
+            spaceBetween: 24,
+            autoplay: true,
+            navigation: {
+            prevEl: '.tsm-btn-prev',
+            nextEl: '.tsm-btn-next',
+            },
+            pagination: {
+            el: ".fraction",
+            type: "fraction",
+            renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span>' +
+                        ' of ' +
+                        '<span class="' + totalClass + '"></span>';
+                }
+            },
 
-        breakpoints: {
-          350: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          576: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          992: {
-            slidesPerView: 2,
-          },
-          1200: {
+            breakpoints: {
+            350: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 1.75,
+                spaceBetween: 20,
+                centeredSlides: true,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+            
+            },
+            
+        })
+        //  Blog Slider // ###########
+        const blog_slider = new Swiper('.blog-slider-container', {
+            loop: true,
+            speed: 1500,
             slidesPerView: 3,
-          }
-         
-        },
-        
-      })
-      const mb_relate_slider = new Swiper('.mb_relate_slider_container', {
-        loop: true,
-        speed: 1500,
-        slidesPerView: 2,
-        spaceBetween: 24,
-        autoplay: true,
-        navigation: {
-          prevEl: '.blog-btn-prev',
-          nextEl: '.blog-btn-next',
-        },
-        pagination: {
-          el: ".blog-fraction",
-          type: "fraction",
-          renderFraction: function (currentClass, totalClass) {
-                return '<span class="' + currentClass + '"></span>' +
-                    ' of ' +
-                    '<span class="' + totalClass + '"></span>';
-            }
-        },
+            spaceBetween: 24,
+            autoplay: true,
+            navigation: {
+            prevEl: '.blog-btn-prev',
+            nextEl: '.blog-btn-next',
+            },
+            pagination: {
+            el: ".blog-fraction",
+            type: "fraction",
+            renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span>' +
+                        ' of ' +
+                        '<span class="' + totalClass + '"></span>';
+                }
+            },
 
-        breakpoints: {
-          350: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          576: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
+            breakpoints: {
+            350: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+            
+            },
+            
+        })
+        const mb_relate_slider = new Swiper('.mb_relate_slider_container', {
+            loop: true,
+            speed: 1500,
             slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          992: {
-            slidesPerView: 2,
-          },
-          1200: {
-            slidesPerView: 2,
-          }
-         
-        },
-        
-      })
+            spaceBetween: 24,
+            autoplay: true,
+            navigation: {
+            prevEl: '.blog-btn-prev',
+            nextEl: '.blog-btn-next',
+            },
+            pagination: {
+            el: ".blog-fraction",
+            type: "fraction",
+            renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span>' +
+                        ' of ' +
+                        '<span class="' + totalClass + '"></span>';
+                }
+            },
+
+            breakpoints: {
+            350: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 2,
+            }
+            
+            },
+            
+        })
 
      
         $('.mb_image_slider').slick({
